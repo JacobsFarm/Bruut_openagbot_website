@@ -1,0 +1,25 @@
+{
+  "about_us_title": "Who We Are & Why We Do It",
+  "about_us_intro": "We are a team of dairy farmers building open-source software for the agricultural sector. Because we use this system on our own farms, we know exactly what works, what goes wrong, and what needs improvement. We aren't a corporate company full of people who have never seen a cow in real life—and that is our greatest strength. Built by Farmers for farmers",
+  
+  "about_us_opensource_title": "Why Open Source?",
+  "about_us_opensource_text": "Because it’s fun, useful, and worth sharing! This project is completely free and easy to download. With computer vision, we can build reliable event detection quickly and affordably. The best part? Everything stays fully local—your data never leaves your farm. All of this is driven by the joy of freedom and independence.",
+  
+  "about_us_team_title": "Advantage of Open Source",
+  "about_us_team_text": "The biggest advantage of open source is that it allows us to leverage powerful software from other projects that commercial entities cannot freely use. For instance, our core computer vision is built on the Ultralytics vision frameworks, and our detection alert system is powered by AI Detector. Without these tools, this project wouldn’t be possible.",
+  
+  "about_us_longevity_title": "Built to Last",
+  "about_us_longevity_text": "Because all the code is completely online, the project can theoretically continue forever. If one of us has to step back, another developer can take easily over. This isn't a project that will quietly die; it will be maintained for years to come. In the future, we expect and encourage more contributors to join",
+  
+  "about_us_independence_title": "Local and Repairable",
+  "about_us_independence_text": "You are responsible for your own setups. You install it, update it, and hang the cameras yourself. We designed it to be as easy as possible because we don't have the time to maintain individual farm systems or deal with invoicing. The software runs locally, so you stay fully in control. Data is not transmitted and stays on your Farm and can run without wifi",
+  
+  "about_us_reality_title": "Expectations & Reality",
+  "about_us_reality_text": "Because it's open-source, we say: 'It is what it is.' We cannot promise that it will work perfectly 100% of the time, and features like calving detection still need to get smarter. We currently have an active group of around 35 farmers running the system. In this group, users help each other out, and even farmers in their 50s and 60s manage the setup perfectly fine.",
+  
+  "about_us_contribute_title": "Join the community",
+  "about_us_contribute_text": "Cowcatcher AI is built by farmers, for farmers. Whether you're already using it or just getting started, we invite you to join our Telegram community. Connect with fellow farmers, share ideas, stay up to date, and get support whenever you need it. Many user-suggested improvements are already live in the code.",
+  
+  "about_us_conclusion": "Ultimately, we are constantly updating our vision modals and software. If it isn't quite what you need right now, check back in a few months!",
+  "about_us_github_button": "View Code on GitHub"
+}

@@ -1,0 +1,25 @@
+{
+  "about_us_title": "Wie we zijn & waarom we het doen",
+  "about_us_intro": "Wij zijn een team van melkveehouders dat open-source software bouwt voor de agrarische sector. Omdat we dit systeem op onze eigen boerderijen gebruiken, weten we precies wat werkt, wat er misgaat en wat er verbeterd moet worden. We zijn geen zakelijk bedrijf vol mensen die nog nooit een koe in het echt hebben gezien—en dat is onze grootste kracht. Gebouwd door boeren, voor boeren.",
+  
+  "about_us_opensource_title": "Waarom open source?",
+  "about_us_opensource_text": "Omdat het leuk en nuttig is, en de moeite waard om te delen! Dit project is volledig gratis en makkelijk te downloaden. Met computer vision kunnen we snel en betaalbaar betrouwbare gebeurtenisdetectie bouwen. Het beste deel? Alles blijft volledig lokaal—je gegevens verlaten je boerderij nooit. Dit alles wordt gedreven door het plezier van vrijheid en onafhankelijkheid.",
+  
+  "about_us_team_title": "Het voordeel van open source",
+  "about_us_team_text": "Het grootste voordeel van open source is dat het ons in staat stelt gebruik te maken van krachtige software uit andere projecten die commerciële partijen niet zomaar gratis kunnen gebruiken. Onze kern voor computer vision is bijvoorbeeld gebouwd op de Ultralytics vision frameworks, en ons waarschuwingssysteem voor detecties wordt aangedreven door AI Detector. Zonder deze tools zou dit project niet mogelijk zijn.",
+  
+  "about_us_longevity_title": "Gebouwd om te blijven",
+  "about_us_longevity_text": "Omdat alle code volledig online staat, kan het project theoretisch voor altijd blijven bestaan. Als een van ons een stap terug moet doen, kan een andere ontwikkelaar het gemakkelijk overnemen. Dit is geen project dat een stille dood zal sterven; het zal nog jarenlang worden onderhouden. In de toekomst verwachten en stimuleren we dat meer bijdragers zich aansluiten.",
+  
+  "about_us_independence_title": "Lokaal en repareerbaar",
+  "about_us_independence_text": "Je bent verantwoordelijk voor je eigen installaties. Je installeert het, updatet het en hangt zelf de camera's op. We hebben het zo makkelijk mogelijk ontworpen, omdat we geen tijd hebben om individuele systemen op boerderijen te onderhouden of ons bezig te houden met facturatie. De software draait lokaal, dus je houdt de volledige controle. Er worden geen gegevens verzonden, alles blijft op jouw boerderij en het kan zonder wifi draaien.",
+  
+  "about_us_reality_title": "Verwachtingen & realiteit",
+  "about_us_reality_text": "Omdat het open-source is, zeggen we: 'Het is wat het is.' We kunnen niet beloven dat het altijd 100% perfect werkt, en functies zoals afkalfdetectie moeten nog slimmer worden. We hebben momenteel een actieve groep van ongeveer 35 boeren die het systeem draaien. In deze groep helpen gebruikers elkaar, en zelfs boeren in de 50 en 60 kunnen prima overweg met de installatie.",
+  
+  "about_us_contribute_title": "Word lid van de community",
+  "about_us_contribute_text": "Cowcatcher AI is gebouwd door boeren, voor boeren. Of je het nu al gebruikt of net begint, we nodigen je uit om lid te worden van onze Telegram-community. Kom in contact met mede-boeren, deel ideeën, blijf op de hoogte en krijg ondersteuning wanneer je die nodig hebt. Veel door gebruikers voorgestelde verbeteringen zijn al doorgevoerd in de code.",
+  
+  "about_us_conclusion": "Uiteindelijk zijn we constant bezig met het updaten van onze vision-modellen en software. Als het nu nog niet helemaal is wat je zoekt, kom dan over een paar maanden nog eens terug!",
+  "about_us_github_button": "Bekijk code op GitHub"
+}

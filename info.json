@@ -1,0 +1,93 @@
+{
+  "project_name": "CowCatcherAI",
+  "design_system": {
+    "typography": {
+      "primary": {
+        "font_family": "Bebas Kai",
+        "weight": "Regular",
+        "usage": ["logo", "project text", "headliners"],
+        "source": "dafont",
+        "download_url": "https://www.dafont.com/bebas-kai.font"
+      },
+      "secondary": {
+        "font_family": "Roboto",
+        "usage": ["smaller text", "body copy", "non-headliners"],
+        "type": "open source",
+        "source": "Microsoft fonts"
+      }
+    },
+    {
+      "brand": {
+        "primary": {
+          "name": "Emerald Green",
+          "hex": "#386938",
+          "rgb": "56, 105, 56",          
+          "ral": "6001",
+          "hue": 145,
+          "shades": {
+            "50": "oklch(97% 0.01 145)",
+            "100": "oklch(92% 0.02 145)",
+            "300": "oklch(65% 0.08 145)",
+            "500": "oklch(42% 0.07 145)", 
+            "700": "oklch(28% 0.05 145)",
+            "900": "oklch(18% 0.03 145)",
+           "usage": ["logo", "primary buttons", "headers"]
+          }
+        },
+        "accents": {
+          "amber_action": {
+            "name": "Deep Amber",
+            "value": "oklch(65% 0.16 75)",
+            "usage": ["high-visibility CTAs", "hover states"]
+          },
+          "soft_teal": {
+            "name": "Muted Teal",
+            "value": "oklch(60% 0.09 195)",
+            "usage": ["high-visibility CTAs", "hover states"]
+          }
+        },
+        "neutrals": {
+          "off_white": "oklch(98% 0.005 145)",
+          "soft_gray": "oklch(85% 0.01 145)",
+          "deep_ink": "oklch(22% 0.02 145)"
+        }
+      }
+    }
+  },
+  "brand_guidelines": {
+    "logo_usage": {
+      "permissions": "You may alter or parody the logo as you wish.",
+      "restrictions": "Do not claim that your modified version is from the official open source project.",
+      "attribution": "Please be fair and direct users to the official GitHub page.",
+      "links": {
+        "official_github": "https://github.com/CowCatcherAI/CowCatcherAI",
+        "official_logo_source": "https://seeklogo.com/vector-logo/637544/cowcatcherai"
+      }
+    }
+  },
+  "technical_setup": {
+    "framework": "SvelteKit",
+    "responsiveness": [
+      "Optimized for phone in vertical mode",
+      "Optimized for desktop"
+    ],
+    "i18n": {
+      "tool": "Paraglide",
+      "supported_languages": ["en", "nl"],
+      "directory_structure": "/messages/en/",
+      "file_architecture": "Separate JSON file per page (e.g., front_page.json)",
+      "build_script": "merge-messages.js automatically merges all JSON files into a single file that Paraglide reads.",
+      "naming_convention": {
+        "rule": "Each JSON file uses the page name as a key prefix.",
+        "examples": [
+          "front_page_cowcatcher_title",
+          "cowcatcher_provide_model"
+        ]
+      }
+    },
+    "assets": {
+      "directory": "\\src\\lib\\assets",
+      "naming_convention": "Images are prefixed with the page name (e.g., cowcatcher_ for the cowcatcher page)."
+    }
+  }
+}

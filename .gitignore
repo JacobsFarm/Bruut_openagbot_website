@@ -1,0 +1,58 @@
+# =========================================
+# Dependencies
+# =========================================
+node_modules/
+
+# =========================================
+# SvelteKit, Vite & Build files
+# =========================================
+.svelte-kit/
+build/
+dist/
+package/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# =========================================
+# Deployment & Hosting Adapters
+# =========================================
+.output/
+.vercel/
+.netlify/
+.wrangler/
+
+# =========================================
+# i18n (Paraglide & Inlang)
+# =========================================
+src/lib/paraglide/
+project.inlang/cache/
+
+# =========================================
+# Environment Variables (Secrets)
+# =========================================
+.env
+.env.*
+!.env.example
+!.env.test
+
+# =========================================
+# Logs
+# =========================================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================
+# Operating Systems & Editors
+# =========================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
