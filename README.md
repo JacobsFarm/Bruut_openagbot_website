@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
@@ -69,3 +70,7 @@ git commit -m "Lokale wijzigingen opslaan voor pull"
 git pull origin main --rebase
 git push origin main 
 ```
+=======
+# Bruut_openagbot_website
+web page for the open source project Bruut openagbot
+>>>>>>> 313ecfd511f0e46960a924bf54fa06faa97d9f32
