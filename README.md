@@ -6,7 +6,7 @@ Everything you need to build a Svelte project, powered by [`sv`](https://github.
 ##Clone repo
 
 ```sh
-git clone https://github.com/JacobsFarm/website.git
+git clone https://github.com/JacobsFarm/Bruut_openagbot_website
 ```
 ```sh
 npm install
