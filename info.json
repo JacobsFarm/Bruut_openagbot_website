@@ -30,8 +30,8 @@
             "300": "oklch(65% 0.08 145)",
             "500": "oklch(42% 0.07 145)", 
             "700": "oklch(28% 0.05 145)",
-            "900": "oklch(18% 0.03 145)",
-           "usage": ["logo", "primary buttons", "headers"]
+            "900": "oklch(18% 0.03 145)"
+            "usage": ["logo", "primary buttons", "headers"]
           }
         },
         "accents": {
@@ -65,8 +65,11 @@
       }
     }
   },
-  "technical_setup": {
+"technical_setup": {
     "framework": "SvelteKit",
+    "coding_standards": {
+      "comments_and_citations": "Do not include citations and comments in the code."
+    },
     "responsiveness": [
       "Optimized for phone in vertical mode",
       "Optimized for desktop"
