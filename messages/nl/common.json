@@ -1,11 +1,11 @@
 {
-  "title": "Welcome to CowCatcherAI",
-  "subtitle": "Open-source AI for the agricultural sector",
+  "title": "Welkom bij Project Bruut",
+  "subtitle": "Open-source robotica voor de agrarische sector",
   "nav_home": "Home",
-  "nav_projects": "Projects",
-  "nav_install": "Installation",
-  "nav_about": "About Us",
-  "read_more": "Read more",
-  "about_title": "About Us",
-  "about_text": "Why open-source? Because we want to advance the agricultural sector with shared knowledge and AI."
+  "nav_projects": "Projecten",
+  "nav_install": "Installatie",
+  "nav_about": "Over Ons",
+  "read_more": "Lees meer",
+  "about_title": "Over Ons",
+  "about_text": "Waarom open-source? Omdat we de agrarische sector vooruit willen helpen met gedeelde kennis en modulaire technologie."
 }

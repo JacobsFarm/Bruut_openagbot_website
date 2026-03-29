@@ -1,19 +1,19 @@
 {
-  "about_us_title": "Project Bruut: Door en voor de community",
-  "about_us_intro": "Robotica in de landbouw is vaak complex en onbetaalbaar. Wij geloven dat dit anders kan. Project Bruut is ontstaan uit de wens om een modulaire, open-source veldrobot te ontwerpen die je als boer of maker zélf kunt bouwen, begrijpen en aanpassen.",
+  "about_us_title": "Project Bruut: By and for the community",
+  "about_us_intro": "Robotics in agriculture is often complex and unaffordable. We believe this can be different. Project Bruut was born from the desire to design a modular, open-source field robot that you, as a farmer or maker, can build, understand, and adapt yourself.",
   
-  "about_us_opensource_title": "Waarom Open Source?",
-  "about_us_opensource_text": "We willen complexe robotica toegankelijk maken door een solide basis te bieden. Omdat het project open-source is, zit je niet vast aan dure licenties of gesloten ecosystemen. Je hebt de vrijheid om de werktuigendrager volledig naar je eigen hand te zetten en je innovaties te delen met anderen.",
+  "about_us_opensource_title": "Why Open Source?",
+  "about_us_opensource_text": "We want to make complex robotics accessible by providing a solid foundation. Because the project is open-source, you are not tied to expensive licenses or closed ecosystems. You have the freedom to fully customize the tool carrier to your own needs and share your innovations with others.",
   
-  "about_us_independence_title": "Eenvoud & Onafhankelijkheid",
-  "about_us_independence_text": "Geen overbodige elektronica of onnodig complexe systemen. We gebruiken zoveel mogelijk 'off-the-shelf' standaardcomponenten. Dit betekent dat de robot eenvoudig te bouwen is en, nog belangrijker, dat je hem zelf op het veld kunt repareren zonder te hoeven wachten op een dure monteur.",
+  "about_us_independence_title": "Simplicity & Independence",
+  "about_us_independence_text": "No unnecessary electronics or overly complex systems. We use as many off-the-shelf standard components as possible. This means the robot is easy to build and, more importantly, that you can repair it yourself in the field without having to wait for an expensive technician.",
   
-  "about_us_reality_title": "Verwachtingen & Realiteit",
-  "about_us_reality_text": "Laten we eerlijk zijn: robotica is lastig. Verwacht daarom geen kant-en-klaar commercieel product met een strik eromheen. Wat we wél bieden is een oersterk, programmeerbaar frame en een duidelijke handleiding. Wij geven je het handvat, jij geeft de robot zijn doel.",
+  "about_us_reality_title": "Expectations & Reality",
+  "about_us_reality_text": "Let’s be honest: robotics is difficult. So don’t expect a ready-made commercial product wrapped up with a bow. What we do offer is a robust, programmable frame and a clear manual. We give you the tool—you give the robot its purpose.",
   
-  "about_us_community_title": "De kracht van de makers",
-  "about_us_community_text": "Of je nu een boer bent met een lasapparaat, of een ontwikkelaar die graag met Ardupilot werkt; we doen dit samen. Hoe mooi is het om als community van enthousiastelingen plannen te delen, te verbeteren, in de modder te testen en gewoon samen te gebruiken?",
+  "about_us_community_title": "The Power of Makers",
+  "about_us_community_text": "Whether you’re a farmer with a welding machine or a developer who enjoys working with Ardupilot—we do this together. How great is it to share ideas as a community of enthusiasts, improve them, test them in the mud, and simply use them together?",
   
-  "about_us_conclusion": "Bouw mee aan de toekomst van de toegankelijke landbouwrobotica. Deel je aanbouwdelen, verbeter de code, of start simpelweg met de bouw van je eigen Bruut.",
-  "about_us_github_button": "Bekijk het project op GitHub"
+  "about_us_conclusion": "Help build the future of accessible agricultural robotics. Share your attachments, improve the code, or simply start building your own Bruut.",
+  "about_us_github_button": "View the project on GitHub"
 }

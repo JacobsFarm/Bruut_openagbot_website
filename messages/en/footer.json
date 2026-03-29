@@ -1,8 +1,8 @@
 {
-  "footer_tagline": "Your Barn, Your Data, Our Vision",
-  "footer_join_community": "Join the Community! 🐄",
-  "footer_project_sub": "We're a community-driven open-source movement revolutionizing AgTech. Built by farmers, for farmers ",
-  "footer_license": "Proudly Free & Open (GNU GPL v3.0)",
-  "footer_contribute": "Check the us out on GitHub",
-  "footer_made_with": "Crafted with 💚 for the future of agriculture"
+  "footer_tagline": "Simple agricultural robotics for everyone. Modular, electric, and fully open-source.",
+  "footer_section_links": "Quick Links",
+  "footer_section_connect": "Connect",
+  "footer_link_github": "GitHub Repository",
+  "footer_link_contact": "Email Contact",
+  "footer_copyright": "&copy; {year} Open Source Project Bruut. All rights reserved."
 }

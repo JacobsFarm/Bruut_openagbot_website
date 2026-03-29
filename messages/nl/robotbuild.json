@@ -1,13 +1,13 @@
 {
-  "build_hero_title": "De Techniek Achter Bruut",
-  "build_hero_subtitle": "Een overzicht van het modulaire ontwerp, de aandrijving en de elektronica om de robot te bouwen.",
-  "build_chassis_title": "Modulair Chassis & Frame",
-  "build_chassis_desc": "Het fundament is een lichtgewicht ontwerp met aanpasbare breedte en lengte via een gatenbalk-systeem. Door de linker- en rechterkant te spiegelen kan de tussenruimte moeiteloos worden opgeschaald voor verschillende omgevingen.",
-  "build_drive_title": "Aandrijfconfiguraties",
-  "build_drive_desc": "Kies voor 2 hubmotors voorop met 2 zwenkwielen achter, of 4 hubmotors voor maximale tractie. De standaard 16 inch wielmotoren leveren vermogens van 400 watt tot 5 kW per wiel.",
-  "build_power_title": "Stroomvoorziening",
-  "build_power_desc": "Het systeem draait op laagvoltage accu's van 12V of 24V. De ruime compartimenten bieden plek voor extra accu's, en het platform kan worden uitgebreid met zonnepanelen of een hybride generator.",
-  "build_control_title": "Elektronika & Besturing",
-  "build_control_desc": "De basis maakt gebruik van off-the-shelf componenten zoals de Arduino Uno R4 WiFi, Nema34 steppermotoren met HBS86H controllers, en een simpleRTK2B Pro met ZED-F9P chip voor Ardupilot integratie.",
-  "build_cta": "Bekijk de componentenlijst"
+  "robotbuild_hero_title": "Bouw Je Eigen Bruut Veldrobot",
+  "robotbuild_hero_subtitle": "Een stapsgewijze handleiding voor het monteren van het modulaire chassis en het aandrijfsysteem.",
+  "robotbuild_cta": "Bekijk op GitHub",
+  "robotbuild_chassis_title": "Het Modulaire Chassis",
+  "robotbuild_chassis_desc": "Het frame is opgebouwd uit standaard gatenprofielen, waardoor breedte en lengte eenvoudig aanpasbaar zijn voor elke toepassing.",
+  "robotbuild_drive_title": "Krachtig Aandrijfsysteem",
+  "robotbuild_drive_desc": "Wielnaafmotoren zorgen voor directe tractie in het veld. Beschikbaar in configuraties van 400W tot 5kW.",
+  "robotbuild_power_title": "Energie & Accu",
+  "robotbuild_power_desc": "Modulair accusysteem met opties voor zonnepanelen voor langdurig autonoom gebruik in het veld.",
+  "robotbuild_control_title": "Open-Source Besturing",
+  "robotbuild_control_desc": "Volledige controle via ESP32 of Raspberry Pi controllers, geoptimaliseerd voor eenvoudige programmering."
 }
