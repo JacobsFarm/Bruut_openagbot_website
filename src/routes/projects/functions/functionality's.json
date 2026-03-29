@@ -1,0 +1,120 @@
+{
+  "attachments": [
+    {
+      "main_attachment": "Grader Blade",
+      "function": "Front-mounted or mid-mounted between the wheels (grader setup) for leveling terrain or pushing feed/grass in stables."
+    },
+    {
+      "main_attachment": "Sweeper",
+      "function": "Large front-mounted brush or an electrically driven radial brush for cleaning surfaces."
+    },
+    {
+      "main_attachment": "Cutter Bar",
+      "function": "Mowing at various heights, including 'topping' plants in the air."
+    },
+    {
+      "main_attachment": "Battery Pack",
+      "function": "Additional power supply to be installed between the frames."
+    },
+    {
+      "main_attachment": "Generator / Engine",
+      "function": "Power source mounted between the frame for auxiliary power or electricity generation."
+    },
+    {
+      "main_attachment": "Irrigation Pump",
+      "function": "Pumping water from ditches for irrigation or crop spraying."
+    },
+    {
+      "main_attachment": "Seat / Frame Extension",
+      "function": "Front or rear-mounted seat, including the option to widen the frame tubes at the sides."
+    },
+    {
+      "main_attachment": "Ditcher / Trencher",
+      "function": "Digging trenches to drain standing water from fields into ditches."
+    },
+    {
+      "main_attachment": "Solar Panels",
+      "function": "Integrated panels to extend battery life during operation."
+    },
+    {
+      "main_attachment": "Sawdust Spreader",
+      "function": "Evenly distributing sawdust bedding."
+    },
+    {
+      "main_attachment": "Fertilizer Spreader",
+      "function": "Precise application of granular fertilizer."
+    },
+    {
+      "main_attachment": "Seeder / Overseeder",
+      "function": "Machine for initial crop sowing or overseeding existing grassland."
+    },
+    {
+      "main_attachment": "Compost Bin",
+      "function": "Transporting and processing compost within the frame structure."
+    },
+    {
+      "main_attachment": "Dump Bucket",
+      "function": "Wheelbarrow-style bin for transporting loose materials."
+    },
+    {
+      "main_attachment": "Tow Hitch",
+      "function": "Rear-mounted hitch for towing trailers."
+    },
+    {
+      "main_attachment": "Counterweights",
+      "function": "Ballast weights to improve traction and vehicle balance."
+    },
+    {
+      "main_attachment": "Lime Spreader",
+      "function": "Spreading lime for soil pH improvement."
+    },
+    {
+      "main_attachment": "Mowing Arm",
+      "function": "Flexible arm with a brush cutter or blades for mowing under fences and obstacles."
+    },
+    {
+      "main_attachment": "Straw Spreader",
+      "function": "Spreading straw, specifically designed for use between vegetable rows."
+    },
+    {
+      "main_attachment": "Power Barrow / Mini Dumper",
+      "function": "Lifting and transport assistance, functioning as a motorized wheelbarrow."
+    },
+    {
+      "main_attachment": "Hydraulic Pump",
+      "function": "External hydraulic power source for applications where hydraulic force is preferred over electricity."
+    },
+    {
+      "main_attachment": "Three-point Hitch",
+      "function": "Standard linkage system for attaching various agricultural implements."
+    },
+    {
+      "main_attachment": "Compact Cultivator",
+      "function": "Soil cultivation specifically for vegetable gardens or light soil plots."
+    },
+    {
+      "main_attachment": "Finger Weeders",
+      "function": "Mechanical weed control using rotating fingers in light soil."
+    },
+    {
+      "main_attachment": "Spot Spray Boom",
+      "function": "Targeted weed control based on the 'Open Weed Locator' project."
+    },
+    {
+      "main_attachment": "Compact Cabin",
+      "function": "Protective enclosure/housing for the operator."
+    },
+    {
+      "main_attachment": "Grassland Aerator",
+      "function": "Improving soil structure and air supply in grassland."
+    },
+    {
+      "main_attachment": "Crop Scanner",
+      "function": "Measuring crop height to create prescription maps (e.g., for nitrogen or phosphate)."
+    },
+    {
+      "main_attachment": "Soil Compaction Meter",
+      "function": "Measuring and mapping soil density at specific data points."
+    }
+  ]
+}

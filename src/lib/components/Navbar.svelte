@@ -17,7 +17,7 @@
 </script>
 
 <nav>
-  <div class="logo">CowCatcherAI</div>
+  <div class="logo">BRUUT</div>
 
   <button
     class="hamburger"
@@ -32,12 +32,11 @@
 
   <div class="links" class:open={isOpen}>
     <a href="{base}/" on:click={closeMenu}>{m.nav_home()}</a>
-    <a href="{base}/installation" on:click={closeMenu}>{m.nav_install()}</a>
     <a href="{base}/about-us" on:click={closeMenu}>{m.nav_about()}</a>
 
-    <a href="{base}/projects/cowcatcher" class="mobile-only" on:click={closeMenu}>CowCatcher</a>
-    <a href="{base}/projects/calvingcatcher" class="mobile-only" on:click={closeMenu}>CalvingCatcher</a>
-    <a href="{base}/projects/ai-detector" class="mobile-only" on:click={closeMenu}>AI-Detector</a>
+    <a href="{base}/projects/robotbuild" class="mobile-only" on:click={closeMenu}>Robot Build</a>
+    <a href="{base}/projects/goal" class="mobile-only" on:click={closeMenu}>Goal</a>
+    <a href="{base}/projects/functions" class="mobile-only" on:click={closeMenu}>Functions</a>
 
     <div class="lang-switcher">
       <button

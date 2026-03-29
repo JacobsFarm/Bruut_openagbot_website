@@ -1,0 +1,13 @@
+{
+  "robotbuild_hero_title": "Build Your Own Bruut Field Robot",
+  "robotbuild_hero_subtitle": "A step-by-step guide to assembling the modular chassis and drive system.",
+  "robotbuild_cta": "View on GitHub",
+  "robotbuild_chassis_title": "The Modular Chassis",
+  "robotbuild_chassis_desc": "The frame is constructed from standard hole-pattern beams, making width and length easily adjustable for any application.",
+  "robotbuild_drive_title": "Powerful Drive System",
+  "robotbuild_drive_desc": "Hub motors provide direct traction in the field. Available in configurations from 400W to 5kW.",
+  "robotbuild_power_title": "Energy & Battery",
+  "robotbuild_power_desc": "Modular battery system with solar panel options for long-term autonomous field use.",
+  "robotbuild_control_title": "Open-Source Control",
+  "robotbuild_control_desc": "Full control via ESP32 or Raspberry Pi controllers, optimized for easy programming."
+}
