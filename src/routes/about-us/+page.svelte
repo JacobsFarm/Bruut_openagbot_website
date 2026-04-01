@@ -35,7 +35,7 @@
       <p>{m.about_us_conclusion()}</p>
       
       <a 
-        href="https://github.com/jouw-repo-link" 
+        href="https://github.com/JacobsFarm/Bruut_OpenAgbot" 
         class="github-btn" 
         target="_blank" 
         rel="noopener noreferrer"

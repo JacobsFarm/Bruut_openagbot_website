@@ -6,7 +6,9 @@
     import InfoWithImage from '$lib/components/InfoWithImage.svelte';
     import MediaCardGif from '$lib/components/MediaCardGif.svelte';
 
-    // Gebruik de placeholder afbeeldingen uit de assets of static map
+    // Importeer de specifieke afbeeldingen uit de assets map [cite: 115]
+    import imgBaseToFrame from '$lib/assets/goal_from_base_to_frame.png';
+    import imgCommunityDriven from '$lib/assets/goal_community_driven.png';
     import placeholderImg from '$lib/assets/place-holder 875x875.jpg';
 </script>
 
@@ -14,16 +16,13 @@
     <section class="hero-section">
         <HighlightBlock title={m.goal_hero_title()}>
             <p>{m.goal_hero_subtitle()}</p>
-            <div class="cta-wrapper">
-                <a href="/about-us" class="btn-primary">{m.goal_cta()}</a>
-            </div>
-        </HighlightBlock>
+            </HighlightBlock>
     </section>
 
     <section class="vision-showcase">
         <InfoWithImage 
             title={m.goal_info_title()} 
-            images={[{ src: placeholderImg, alt: "Visie illustratie" }]}
+            images={[{ src: imgBaseToFrame, alt: "Van basisframe naar eigen toepassing" }]}
         >
             <p>{m.goal_info_desc()}</p>
         </InfoWithImage>
@@ -48,8 +47,8 @@
         <MediaCardGif 
             title={m.goal_feature1_title()} 
             desc={m.goal_feature1_desc()}
-            gifs={[placeholderImg]} 
-            altText="Community samenwerking"
+            gifs={[imgCommunityDriven]} 
+            altText="Community samenwerking aan de Bruut robot"
         />
     </section>
 </main>
@@ -62,30 +61,6 @@
         display: flex;
         flex-direction: column;
         gap: 6rem;
-    }
-
-    /* Styling voor de CTA knop in het HighlightBlock */
-    .cta-wrapper {
-        margin-top: 2rem;
-    }
-
-    .btn-primary {
-        display: inline-block;
-        padding: 1rem 2rem;
-        background-color: #386938; /* Emerald Green */
-        color: oklch(98% 0.005 145); /* Off White */
-        text-decoration: none;
-        border-radius: 8px;
-        font-family: 'Bebas Kai', sans-serif;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-    }
-
-    .btn-primary:hover {
-        background-color: oklch(65% 0.16 75); /* Deep Amber */
-        color: oklch(22% 0.02 145); /* Deep Ink */
-        transform: translateY(-2px);
     }
 
     .benefits-grid {

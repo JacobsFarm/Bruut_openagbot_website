@@ -2,27 +2,302 @@ Bruut_website/
 ├── .github
     └── workflows
         └── deploy.yml
+├── .svelte-kit
+    ├── generated
+        ├── client
+            ├── nodes
+                ├── 0.js
+                ├── 1.js
+                ├── 2.js
+                ├── 3.js
+                ├── 4.js
+                ├── 5.js
+                └── 6.js
+            ├── app.js
+            └── matchers.js
+        ├── client-optimized
+            ├── nodes
+                ├── 0.js
+                ├── 1.js
+                ├── 2.js
+                ├── 3.js
+                ├── 4.js
+                ├── 5.js
+                └── 6.js
+            ├── app.js
+            └── matchers.js
+        ├── server
+            └── internal.js
+        ├── root.js
+        └── root.svelte
+    ├── output
+        ├── client
+            ├── .vite
+                └── manifest.json
+            ├── _app
+                ├── immutable
+                    ├── assets
+                        ├── 0.B1hJvB0a.css
+                        ├── 2.zk449YpW.css
+                        ├── 3.DLlgEhJy.css
+                        ├── 4.BpaEenbU.css
+                        ├── 5.BEd2ME_H.css
+                        ├── 6.BYp4yCkU.css
+                        ├── FeatureCard.l8XBiROk.css
+                        ├── front_page_scad_model_robot.DJohaD2X.png
+                        ├── frontpage_video1.DlndMNwE.gif
+                        ├── HighlightBlock.DdVGdayO.css
+                        ├── MediaCardGif.DoQqCggA.css
+                        ├── MediaCardPicture.D10wn8qk.css
+                        ├── place-holder 875x875.Bvdw3oP5.jpg
+                        ├── robotbuild (1).BDnnpxie.png
+                        └── robotbuild (2).3FSD3sAb.png
+                    ├── chunks
+                        ├── 0J22l7Jc.js
+                        ├── _XvFgtDI.js
+                        ├── B59XTudX.js
+                        ├── B6RL0Iun.js
+                        ├── BkOfzWD6.js
+                        ├── BSyyQ1Cu.js
+                        ├── C9aULRNU.js
+                        ├── CCzKooT9.js
+                        ├── CiNavlap.js
+                        ├── CMFKUMKc.js
+                        ├── CmXfUiI_.js
+                        ├── CQ0YEYFe.js
+                        ├── CVP_y9cv.js
+                        ├── CwLZPo8M.js
+                        ├── D5cfEz7a.js
+                        ├── DHfDVjez.js
+                        ├── DKwHBiMq.js
+                        ├── DM_D-mh4.js
+                        ├── Du2aCi0V.js
+                        ├── DWpL9MZ1.js
+                        ├── eWtONo3v.js
+                        └── zd47FlDp.js
+                    ├── entry
+                        ├── app.CG1AWkMU.js
+                        └── start.CZMvFCbr.js
+                    └── nodes
+                        ├── 0.GJxvdyz_.js
+                        ├── 1.CyLAkxzz.js
+                        ├── 2.CvQJE7EU.js
+                        ├── 3.vUWAutZY.js
+                        ├── 4.DAVg_j8l.js
+                        ├── 5.CXEL0Y4j.js
+                        └── 6.C86gFHmE.js
+                └── version.json
+            └── robots.txt
+        ├── prerendered
+            ├── dependencies
+                └── _app
+                    └── env.js
+            └── pages
+                ├── about-us
+                    └── index.html
+                ├── projects
+                    ├── functions
+                        └── index.html
+                    ├── goal
+                        └── index.html
+                    └── robotbuild
+                        └── index.html
+                └── index.html
+        └── server
+            ├── .vite
+                └── manifest.json
+            ├── _app
+                └── immutable
+                    └── assets
+                        ├── _layout.D8CEHHUT.css
+                        ├── _page.BpaEenbU.css
+                        ├── _page.BRboXzR3.css
+                        ├── _page.CBaUxbqL.css
+                        ├── _page.cgsBaaVi.css
+                        ├── _page.Dc_FSw_i.css
+                        ├── FeatureCard.l8XBiROk.css
+                        ├── front_page_scad_model_robot.DJohaD2X.png
+                        ├── frontpage_video1.DlndMNwE.gif
+                        ├── HighlightBlock.DdVGdayO.css
+                        ├── MediaCardGif.wjrMoIFk.css
+                        ├── MediaCardPicture.ByxgY7Mj.css
+                        ├── place-holder 875x875.Bvdw3oP5.jpg
+                        ├── robotbuild (1).BDnnpxie.png
+                        └── robotbuild (2).3FSD3sAb.png
+            ├── chunks
+                ├── environment.js
+                ├── exports.js
+                ├── false.js
+                ├── FeatureCard.js
+                ├── frontpage_video1.js
+                ├── HighlightBlock.js
+                ├── index.js
+                ├── internal.js
+                ├── MediaCardGif.js
+                ├── MediaCardPicture.js
+                ├── place-holder 875x875.js
+                ├── root.js
+                ├── runtime.js
+                ├── server.js
+                ├── shared.js
+                ├── url.js
+                └── utils.js
+            ├── entries
+                ├── fallbacks
+                    └── error.svelte.js
+                ├── pages
+                    ├── about-us
+                        └── _page.svelte.js
+                    ├── projects
+                        ├── functions
+                            └── _page.svelte.js
+                        ├── goal
+                            └── _page.svelte.js
+                        └── robotbuild
+                            └── _page.svelte.js
+                    ├── _layout.svelte.js
+                    ├── _layout.ts.js
+                    └── _page.svelte.js
+                ├── hooks.server.js
+                └── hooks.universal.js
+            ├── nodes
+                ├── 0.js
+                ├── 1.js
+                ├── 2.js
+                ├── 3.js
+                ├── 4.js
+                ├── 5.js
+                └── 6.js
+            ├── stylesheets
+            ├── index.js
+            ├── internal.js
+            ├── manifest-full.js
+            ├── manifest.js
+            └── remote-entry.js
+    ├── types
+        ├── src
+            └── routes
+                ├── about-us
+                    └── $types.d.ts
+                ├── projects
+                    ├── functions
+                        └── $types.d.ts
+                    ├── goal
+                        └── $types.d.ts
+                    └── robotbuild
+                        └── $types.d.ts
+                └── $types.d.ts
+        └── route_meta_data.json
+    ├── ambient.d.ts
+    ├── non-ambient.d.ts
+    └── tsconfig.json
+├── build
+    ├── _app
+        ├── immutable
+            ├── assets
+                ├── 0.B1hJvB0a.css
+                ├── 2.zk449YpW.css
+                ├── 3.DLlgEhJy.css
+                ├── 4.BpaEenbU.css
+                ├── 5.BEd2ME_H.css
+                ├── 6.BYp4yCkU.css
+                ├── FeatureCard.l8XBiROk.css
+                ├── front_page_scad_model_robot.DJohaD2X.png
+                ├── frontpage_video1.DlndMNwE.gif
+                ├── HighlightBlock.DdVGdayO.css
+                ├── MediaCardGif.DoQqCggA.css
+                ├── MediaCardPicture.D10wn8qk.css
+                ├── place-holder 875x875.Bvdw3oP5.jpg
+                ├── robotbuild (1).BDnnpxie.png
+                └── robotbuild (2).3FSD3sAb.png
+            ├── chunks
+                ├── 0J22l7Jc.js
+                ├── _XvFgtDI.js
+                ├── B59XTudX.js
+                ├── B6RL0Iun.js
+                ├── BkOfzWD6.js
+                ├── BSyyQ1Cu.js
+                ├── C9aULRNU.js
+                ├── CCzKooT9.js
+                ├── CiNavlap.js
+                ├── CMFKUMKc.js
+                ├── CmXfUiI_.js
+                ├── CQ0YEYFe.js
+                ├── CVP_y9cv.js
+                ├── CwLZPo8M.js
+                ├── D5cfEz7a.js
+                ├── DHfDVjez.js
+                ├── DKwHBiMq.js
+                ├── DM_D-mh4.js
+                ├── Du2aCi0V.js
+                ├── DWpL9MZ1.js
+                ├── eWtONo3v.js
+                └── zd47FlDp.js
+            ├── entry
+                ├── app.CG1AWkMU.js
+                └── start.CZMvFCbr.js
+            └── nodes
+                ├── 0.GJxvdyz_.js
+                ├── 1.CyLAkxzz.js
+                ├── 2.CvQJE7EU.js
+                ├── 3.vUWAutZY.js
+                ├── 4.DAVg_j8l.js
+                ├── 5.CXEL0Y4j.js
+                └── 6.C86gFHmE.js
+        ├── env.js
+        └── version.json
+    ├── about-us
+        └── index.html
+    ├── projects
+        ├── functions
+            └── index.html
+        ├── goal
+            └── index.html
+        └── robotbuild
+            └── index.html
+    ├── 404.html
+    ├── index.html
+    └── robots.txt
 ├── messages
     ├── en
         ├── about-us.json
+        ├── common.json
+        ├── footer.json
         ├── front_page.json
         ├── functions.json
         ├── goal.json
         └── robotbuild.json
-    └── nl
+    ├── nl
         ├── about-us.json
+        ├── common.json
+        ├── footer.json
         ├── front_page.json
         ├── functions.json
         ├── goal.json
         └── robotbuild.json
+    ├── en.json
+    └── nl.json
 ├── project.inlang
+    ├── cache
+        └── plugins
+            ├── 2sy648wh9sugi
+            └── ygx0uiahq6uw
+    ├── .meta.json
+    ├── README.md
     └── settings.json
 ├── src
     ├── lib
         ├── assets
+            ├── front_page_functionality.png
             ├── front_page_robot.png
+            ├── front_page_robot_build.png
             ├── front_page_scad_model_robot.png
             ├── frontpage_video1.gif
+            ├── functions_sicklebar_mower.png
+            ├── functions_spotspray.png
+            ├── functions_spotspray_field.png
+            ├── goal_community_driven.png
+            ├── goal_from_base_to_frame.png
             ├── place-holder 875x875.jpg
             ├── robotbuild (1).png
             ├── robotbuild (2).png
@@ -40,18 +315,29 @@ Bruut_website/
             ├── MediaCardPicture.svelte
             ├── Navbar.svelte
             └── ProjectCard.svelte
+        ├── paraglide
+            ├── messages
+                ├── _index.js
+                ├── en.js
+                └── nl.js
+            ├── .prettierignore
+            ├── messages.js
+            ├── README.md
+            ├── registry.js
+            ├── runtime.js
+            └── server.js
         └── index.ts
     ├── routes
         ├── about-us
             └── +page.svelte
         ├── projects
             ├── functions
-                └── +page.svelte
+                ├── +page.svelte
+                └── functionality's.json
             ├── goal
                 └── +page.svelte
             └── robotbuild
-                ├── +page.svelte
-                └── functionality's.json
+                └── +page.svelte
         ├── +layout.svelte
         ├── +layout.ts
         └── +page.svelte

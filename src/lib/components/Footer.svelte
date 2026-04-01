@@ -21,7 +21,7 @@
             </div>
             <div class="link-group">
                 <h3>{m.footer_section_connect()}</h3>
-                <a href="https://github.com/your-repo-here" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" rel="noopener noreferrer">
                     {m.footer_link_github()}
                 </a>
                 <a href="mailto:info@projectbruut.nl">{m.footer_link_contact()}</a>

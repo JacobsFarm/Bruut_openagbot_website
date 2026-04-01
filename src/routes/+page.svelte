@@ -7,7 +7,12 @@
     import MediaCardGif from '$lib/components/MediaCardGif.svelte';
     import ProjectCard from '$lib/components/ProjectCard.svelte';
 
-    // Importeren van assets
+    // Importeren van assets voor de projectkaarten
+    import imgRobotBuild from '$lib/assets/front_page_robot_build.png';
+    import imgGoal from '$lib/assets/goal_community_driven.png';
+    import imgFunctions from '$lib/assets/front_page_functionality.png';
+    
+    // Overige assets
     import imgScad from '$lib/assets/front_page_scad_model_robot.png';
     import gifRobot from '$lib/assets/frontpage_video1.gif';
     import placeholderLogo from '$lib/assets/place-holder 875x875.jpg';
@@ -26,19 +31,19 @@
             title={m.front_page_project_build_title()} 
             link="/projects/robotbuild" 
             desc={m.front_page_project_build_desc()} 
-            logo={placeholderLogo}
+            logo={imgRobotBuild}
         />
         <ProjectCard 
             title={m.front_page_project_goal_title()}
             link="/projects/goal"
             desc={m.front_page_project_goal_desc()}
-            logo={placeholderLogo}
+            logo={imgGoal}
         />
         <ProjectCard 
             title={m.front_page_project_functions_title()}
             link="/projects/functions"
             desc={m.front_page_project_functions_desc()}
-            logo={placeholderLogo}
+            logo={imgFunctions}
         />
     </section>
 
@@ -86,7 +91,6 @@
         gap: 4rem;
     }
 
-    /* Grid voor de Project Kaarten */
     .projects-grid {
         display: grid;
         gap: 1.5rem;
@@ -100,9 +104,8 @@
         }
     }
 
-    /* Specifieke styling voor ProjectCard root (optioneel, afhankelijk van hoe je globale stijlen zijn ingesteld) */
     :global(.project-card) {
-        border-top: 5px solid #386938; /* Emerald Green */
+        border-top: 5px solid #386938;
         transition: transform 0.3s ease, border-color 0.3s ease;
         height: 100%;
         display: flex;
@@ -111,12 +114,11 @@
 
     @media (hover: hover) {
         :global(.project-card:hover) {
-            border-color: oklch(65% 0.16 75); /* Deep Amber */
+            border-color: oklch(65% 0.16 75);
             transform: translateY(-10px);
         }
     }
 
-    /* Grid voor de Features */
     .features {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,12 +126,11 @@
         align-items: stretch;
     }
 
-    /* Styling voor de call-to-action knop binnen HighlightBlock */
     .btn {
         display: inline-block;
         margin-top: 1.5rem;
         padding: 0.8rem 1.5rem;
-        background: #386938; /* Emerald Green */
+        background: #386938;
         color: #ffffff;
         text-decoration: none;
         border-radius: 8px;
@@ -138,8 +139,8 @@
     }
 
     .btn:hover {
-        background: oklch(65% 0.16 75); /* Deep Amber */
-        color: oklch(22% 0.02 145); /* Deep Ink */
+        background: oklch(65% 0.16 75);
+        color: oklch(22% 0.02 145);
         transform: translateY(-2px);
     }
 </style>
