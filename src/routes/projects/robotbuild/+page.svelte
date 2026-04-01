@@ -2,15 +2,14 @@
     import * as m from '$lib/paraglide/messages';
     
     import HighlightBlock from '$lib/components/HighlightBlock.svelte';
-    import FeatureCard from '$lib/components/FeatureCard.svelte';
-    import InfoWithImage from '$lib/components/InfoWithImage.svelte';
     import MediaCardGif from '$lib/components/MediaCardGif.svelte';
     import MediaCardPicture from '$lib/components/MediaCardPicture.svelte';
 
     // Importeren van assets uit de projectstructuur
-    import buildImg1 from '$lib/assets/robotbuild (1).png';
-    import buildImg2 from '$lib/assets/robotbuild (2).png';
-    import scadModel from '$lib/assets/front_page_scad_model_robot.png';
+    import imgModular from '$lib/assets/robotbuild_modulair_build.png';
+    import imgHubmotor from '$lib/assets/robotbuild_hubmotor.png';
+    import imgMaintenance from '$lib/assets/robotbuild_easy_maintance.png';
+    import imgCustomizable from '$lib/assets/robotbuild.png'; // Of robotbuild (3).png indien gewenst
     import actionGif from '$lib/assets/frontpage_video1.gif';
 </script>
 
@@ -19,53 +18,60 @@
         <HighlightBlock title={m.robotbuild_hero_title()}>
             <p>{m.robotbuild_hero_subtitle()}</p>
             <div class="cta-container">
-                <a href="https://github.com/CowCatcherAI/CowCatcherAI" target="_blank" class="btn-primary">
+                <a href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" class="btn-primary">
                     {m.robotbuild_cta()}
                 </a>
             </div>
         </HighlightBlock>
     </section>
 
-    <section class="tech-showcase">
-        <InfoWithImage 
-            title={m.robotbuild_chassis_title()} 
-            images={[{ src: scadModel, alt: "3D CAD Model van het chassis" }]}
-        >
-            <p>{m.robotbuild_chassis_desc()}</p>
-        </InfoWithImage>
-    </section>
-
-    <section class="specs-grid">
-        <FeatureCard 
-            title={m.robotbuild_drive_title()} 
-            desc={m.robotbuild_drive_desc()} 
-        />
-        <FeatureCard 
-            title={m.robotbuild_power_title()} 
-            desc={m.robotbuild_power_desc()} 
-        />
-        <FeatureCard 
-            title={m.robotbuild_control_title()} 
-            desc={m.robotbuild_control_desc()} 
-        />
-    </section>
-
-    <section class="build-gallery">
+    <section class="media-gallery">
         <MediaCardPicture 
-            title={m.robotbuild_chassis_title()} 
-            desc={m.robotbuild_chassis_desc()} 
-            images={[buildImg1, buildImg2]} 
-            altText="Stappen in het bouwproces"
+            title={m.robotbuild_modular_title()} 
+            desc={m.robotbuild_modular_desc()} 
+            images={[imgModular]} 
+            altText="Modulaire opbouw van de robot"
+        />
+
+        <MediaCardPicture 
+            title={m.robotbuild_hubmotors_title()} 
+            desc={m.robotbuild_hubmotors_desc()} 
+            images={[imgHubmotor]} 
+            altText="Direct drive hubmotors"
+        />
+
+        <MediaCardPicture 
+            title={m.robotbuild_maintenance_title()} 
+            desc={m.robotbuild_maintenance_desc()} 
+            images={[imgMaintenance]} 
+            altText="Gemakkelijk onderhoud via toegankelijke kasten"
+        />
+
+        <MediaCardPicture 
+            title={m.robotbuild_customizable_title()} 
+            desc={m.robotbuild_customizable_desc()} 
+            images={[imgCustomizable]} 
+            altText="Open design voor uitbreidingen"
+        />
+
+        <MediaCardGif 
+            title={m.robotbuild_control_sys_title()} 
+            desc={m.robotbuild_control_sys_desc()} 
+            gifs={[actionGif]} 
+            altText="Besturing en autonome functies in actie" 
         />
     </section>
 
-    <section class="action-media">
-        <MediaCardGif 
-            title={m.robotbuild_control_title()} 
-            desc={m.robotbuild_control_desc()} 
-            gifs={[actionGif]} 
-            altText="Besturing in actie" 
-        />
+    <section class="extra-info-grid">
+        <div class="info-block">
+            <h3>{m.robotbuild_ardupilot_title()}</h3>
+            <p>{m.robotbuild_ardupilot_desc()}</p>
+        </div>
+        
+        <div class="info-block">
+            <h3>{m.robotbuild_spot_spraying_title()}</h3>
+            <p>{m.robotbuild_spot_spraying_desc()}</p>
+        </div>
     </section>
 </main>
 
@@ -101,16 +107,48 @@
         transform: translateY(-2px);
     }
 
-    .specs-grid {
+    .media-gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .extra-info-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid oklch(85% 0.01 145); /* Subtiele scheidingslijn */
+    }
+
+    .info-block {
+        background-color: oklch(95% 0.01 145); /* Lichte achtergrond */
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .info-block h3 {
+        font-family: 'Bebas Kai', sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #386938; /* Emerald Green accent */
+    }
+
+    .info-block p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
     }
 
     @media (max-width: 768px) {
         main {
             padding: 2rem 1rem;
             gap: 4rem;
+        }
+
+        .extra-info-grid {
+            grid-template-columns: 1fr;
         }
     }
 </style>

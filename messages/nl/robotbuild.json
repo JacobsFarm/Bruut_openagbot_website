@@ -1,13 +1,19 @@
 {
   "robotbuild_hero_title": "Bouw Je Eigen Bruut Veldrobot",
-  "robotbuild_hero_subtitle": "Een stapsgewijze handleiding voor het monteren van het modulaire chassis en het aandrijfsysteem.",
+  "robotbuild_hero_subtitle": "Een stap-voor-stap handleiding voor het monteren van het modulaire chassis en het aandrijfsysteem.",
   "robotbuild_cta": "Bekijk op GitHub",
-  "robotbuild_chassis_title": "Het Modulaire Chassis",
-  "robotbuild_chassis_desc": "Het frame is opgebouwd uit standaard gatenprofielen, waardoor breedte en lengte eenvoudig aanpasbaar zijn voor elke toepassing.",
-  "robotbuild_drive_title": "Krachtig Aandrijfsysteem",
-  "robotbuild_drive_desc": "Wielnaafmotoren zorgen voor directe tractie in het veld. Beschikbaar in configuraties van 400W tot 5kW.",
-  "robotbuild_power_title": "Energie & Accu",
-  "robotbuild_power_desc": "Modulair accusysteem met opties voor zonnepanelen voor langdurig autonoom gebruik in het veld.",
-  "robotbuild_control_title": "Open-Source Besturing",
-  "robotbuild_control_desc": "Volledige controle via ESP32 of Raspberry Pi controllers, geoptimaliseerd voor eenvoudige programmering."
+  "robotbuild_modular_title": "Modulair Chassis Ontwerp",
+  "robotbuild_modular_desc": "De robot beschikt over een zeer modulair frame met standaard gatenpatronen. Je kunt eenvoudig de breedte, lengte of hoogte aanpassen om perfect aan te sluiten bij specifieke veldomstandigheden en spoorbreedtes. Het is ontworpen om eenvoudig te fabriceren met volledige bouwplannen en kant-en-klare CNC-tekeningen, zodat elke werkplaats het kan maken of je het zelf kunt snijden en lassen.",
+  "robotbuild_hubmotors_title": "Krachtige Naafmotoren",
+  "robotbuild_hubmotors_desc": "Aangedreven door 2 of 4 direct-drive naafmotoren (met 2 zwenkwielen voor de 2WD-opstelling). Deze onderhoudsvrije motoren bieden een indrukwekkend koppel. Variërend van 400W tot 3kW, kun je de grootte en capaciteit van de robot schalen voor zwaardere taken terwijl je precies dezelfde software gebruikt.",
+  "robotbuild_maintenance_title": "Eenvoudig Onderhoud & Veilige Stroom",
+  "robotbuild_maintenance_desc": "Functie boven vorm: alle cruciale componenten zijn eenvoudig toegankelijk via utility-boxen op de robot. Het systeem werkt op een veilige laagvoltage accu-opstelling (maximaal 60V) met speciale hoofdschakelaars. Computers en elektronica worden veilig opgeborgen en beschermd in deze toegankelijke compartimenten. Hardware kan eenvoudig zelf worden geïnstalleerd.",
+  "robotbuild_customizable_title": "Open & Aanpasbaar Platform",
+  "robotbuild_customizable_desc": "Het open ontwerp is ongelooflijk veelzijdig. Het kan eenvoudig worden uitgebreid met een breed scala aan werktuigen zoals een zitje, onkruideggen, frontschuiven, spuitbomen of bezems, waardoor het universeel aanpasbaar is voor elke taak.",
+  "robotbuild_control_sys_title": "Flexibele Besturingssystemen",
+  "robotbuild_control_sys_desc": "In eerste instantie kan de robot worden bestuurd via een RC-afstandsbediening of een ingebouwde joystick — een vitale terugvaloptie die altijd beschikbaar blijft. Het uiteindelijke doel is echter volledige autonome werking, waarbij de robot zelfstandig kan werken terwijl u hem op afstand monitort.",
+  "robotbuild_ardupilot_title": "RTK & Autonome Navigatie",
+  "robotbuild_ardupilot_desc": "Voor RTK-communicatie en autonoom rijden maken we momenteel gebruik van het robuuste open-source ArduPilot project. Dit zorgt voor betrouwbare besturing, nauwkeurige missieplanning en efficiënte navigatie over het veld.",
+  "robotbuild_spot_spraying_title": "Precisie Pleksgewijs Spuiten",
+  "robotbuild_spot_spraying_desc": "Onze mogelijkheden voor precisie-plekspuiten worden gebouwd op de Open Weed Locator (OWL) open-source software. Innovators zoals Guy Coleman laten zien waar de open-source gemeenschap op haar best is."
 }
