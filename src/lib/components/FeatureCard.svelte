@@ -2,9 +2,13 @@
   // Exporteer variabelen zodat we deze vanuit de parent (page.svelte) kunnen vullen
   export let title = "";
   export let desc = "";
+  export let logo = null; // Toegevoegd om een optioneel logo te accepteren
 </script>
 
 <div class="feature-card">
+  {#if logo}
+    <img src={logo} alt="{title} logo" class="company-logo" />
+  {/if}
   <h2>{title}</h2>
   <p>{desc}</p>
 </div>
@@ -16,10 +20,20 @@
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     /* Teruggezet naar Emerald Green (#386938) zoals gevraagd */
-    border-top: 4px solid #386938; 
+    border-top: 4px solid #386938;
     /* Zorgt ervoor dat alle kaarten in een grid even hoog worden */
     height: 100%; 
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Zorgt voor een logische opbouw van logo -> titel -> tekst */
+  }
+
+  .company-logo {
+    max-width: 100%;
+    height: 60px; /* Vaste hoogte voor consistentie */
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
   }
 
   h2 {
