@@ -5,8 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"merge-messages": "node merge-messages.js",
-		"dev": "npm run merge-messages && vite dev",
-		"build": "npm run merge-messages && vite build",
+		"fetch-youtube": "node scripts/fetch-youtube.mjs",
+		"dev": "npm run merge-messages && npm run fetch-youtube && vite dev",
+		"build": "npm run merge-messages && npm run fetch-youtube && vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

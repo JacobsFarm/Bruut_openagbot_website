@@ -4,10 +4,26 @@ on:
   push:
     branches: 'main' # Of 'master' afhankelijk van je branch naam
 
+  # Elke twee weken opnieuw bouwen zodat nieuwe YouTube-video's ook op de site
+  # verschijnen als er niets aan de code is veranderd. Cron kent geen "om de
+  # twee weken", dus draaien we op de 1e en de 15e van de maand.
+  # (04:00 UTC; GitHub kan de starttijd bij drukte iets uitstellen.)
+  schedule:
+    - cron: '0 4 1,15 * *'
+
+  # Handmatig te starten via het Actions-tabblad, bijvoorbeeld vlak nadat je
+  # een nieuwe video hebt geüpload en die meteen op de site wilt hebben.
+  workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# Nooit twee deploys tegelijk; een lopende deploy mag wel afmaken.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
   build_site:

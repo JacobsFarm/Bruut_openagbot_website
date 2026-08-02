@@ -1,6 +1,8 @@
 <script>
     import * as m from '$lib/paraglide/messages';
-    
+    import { base } from '$app/paths';
+    import { channel } from '$lib/youtube';
+
     // Bereken het huidige jaar automatisch
     const currentYear = new Date().getFullYear();
 </script>
@@ -8,19 +10,23 @@
 <footer>
     <div class="footer-content">
         <div class="footer-brand">
-            <a href="/" class="logo">BRUUT</a>
+            <a href="{base}/" class="logo">BRUUT</a>
             <p class="tagline">{m.footer_tagline()}</p>
         </div>
 
         <div class="footer-links">
             <div class="link-group">
                 <h3>{m.footer_section_links()}</h3>
-                <a href="/">{m.nav_home()}</a>
-                <a href="/about-us">{m.nav_about()}</a>
-                <a href="/projects/goal">Goal</a>
+                <a href="{base}/">{m.nav_home()}</a>
+                <a href="{base}/about-us">{m.nav_about()}</a>
+                <a href="{base}/videos">{m.nav_videos()}</a>
+                <a href="{base}/projects/goal">Goal</a>
             </div>
             <div class="link-group">
                 <h3>{m.footer_section_connect()}</h3>
+                <a href={channel.url} target="_blank" rel="noopener noreferrer">
+                    {m.footer_link_youtube()}
+                </a>
                 <a href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" rel="noopener noreferrer">
                     {m.footer_link_github()}
                 </a>

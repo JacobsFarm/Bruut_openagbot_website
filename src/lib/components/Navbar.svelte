@@ -32,6 +32,14 @@
 
   <div class="links" class:open={isOpen}>
     <a href="{base}/" on:click={closeMenu}>{m.nav_home()}</a>
+    <a href="{base}/videos" class="nav-videos" on:click={closeMenu}>
+      <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M23 12s0-3.9-.5-5.8c-.3-1-1.1-1.8-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5c-1 .3-1.8 1.1-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8zM9.9 15.6V8.4l5.4 3.6-5.4 3.6z"
+        />
+      </svg>
+      {m.nav_videos()}
+    </a>
     <a href="{base}/about-us" on:click={closeMenu}>{m.nav_about()}</a>
 
     <a href="{base}/projects/robotbuild" class="mobile-only" on:click={closeMenu}>Robot Build</a>
@@ -97,6 +105,23 @@
 
   .mobile-only {
     display: none;
+  }
+
+  .nav-videos {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .yt-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+  }
+
+  .nav-videos:hover .yt-icon {
+    color: oklch(65% 0.16 75); /* Deep Amber */
   }
 
   .lang-switcher {

@@ -25,6 +25,17 @@
   "front_page_stats_label_2": "Electric",
   "front_page_stats_label_3": "Tool Attachments",
   
+  "front_page_media_cta": "See the Build",
+
+  "front_page_youtube_eyebrow": "Follow along on YouTube",
+  "front_page_youtube_title": "The Build, Episode by Episode",
+  "front_page_youtube_desc": "Everything that happens to Bruut ends up on YouTube: welding the chassis, wiring the motor controllers, the first autonomous rows and the tests that went wrong. It is the fastest way to follow the project and to see exactly how the robot is put together.",
+  "front_page_youtube_point_1": "Build steps and design choices explained in detail",
+  "front_page_youtube_point_2": "Honest field tests, including what did not work",
+  "front_page_youtube_point_3": "New video every few weeks",
+  "front_page_youtube_cta": "See all videos",
+  "front_page_youtube_subscribe": "Subscribe on YouTube",
+
   "front_page_featured_in_title": "Our Partners",
   "front_page_partner_1_title": "Company 1",
   "front_page_partner_1_desc": "Proud partner and supporter of the open-source Bruut project.",

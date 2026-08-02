@@ -5,10 +5,16 @@
     import InfoWithImage from '$lib/components/InfoWithImage.svelte';
     import MediaCardGif from '$lib/components/MediaCardGif.svelte';
     import FeaturedIn from '$lib/components/FeaturedIn.svelte';
+    import VideoCard from '$lib/components/VideoCard.svelte';
+    import { base } from '$app/paths';
+    import { channel, videos } from '$lib/youtube';
     // Nieuwe import
     import { tweened } from 'svelte/motion';
     import { cubicOut } from 'svelte/easing';
     import { onMount } from 'svelte';
+
+    // De drie nieuwste video's als teaser; de rest staat op /videos.
+    const latestVideos = videos.slice(0, 3);
 
     // Assets
     import imgRobotBuild from '$lib/assets/front_page_robot_build.png';
@@ -85,8 +91,48 @@
             altText="The Bruut Field Robot in action" 
         />
         <div class="action-container">
-            <a href="/projects/robotbuild" class="btn-primary">See the Build</a>
+            <a href="{base}/projects/robotbuild" class="btn-primary">{m.front_page_media_cta()}</a>
         </div>
+    </section>
+
+    <section class="youtube-section">
+        <div class="youtube-intro">
+            <span class="yt-eyebrow">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M23 12s0-3.9-.5-5.8c-.3-1-1.1-1.8-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5c-1 .3-1.8 1.1-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8zM9.9 15.6V8.4l5.4 3.6-5.4 3.6z" />
+                </svg>
+                {m.front_page_youtube_eyebrow()}
+            </span>
+
+            <h2>{m.front_page_youtube_title()}</h2>
+            <p class="yt-desc">{m.front_page_youtube_desc()}</p>
+
+            <ul class="yt-points">
+                <li>{m.front_page_youtube_point_1()}</li>
+                <li>{m.front_page_youtube_point_2()}</li>
+                <li>{m.front_page_youtube_point_3()}</li>
+            </ul>
+
+            <div class="yt-actions">
+                <a href="{base}/videos" class="btn-primary">{m.front_page_youtube_cta()}</a>
+                <a
+                    href={channel.subscribeUrl}
+                    class="btn-youtube"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {m.front_page_youtube_subscribe()}
+                </a>
+            </div>
+        </div>
+
+        {#if latestVideos.length > 0}
+            <div class="yt-grid">
+                {#each latestVideos as video, i (video.id)}
+                    <VideoCard {video} latest={i === 0} />
+                {/each}
+            </div>
+        {/if}
     </section>
 
     <FeaturedIn />
@@ -212,6 +258,130 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
+    }
+
+    /* ---------- YouTube sectie ---------- */
+
+    .youtube-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 3rem 2.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        border-top: 5px solid #ff0000; /* YouTube rood */
+    }
+
+    .youtube-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .yt-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: oklch(45% 0.02 145);
+    }
+
+    .yt-eyebrow svg {
+        width: 24px;
+        height: 24px;
+        color: #ff0000;
+    }
+
+    .youtube-section h2 {
+        font-family: 'Bebas Kai', sans-serif;
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #386938; /* Emerald Green */
+        margin: 0;
+    }
+
+    .yt-desc {
+        max-width: 700px;
+        margin: 0;
+        line-height: 1.7;
+    }
+
+    .yt-points {
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1.75rem;
+    }
+
+    .yt-points li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        color: oklch(22% 0.02 145);
+    }
+
+    .yt-points li::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: oklch(65% 0.16 75); /* Deep Amber */
+        flex-shrink: 0;
+    }
+
+    .yt-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .btn-youtube {
+        background: #ff0000; /* YouTube rood */
+        color: #ffffff;
+        padding: 0.8rem 2.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);
+    }
+
+    .btn-youtube:hover {
+        background: oklch(55% 0.22 28);
+        transform: translateY(-2px);
+    }
+
+    .yt-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        gap: 1.75rem;
+    }
+
+    @media (max-width: 768px) {
+        .youtube-section {
+            padding: 2rem 1.25rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .btn-primary:hover,
+        .btn-youtube:hover {
+            transform: none;
+        }
     }
 
     .stats-section {
