@@ -48,7 +48,7 @@
             title={m.goal_feature1_title()} 
             desc={m.goal_feature1_desc()}
             gifs={[imgCommunityDriven]} 
-            altText="Community samenwerking aan de Bruut robot"
+            altText="Community samenwerking aan de Bruut agrobot"
         />
     </section>
 </main>
