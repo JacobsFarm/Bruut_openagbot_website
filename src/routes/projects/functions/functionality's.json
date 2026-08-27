@@ -5,6 +5,14 @@
       "function": "Front-mounted or mid-mounted between the wheels (grader setup) for leveling terrain or pushing feed/grass in stables."
     },
     {
+      "main_attachment": "Spotspray boom",
+      "function": "Front mounted sprayboom with spraying nozles with tradiotional nozlles on high pressure."
+    },
+    {
+      "main_attachment": "coarse droplet chem boom",
+      "function": "Boom with fuel injectors for dosing a coarse droplet with chem for herbicidde application on low bar"
+    },
+    {
       "main_attachment": "Sweeper",
       "function": "Large front-mounted brush or an electrically driven radial brush for cleaning surfaces."
     },
