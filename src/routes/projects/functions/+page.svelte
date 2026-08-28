@@ -53,7 +53,9 @@
         { title: m.func_26_title, desc: m.func_26_desc, images: [fallbackImg] },
         { title: m.func_27_title, desc: m.func_27_desc, images: [fallbackImg] },
         { title: m.func_28_title, desc: m.func_28_desc, images: [fallbackImg] },
-        { title: m.func_29_title, desc: m.func_29_desc, images: [fallbackImg] }
+        { title: m.func_29_title, desc: m.func_29_desc, images: [fallbackImg] },
+        { title: m.func_30_title, desc: m.func_30_desc, images: [imgSpotspray, imgSpotsprayField] },
+        { title: m.func_31_title, desc: m.func_31_desc, images: [fallbackImg] }
     ];
 </script>
 

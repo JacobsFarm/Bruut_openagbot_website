@@ -5,12 +5,12 @@
       "function": "Front-mounted or mid-mounted between the wheels (grader setup) for leveling terrain or pushing feed/grass in stables."
     },
     {
-      "main_attachment": "Spotspray boom",
-      "function": "Front mounted sprayboom with spraying nozles with tradiotional nozlles on high pressure."
+      "main_attachment": "Atomising Spot Spray Boom",
+      "function": "Front-mounted spray boom with conventional high-pressure nozzles that atomise the liquid into a fine mist. Each nozzle is switched individually, so only the detected weed is treated, while the fine droplets fully cover the leaf surface. Ideal for contact herbicides and crop protection products."
     },
     {
-      "main_attachment": "coarse droplet chem boom",
-      "function": "Boom with fuel injectors for dosing a coarse droplet with chem for herbicidde application on low bar"
+      "main_attachment": "Drop-on-Demand Boom (Coarse Droplets)",
+      "function": "Boom with individually controlled injectors that fire single coarse droplets on demand at low pressure. Every droplet is placed straight onto the weed, which practically eliminates drift and cuts chemical usage to a fraction of a conventional spray pass."
     },
     {
       "main_attachment": "Sweeper",

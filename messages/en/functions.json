@@ -59,5 +59,10 @@
   "func_28_title": "Soil Compaction Meter",
   "func_28_desc": "Measuring and mapping soil density at specific data points.",
   "func_29_title": "Engine / Power Source",
-  "func_29_desc": "Internal power unit within the frame for additional traction or electricity."
+  "func_29_desc": "Internal power unit within the frame for additional traction or electricity.",
+
+  "func_30_title": "Atomising Spot Spray Boom",
+  "func_30_desc": "Front-mounted boom with conventional high-pressure nozzles that atomise the liquid into a fine mist. Each nozzle is switched individually, so only the detected weed is treated, while the fine droplets fully cover the leaf surface. Ideal for contact herbicides and crop protection products.",
+  "func_31_title": "Drop-on-Demand Boom (Coarse Droplets)",
+  "func_31_desc": "Boom with individually controlled injectors that fire single coarse droplets on demand at low pressure. Every droplet is placed straight onto the weed, which practically eliminates drift and cuts chemical usage to a fraction of a conventional spray pass."
 }

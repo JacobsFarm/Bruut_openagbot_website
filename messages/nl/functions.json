@@ -58,5 +58,10 @@
   "func_28_title": "Bodemverdichtingsmeter",
   "func_28_desc": "Meten en in kaart brengen van de bodemdichtheid op specifieke datapunten.",
   "func_29_title": "Motor / Krachtbron",
-  "func_29_desc": "Interne krachtbron binnen het frame voor extra tractie of elektriciteit."
+  "func_29_desc": "Interne krachtbron binnen het frame voor extra tractie of elektriciteit.",
+
+  "func_30_title": "Spotspray-boom met verneveling",
+  "func_30_desc": "Frontgemonteerde spuitboom met traditionele doppen die de vloeistof onder hoge druk vernevelen tot een fijne nevel. Elke dop schakelt afzonderlijk, zodat alleen het gedetecteerde onkruid wordt geraakt en de fijne druppels het blad volledig bedekken. Ideaal voor contactherbiciden en gewasbeschermingsmiddelen.",
+  "func_31_title": "Drop-on-demand spuitboom (grove druppels)",
+  "func_31_desc": "Spuitboom met afzonderlijk aangestuurde injectoren die bij lage druk losse, grove druppels op commando afvuren. Elke druppel wordt direct op het onkruid geplaatst, waardoor drift vrijwel verdwijnt en het middelenverbruik daalt tot een fractie van een reguliere bespuiting."
 }
