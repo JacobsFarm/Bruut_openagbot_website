@@ -3,7 +3,7 @@
     import ProjectCard from '$lib/components/ProjectCard.svelte';
     import FeatureCard from '$lib/components/FeatureCard.svelte';
     import InfoWithImage from '$lib/components/InfoWithImage.svelte';
-    import MediaCardGif from '$lib/components/MediaCardGif.svelte';
+    import MediaCardVideo from '$lib/components/MediaCardVideo.svelte';
     import FeaturedIn from '$lib/components/FeaturedIn.svelte';
     import VideoCard from '$lib/components/VideoCard.svelte';
     import { base } from '$app/paths';
@@ -21,7 +21,9 @@
     import imgGoal from '$lib/assets/goal_community_driven.png';
     import imgFunctions from '$lib/assets/front_page_functionality.png';
     import imgScad from '$lib/assets/front_page_intro_picture.webp';
-    import gifRobot from '$lib/assets/frontpage_video1.gif';
+    import videoRobotWebm from '$lib/assets/front_page_video_720.webm';
+    import videoRobotMp4 from '$lib/assets/front_page_video_720.mp4';
+    import videoRobotPoster from '$lib/assets/front_page_video_poster.jpg';
 
     const statsValue1 = tweened(0, { duration: 2000, easing: cubicOut });
     const statsValue2 = tweened(0, { duration: 2000, easing: cubicOut });
@@ -84,11 +86,11 @@
     </section>
 
     <section class="media-showcase">
-        <MediaCardGif 
-            title={m.front_page_media_title()} 
-            desc={m.front_page_media_desc()} 
-            gifs={[gifRobot]} 
-            altText="The Bruut Field Robot in action" 
+        <MediaCardVideo
+            title={m.front_page_media_title()}
+            desc={m.front_page_media_desc()}
+            videos={[{ webm: videoRobotWebm, mp4: videoRobotMp4, poster: videoRobotPoster }]}
+            altText="The Bruut Field Robot in action"
         />
         <div class="action-container">
             <a href="{base}/projects/robotbuild" class="btn-primary">{m.front_page_media_cta()}</a>

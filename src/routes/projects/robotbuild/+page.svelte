@@ -3,7 +3,7 @@
     import { base } from '$app/paths';
 
     import HighlightBlock from '$lib/components/HighlightBlock.svelte';
-    import MediaCardGif from '$lib/components/MediaCardGif.svelte';
+    import MediaCardVideo from '$lib/components/MediaCardVideo.svelte';
     import MediaCardPicture from '$lib/components/MediaCardPicture.svelte';
 
     // Importeren van assets uit de projectstructuur
@@ -11,7 +11,9 @@
     import imgHubmotor from '$lib/assets/robotbuild_hubmotor.png';
     import imgMaintenance from '$lib/assets/robotbuild_easy_maintance.png';
     import imgCustomizable from '$lib/assets/robotbuild.png'; // Of robotbuild (3).png indien gewenst
-    import actionGif from '$lib/assets/frontpage_video1.gif';
+    import actionVideoWebm from '$lib/assets/front_page_video_2_720.webm';
+    import actionVideoMp4 from '$lib/assets/front_page_video_2_720.mp4';
+    import actionVideoPoster from '$lib/assets/front_page_video_2_poster.jpg';
 
     // Foto van het werkende prototype in het veld
     import imgPrototype from '$lib/assets/robotbuild_prototype_field.jpg';
@@ -172,10 +174,10 @@
             altText="Open design voor uitbreidingen"
         />
 
-        <MediaCardGif
+        <MediaCardVideo
             title={m.robotbuild_control_sys_title()}
             desc={m.robotbuild_control_sys_desc()}
-            gifs={[actionGif]}
+            videos={[{ webm: actionVideoWebm, mp4: actionVideoMp4, poster: actionVideoPoster }]}
             altText="Besturing en autonome functies in actie"
         />
     </section>
