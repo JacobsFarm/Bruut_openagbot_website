@@ -1,128 +1,180 @@
 {
-  "attachments": [
+  "categories": [
     {
-      "main_attachment": "Grader Blade",
-      "function": "Front-mounted or mid-mounted between the wheels (grader setup) for leveling terrain or pushing feed/grass in stables."
+      "category": "Soil Cultivation & Weed Control",
+      "attachments": [
+        {
+          "main_attachment": "(Rubber) Push Blade / Grader Blade",
+          "function": "Front-mounted or mid-mounted between the front and rear wheels. Usable as a grader for leveling terrain, for pushing feed and grass back in the stable, or for cleaning silos."
+        },
+        {
+          "main_attachment": "Ditch Trencher",
+          "function": "Trencher for digging wet buffer strips and drainage ditches, so standing water is carried off the field efficiently."
+        },
+        {
+          "main_attachment": "Small Cultivator",
+          "function": "Compact cultivator for soil cultivation in vegetable gardens and light plots."
+        },
+        {
+          "main_attachment": "Single-Axis Inter-Row Hoe",
+          "function": "Hoeing unit with single-axis (left/right) guidance that stays tightly between the rows, for example in maize, so weeds are cut close to the crop without damaging it."
+        },
+        {
+          "main_attachment": "Finger Weeders",
+          "function": "Mechanical weed control using rotating fingers in light soil."
+        },
+        {
+          "main_attachment": "Atomising Spot Spray Boom",
+          "function": "Front-mounted boom with conventional high-pressure nozzles that atomise the liquid into a fine mist. Each nozzle is switched individually, so only the detected weed is treated while the fine droplets fully cover the leaf surface. Based on the 'Open Weed Locator' project and ideal for contact herbicides and crop protection products."
+        },
+        {
+          "main_attachment": "Drop-on-Demand Boom (Coarse Droplets)",
+          "function": "Boom with individually controlled injectors that fire single coarse droplets on demand at low pressure. Every droplet is placed straight onto the weed, which practically eliminates drift and cuts chemical usage to a fraction of a conventional spray pass."
+        },
+        {
+          "main_attachment": "Two-Axis CNC Weed Driller",
+          "function": "Two-axis system with CNC movement (left/right and up/down) carrying a drill that grinds individual weeds out of the sward. Developed for tap-rooted weeds such as broad-leaved dock, fully chemical-free."
+        },
+        {
+          "main_attachment": "Grassland Aerator",
+          "function": "Improving soil structure and air supply in grassland."
+        }
+      ]
     },
     {
-      "main_attachment": "Atomising Spot Spray Boom",
-      "function": "Front-mounted spray boom with conventional high-pressure nozzles that atomise the liquid into a fine mist. Each nozzle is switched individually, so only the detected weed is treated, while the fine droplets fully cover the leaf surface. Ideal for contact herbicides and crop protection products."
+      "category": "Mowing",
+      "attachments": [
+        {
+          "main_attachment": "Sickle Bar Mower",
+          "function": "Mowing at various heights, including 'topping' plants above ground level."
+        },
+        {
+          "main_attachment": "Mowing Arm / Brush Cutter",
+          "function": "Flexible arm with a brush cutter head or blades for mowing under fences and around obstacles."
+        }
+      ]
     },
     {
-      "main_attachment": "Drop-on-Demand Boom (Coarse Droplets)",
-      "function": "Boom with individually controlled injectors that fire single coarse droplets on demand at low pressure. Every droplet is placed straight onto the weed, which practically eliminates drift and cuts chemical usage to a fraction of a conventional spray pass."
+      "category": "Spraying, Fertilizing & Irrigation",
+      "attachments": [
+        {
+          "main_attachment": "Irrigation Pump",
+          "function": "Pumping water from ditches for local irrigation or crop spraying."
+        },
+        {
+          "main_attachment": "Fertilizer Spreader",
+          "function": "Precise application and spreading of granular fertilizers."
+        },
+        {
+          "main_attachment": "Lime Spreader",
+          "function": "Spreading lime to improve soil pH levels and structure."
+        }
+      ]
     },
     {
-      "main_attachment": "Sweeper",
-      "function": "Large front-mounted brush or an electrically driven radial brush for cleaning surfaces."
+      "category": "Sowing & Planting",
+      "attachments": [
+        {
+          "main_attachment": "Seeder & Overseeder",
+          "function": "Seed box for initial crop sowing and for overseeding existing grassland in one pass."
+        },
+        {
+          "main_attachment": "Tray Setter",
+          "function": "Front-mounted unit that takes seedlings out of the tray and sets them out at the right spacing."
+        },
+        {
+          "main_attachment": "Patch Seeder",
+          "function": "Compact seeder that spreads grass seed onto bare patches in the sward, so damaged spots close up again quickly."
+        }
+      ]
     },
     {
-      "main_attachment": "Cutter Bar",
-      "function": "Mowing at various heights, including 'topping' plants in the air."
+      "category": "Spreading & Bedding",
+      "attachments": [
+        {
+          "main_attachment": "Sawdust Spreader",
+          "function": "Even distribution of sawdust or bedding material in stables."
+        },
+        {
+          "main_attachment": "Straw Spreader",
+          "function": "Evenly spreading straw, specially designed for use between vegetable rows."
+        },
+        {
+          "main_attachment": "Compost Spreader / Bin",
+          "function": "Transporting compost within the frame structure and spreading it between the crop rows."
+        }
+      ]
     },
     {
-      "main_attachment": "Battery Pack",
-      "function": "Additional power supply to be installed between the frames."
+      "category": "Power & Drive",
+      "attachments": [
+        {
+          "main_attachment": "Battery Pack",
+          "function": "Additional power supply modules to be installed between the frames."
+        },
+        {
+          "main_attachment": "Generator / Engine",
+          "function": "Generator or combustion engine mounted between the frame as an auxiliary power source for extra electricity or mechanical power."
+        },
+        {
+          "main_attachment": "Solar Panels",
+          "function": "Integrated panels to extend battery life and provide sustainable power during operation."
+        },
+        {
+          "main_attachment": "Heavy-Duty Electric Motors",
+          "function": "Electric motors such as the Ego Power+ or Greenworks units to drive implements that need real power, replacing small petrol engines."
+        }
+      ]
     },
     {
-      "main_attachment": "Generator / Engine",
-      "function": "Power source mounted between the frame for auxiliary power or electricity generation."
+      "category": "Transport & General",
+      "attachments": [
+        {
+          "main_attachment": "Broom / Sweeper",
+          "function": "Large front-mounted brush or electrically driven radial brush for surface cleaning, as an alternative to the front push blade."
+        },
+        {
+          "main_attachment": "Seat & Frame Extension",
+          "function": "Front or rear-mounted seat, with the option to widen the frame tubes at the sides."
+        },
+        {
+          "main_attachment": "Dumper / Power Barrow",
+          "function": "Motorized wheelbarrow-style bin for transporting and dumping loose materials, also usable as a carrying aid or mini dumper."
+        },
+        {
+          "main_attachment": "Tow Hitch",
+          "function": "Rear-mounted hitch for pulling trailers and other rolling equipment."
+        },
+        {
+          "main_attachment": "Counterweights",
+          "function": "Ballast weights to improve traction and vehicle balance for heavy tasks."
+        },
+        {
+          "main_attachment": "Hydraulic Pump",
+          "function": "External hydraulic power source for applications where hydraulics are a better option than electricity."
+        },
+        {
+          "main_attachment": "Three-Point Hitch",
+          "function": "Standard lifting system for attaching various agricultural implements."
+        },
+        {
+          "main_attachment": "Small Cabin",
+          "function": "Protective enclosure or housing for the operator."
+        }
+      ]
     },
     {
-      "main_attachment": "Irrigation Pump",
-      "function": "Pumping water from ditches for irrigation or crop spraying."
-    },
-    {
-      "main_attachment": "Seat / Frame Extension",
-      "function": "Front or rear-mounted seat, including the option to widen the frame tubes at the sides."
-    },
-    {
-      "main_attachment": "Ditcher / Trencher",
-      "function": "Digging trenches to drain standing water from fields into ditches."
-    },
-    {
-      "main_attachment": "Solar Panels",
-      "function": "Integrated panels to extend battery life during operation."
-    },
-    {
-      "main_attachment": "Sawdust Spreader",
-      "function": "Evenly distributing sawdust bedding."
-    },
-    {
-      "main_attachment": "Fertilizer Spreader",
-      "function": "Precise application of granular fertilizer."
-    },
-    {
-      "main_attachment": "Seeder / Overseeder",
-      "function": "Machine for initial crop sowing or overseeding existing grassland."
-    },
-    {
-      "main_attachment": "Compost Bin",
-      "function": "Transporting and processing compost within the frame structure."
-    },
-    {
-      "main_attachment": "Dump Bucket",
-      "function": "Wheelbarrow-style bin for transporting loose materials."
-    },
-    {
-      "main_attachment": "Tow Hitch",
-      "function": "Rear-mounted hitch for towing trailers."
-    },
-    {
-      "main_attachment": "Counterweights",
-      "function": "Ballast weights to improve traction and vehicle balance."
-    },
-    {
-      "main_attachment": "Lime Spreader",
-      "function": "Spreading lime for soil pH improvement."
-    },
-    {
-      "main_attachment": "Mowing Arm",
-      "function": "Flexible arm with a brush cutter or blades for mowing under fences and obstacles."
-    },
-    {
-      "main_attachment": "Straw Spreader",
-      "function": "Spreading straw, specifically designed for use between vegetable rows."
-    },
-    {
-      "main_attachment": "Power Barrow / Mini Dumper",
-      "function": "Lifting and transport assistance, functioning as a motorized wheelbarrow."
-    },
-    {
-      "main_attachment": "Hydraulic Pump",
-      "function": "External hydraulic power source for applications where hydraulic force is preferred over electricity."
-    },
-    {
-      "main_attachment": "Three-point Hitch",
-      "function": "Standard linkage system for attaching various agricultural implements."
-    },
-    {
-      "main_attachment": "Compact Cultivator",
-      "function": "Soil cultivation specifically for vegetable gardens or light soil plots."
-    },
-    {
-      "main_attachment": "Finger Weeders",
-      "function": "Mechanical weed control using rotating fingers in light soil."
-    },
-    {
-      "main_attachment": "Spot Spray Boom",
-      "function": "Targeted weed control based on the 'Open Weed Locator' project."
-    },
-    {
-      "main_attachment": "Compact Cabin",
-      "function": "Protective enclosure/housing for the operator."
-    },
-    {
-      "main_attachment": "Grassland Aerator",
-      "function": "Improving soil structure and air supply in grassland."
-    },
-    {
-      "main_attachment": "Crop Scanner",
-      "function": "Measuring crop height to create prescription maps (e.g., for nitrogen or phosphate)."
-    },
-    {
-      "main_attachment": "Soil Compaction Meter",
-      "function": "Measuring and mapping soil density at specific data points."
+      "category": "Measuring & Sensors",
+      "attachments": [
+        {
+          "main_attachment": "Grass Meter / Crop Scanner",
+          "function": "Measuring grass and crop height and health to create task maps for nitrogen or phosphate."
+        },
+        {
+          "main_attachment": "Soil Compaction Meter",
+          "function": "Measuring and mapping soil density at specific data points."
+        }
+      ]
     }
   ]
 }
