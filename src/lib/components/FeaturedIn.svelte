@@ -27,7 +27,7 @@
     <div class="carousel-track">
       {#each logos as logo}
         <div class="carousel-item">
-          <img src={logo} alt="Featured In" />
+          <img src={logo} alt="Featured In" loading="lazy" />
         </div>
       {/each}
     </div>

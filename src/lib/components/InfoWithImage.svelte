@@ -34,7 +34,7 @@
         <div class="slider-container">
             {#each images as img, i}
                 <div class="slide {i === currentIndex ? 'active' : ''}">
-                    <img src={img.src} alt={img.alt} class="img-fluid" />
+                    <img src={img.src} alt={img.alt} class="img-fluid" loading="lazy" />
                 </div>
             {/each}
         </div>

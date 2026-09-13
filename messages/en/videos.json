@@ -1,20 +1,20 @@
 {
   "videos_meta_title": "Videos",
-  "videos_meta_description": "Watch the latest build updates, field tests and design decisions of the Bruut open source field robot.",
-  "videos_hero_title": "Latest Videos",
-  "videos_hero_description": "Every step of the Bruut field robot is documented on YouTube: from the first sketch and the modular chassis to field tests, mistakes and fixes. This page updates automatically with every new upload.",
+  "videos_meta_description": "The whole build of the Bruut open source field robot on one timeline: every video from the first hub motor to autonomous driving in the field.",
+  "videos_hero_title": "The build in videos",
+  "videos_hero_description": "Every step of the Bruut field robot is documented on YouTube: from the first hub motor on the workbench to autonomous driving in the field. Below it is all on one timeline, with the big moments highlighted.",
   "videos_subscribe": "Subscribe on YouTube",
   "videos_visit_channel": "Visit the channel",
   "videos_play_button": "Play the video {title}",
-  "videos_watch_on_youtube": "Watch on YouTube",
   "videos_badge_new": "Newest",
   "videos_views": "{count} views",
-  "videos_all_title": "All Videos",
-  "videos_all_subtitle": "Click a video to play it in the player above.",
+  "videos_all_title": "From the start to now",
+  "videos_all_subtitle": "Every video on one timeline, newest at the top. The big steps are highlighted with their own title and explanation; the rest are ordinary build updates.",
   "videos_last_updated": "Video list last updated on {date}. New uploads appear here automatically.",
   "videos_empty_title": "No videos found",
   "videos_empty_desc": "The video list could not be loaded right now. You can always find everything directly on the YouTube channel.",
   "videos_cta_title": "Follow the build live",
   "videos_cta_desc": "New videos every few weeks: build steps, electronics, autonomous driving and honest field results. Subscribe so you do not miss an update.",
-  "videos_cta_github": "View the code on GitHub"
+  "videos_cta_github": "View the code on GitHub",
+  "videos_counts": "{videos} videos · {milestones} milestones"
 }

@@ -3,20 +3,17 @@
     import { base } from '$app/paths';
 
     import HighlightBlock from '$lib/components/HighlightBlock.svelte';
-    import MediaCardVideo from '$lib/components/MediaCardVideo.svelte';
+    import MediaCardYouTube from '$lib/components/MediaCardYouTube.svelte';
     import MediaCardPicture from '$lib/components/MediaCardPicture.svelte';
 
     // Importeren van assets uit de projectstructuur
     import imgModular from '$lib/assets/robotbuild_modulair_build.png';
     import imgHubmotor from '$lib/assets/robotbuild_hubmotor.png';
     import imgMaintenance from '$lib/assets/robotbuild_easy_maintance.png';
-    import imgCustomizable from '$lib/assets/robotbuild.png'; // Of robotbuild (3).png indien gewenst
-    import actionVideoWebm from '$lib/assets/front_page_video_2_720.webm';
-    import actionVideoMp4 from '$lib/assets/front_page_video_2_720.mp4';
-    import actionVideoPoster from '$lib/assets/front_page_video_2_poster.jpg';
+    import imgCustomizable from '$lib/assets/robotbuild.webp'; // Of robotbuild (3).png indien gewenst
 
     // Foto van het werkende prototype in het veld
-    import imgPrototype from '$lib/assets/robotbuild_prototype_field.jpg';
+    import imgPrototype from '$lib/assets/robotbuild_prototype_field.webp';
 
     // OpenSCAD-renders van het huidige ontwerp
     import imgAssembly2wd from '$lib/assets/robotbuild_assembly_2wd.png';
@@ -83,8 +80,8 @@
         <div class="drive-grid">
             <article class="drive-card">
                 <div class="drive-images">
-                    <img src={imgAssembly2wd} alt={m.robotbuild_drive_2wd_title()} />
-                    <img src={imgAssembly2wdSide} alt={m.robotbuild_drive_2wd_title()} />
+                    <img src={imgAssembly2wd} alt={m.robotbuild_drive_2wd_title()} loading="lazy" />
+                    <img src={imgAssembly2wdSide} alt={m.robotbuild_drive_2wd_title()} loading="lazy" />
                 </div>
                 <h3>{m.robotbuild_drive_2wd_title()}</h3>
                 <p>{m.robotbuild_drive_2wd_desc()}</p>
@@ -92,8 +89,8 @@
 
             <article class="drive-card">
                 <div class="drive-images">
-                    <img src={imgAssembly4wd} alt={m.robotbuild_drive_4wd_title()} />
-                    <img src={imgAssembly4wdSide} alt={m.robotbuild_drive_4wd_title()} />
+                    <img src={imgAssembly4wd} alt={m.robotbuild_drive_4wd_title()} loading="lazy" />
+                    <img src={imgAssembly4wdSide} alt={m.robotbuild_drive_4wd_title()} loading="lazy" />
                 </div>
                 <h3>{m.robotbuild_drive_4wd_title()}</h3>
                 <p>{m.robotbuild_drive_4wd_desc()}</p>
@@ -104,7 +101,7 @@
     <!-- Chassis en wielunit: de twee bouwstenen van het frame. -->
     <section class="build-blocks">
         <article class="block">
-            <img src={imgChassisFrame} alt={m.robotbuild_frame_title()} />
+            <img src={imgChassisFrame} alt={m.robotbuild_frame_title()} loading="lazy" />
             <div class="block-text">
                 <h3>{m.robotbuild_frame_title()}</h3>
                 <p>{m.robotbuild_frame_desc()}</p>
@@ -112,7 +109,7 @@
         </article>
 
         <article class="block">
-            <img src={imgWheelUnit} alt={m.robotbuild_wheelunit_title()} />
+            <img src={imgWheelUnit} alt={m.robotbuild_wheelunit_title()} loading="lazy" />
             <div class="block-text">
                 <h3>{m.robotbuild_wheelunit_title()}</h3>
                 <p>{m.robotbuild_wheelunit_desc()}</p>
@@ -120,7 +117,7 @@
         </article>
 
         <article class="block">
-            <img src={imgCasterWheel} alt={m.robotbuild_caster_title()} />
+            <img src={imgCasterWheel} alt={m.robotbuild_caster_title()} loading="lazy" />
             <div class="block-text">
                 <h3>{m.robotbuild_caster_title()}</h3>
                 <p>{m.robotbuild_caster_desc()}</p>
@@ -174,10 +171,10 @@
             altText="Open design voor uitbreidingen"
         />
 
-        <MediaCardVideo
+        <MediaCardYouTube
             title={m.robotbuild_control_sys_title()}
             desc={m.robotbuild_control_sys_desc()}
-            videos={[{ webm: actionVideoWebm, mp4: actionVideoMp4, poster: actionVideoPoster }]}
+            videoId="JFSSVHmUz9o"
             altText="Besturing en autonome functies in actie"
         />
     </section>

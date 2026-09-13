@@ -4,27 +4,27 @@
     import MediaCardPicture from '$lib/components/MediaCardPicture.svelte';
 
     // Fallback afbeelding
-    import fallbackImg from '$lib/assets/robotbuild.png';
+    import fallbackImg from '$lib/assets/robotbuild.webp';
 
     // Specifieke Asset Imports
-    import imgSicklebar from '$lib/assets/functions_sicklebar_mower.png';
-    import imgSpotspray from '$lib/assets/functions_spotspray.png';
-    import imgSpotsprayField from '$lib/assets/functions_spotspray_field.png';
+    import imgSicklebar from '$lib/assets/functions_sicklebar_mower.webp';
+    import imgSpotspray from '$lib/assets/functions_spotspray.webp';
+    import imgSpotsprayField from '$lib/assets/functions_spotspray_field.webp';
     import imgWeeder from '$lib/assets/functions_weeder.jpg';
-    import imgGrassMeter from '$lib/assets/functions_grass_meter.jpg';
-    import imgFeedpusher from '$lib/assets/function_feedpsuher.png';
-    import imgFertilizer from '$lib/assets/function_fertilize_spreader.png';
-    import imgFingerWeeder from '$lib/assets/function_finger_weeder.png';
-    import imgLimeSpreader from '$lib/assets/function_lime_spreader.png';
-    import imgScanner from '$lib/assets/function_scanner.png';
-    import imgSeat from '$lib/assets/function_seat.png';
-    import imgSolar from '$lib/assets/function_solarpanel.png';
-    import imgStraw from '$lib/assets/function_straw_spreader.png';
-    import imgHitch from '$lib/assets/function_tow_hitch.png';
-    import imgDumper from '$lib/assets/function_dumper.png';
+    import imgGrassMeter from '$lib/assets/functions_grass_meter.webp';
+    import imgFeedpusher from '$lib/assets/function_feedpsuher.webp';
+    import imgFertilizer from '$lib/assets/function_fertilize_spreader.webp';
+    import imgFingerWeeder from '$lib/assets/function_finger_weeder.webp';
+    import imgLimeSpreader from '$lib/assets/function_lime_spreader.webp';
+    import imgScanner from '$lib/assets/function_scanner.webp';
+    import imgSeat from '$lib/assets/function_seat.webp';
+    import imgSolar from '$lib/assets/function_solarpanel.webp';
+    import imgStraw from '$lib/assets/function_straw_spreader.webp';
+    import imgHitch from '$lib/assets/function_tow_hitch.webp';
+    import imgDumper from '$lib/assets/function_dumper.webp';
 
     // Functionaliteiten gegroepeerd per categorie.
-    // Zonder eigen afbeelding wordt de fallback robotbuild.png gebruikt.
+    // Zonder eigen afbeelding wordt de fallback robotbuild.webp gebruikt.
     const categories = [
         {
             title: m.func_cat_1_title,
@@ -97,7 +97,15 @@
             title: m.func_cat_8_title,
             items: [
                 { title: m.func_33_title, desc: m.func_33_desc, images: [imgGrassMeter, imgScanner] },
-                { title: m.func_34_title, desc: m.func_34_desc, images: [fallbackImg] }
+                { title: m.func_34_title, desc: m.func_34_desc, images: [fallbackImg] },
+                { title: m.func_35_title, desc: m.func_35_desc, images: [fallbackImg] }
+            ]
+        },
+        {
+            title: m.func_cat_9_title,
+            items: [
+                { title: m.func_36_title, desc: m.func_36_desc, images: [fallbackImg] },
+                { title: m.func_37_title, desc: m.func_37_desc, images: [fallbackImg] }
             ]
         }
     ];

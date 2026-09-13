@@ -173,6 +173,23 @@
         {
           "main_attachment": "Soil Compaction Meter",
           "function": "Measuring and mapping soil density at specific data points."
+        },
+        {
+          "main_attachment": "NIR Sensor (NDVI & Crop Status)",
+          "function": "Near-infrared sensor that measures the NDVI of the crop while driving. From the difference between reflected red and near-infrared light the robot reads biomass, ground cover and crop vitality, and builds live task maps for variable-rate fertilisation. Because the sensor moves close over the crop instead of looking down from a satellite, the readings stay reliable under cloud cover and also register small spots and gaps."
+        }
+      ]
+    },
+    {
+      "category": "Cooperation & Swarm Operation",
+      "attachments": [
+        {
+          "main_attachment": "Drone Combination",
+          "function": "The robot works together with a drone as a mobile base station. The drone flies out from the platform, maps the plot from above and passes its imagery straight to the robot, which converts it into a driving and treatment plan. The drone charges and swaps batteries on the robot, so the pair can keep scouting and working alternately for a full day without anyone coming out to the field."
+        },
+        {
+          "main_attachment": "Swarm Operation (Multiple Robots per Field)",
+          "function": "Several Bruut units work the same field as one swarm. The job is split into sections, the robots divide the passes among themselves and keep each other informed of position, progress and battery state, so they never overlap or cross. Capacity scales simply with the number of units instead of with machine size, work continues when one unit drops out, and the light platforms keep soil compaction low."
         }
       ]
     }

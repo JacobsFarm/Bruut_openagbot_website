@@ -2,8 +2,58 @@
   "channelId": "UCYW2RxlhWwQdn4d33I-OmGg",
   "channelTitle": "Agbot bruut",
   "channelUrl": "https://www.youtube.com/@opensource_agbot",
-  "fetchedAt": "2026-08-29T19:24:23.413Z",
+  "fetchedAt": "2026-09-13T12:06:08.377Z",
   "videos": [
+    {
+      "id": "JFSSVHmUz9o",
+      "title": "Drone video voor op de website ;)",
+      "description": "Drone video voor op de website ;)",
+      "url": "https://www.youtube.com/watch?v=JFSSVHmUz9o",
+      "thumbnail": "https://i.ytimg.com/vi/JFSSVHmUz9o/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/JFSSVHmUz9o/hqdefault.jpg",
+      "published": "2026-09-13T11:29:59+00:00",
+      "views": 1
+    },
+    {
+      "id": "slNxeRu5yBM",
+      "title": "Grashoogte, echt meten maar ook schatten tussen de gemeten punten",
+      "description": "Grashoogte, echt meten maar ook schatten tussen de gemeten punten door",
+      "url": "https://www.youtube.com/watch?v=slNxeRu5yBM",
+      "thumbnail": "https://i.ytimg.com/vi/slNxeRu5yBM/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/slNxeRu5yBM/hqdefault.jpg",
+      "published": "2026-09-07T06:00:20+00:00",
+      "views": 24
+    },
+    {
+      "id": "x8GQCHDpHLs",
+      "title": "De camera weer eens proberen en moet nog anders weer",
+      "description": "De camera weer eens proberen en moet nog anders weer\n\ncamera moet recht naar beneden staan om een meer stabiele en gelijke lichtinval te krijgen, daar gok ik op dat het komt door de hoek.",
+      "url": "https://www.youtube.com/watch?v=x8GQCHDpHLs",
+      "thumbnail": "https://i.ytimg.com/vi/x8GQCHDpHLs/maxresdefault.jpg",
+      "thumbnailFallback": "https://i1.ytimg.com/vi/x8GQCHDpHLs/hqdefault.jpg",
+      "published": "2026-09-03T06:00:26+00:00",
+      "views": 92
+    },
+    {
+      "id": "8FxPGs8M8AU",
+      "title": "hellingtest met de robot op de dijk | agbot bruut",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=8FxPGs8M8AU",
+      "thumbnail": "https://i.ytimg.com/vi/8FxPGs8M8AU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i1.ytimg.com/vi/8FxPGs8M8AU/hqdefault.jpg",
+      "published": "2026-09-02T06:00:17+00:00",
+      "views": 102
+    },
+    {
+      "id": "GbBcDZ21bIE",
+      "title": "concept idee: Ridderzuring mechanisch kapot boren autonoom en gras meter",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=GbBcDZ21bIE",
+      "thumbnail": "https://i.ytimg.com/vi/GbBcDZ21bIE/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/GbBcDZ21bIE/hqdefault.jpg",
+      "published": "2026-08-30T06:00:19+00:00",
+      "views": 48
+    },
     {
       "id": "gEqBgbst-S8",
       "title": "Grove druppel spuitboom over Vernevel spuitboom wordt het idee en hoe kom ik erop",
@@ -12,7 +62,7 @@
       "thumbnail": "https://i.ytimg.com/vi/gEqBgbst-S8/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/gEqBgbst-S8/hqdefault.jpg",
       "published": "2026-08-28T06:00:03+00:00",
-      "views": 28
+      "views": 36
     },
     {
       "id": "jWlJfWt2rw8",
@@ -22,7 +72,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jWlJfWt2rw8/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/jWlJfWt2rw8/hqdefault.jpg",
       "published": "2026-08-27T10:00:13+00:00",
-      "views": 28
+      "views": 55
     },
     {
       "id": "q5jfiYExJE8",
@@ -32,7 +82,7 @@
       "thumbnail": "https://i.ytimg.com/vi/q5jfiYExJE8/maxresdefault.jpg",
       "thumbnailFallback": "https://i2.ytimg.com/vi/q5jfiYExJE8/hqdefault.jpg",
       "published": "2026-08-26T12:00:11+00:00",
-      "views": 41
+      "views": 76
     },
     {
       "id": "PnqiansWV58",
@@ -42,7 +92,7 @@
       "thumbnail": "https://i.ytimg.com/vi/PnqiansWV58/maxresdefault.jpg",
       "thumbnailFallback": "https://i1.ytimg.com/vi/PnqiansWV58/hqdefault.jpg",
       "published": "2026-08-25T06:00:06+00:00",
-      "views": 25
+      "views": 31
     },
     {
       "id": "7sXGuQ1RMKs",
@@ -52,7 +102,7 @@
       "thumbnail": "https://i.ytimg.com/vi/7sXGuQ1RMKs/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/7sXGuQ1RMKs/hqdefault.jpg",
       "published": "2026-08-24T05:00:29+00:00",
-      "views": 24
+      "views": 28
     },
     {
       "id": "jFP0uotRBT4",
@@ -62,7 +112,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jFP0uotRBT4/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/jFP0uotRBT4/hqdefault.jpg",
       "published": "2026-08-24T04:00:35+00:00",
-      "views": 34
+      "views": 53
     },
     {
       "id": "gD7W9mkGIkA",
@@ -72,7 +122,7 @@
       "thumbnail": "https://i.ytimg.com/vi/gD7W9mkGIkA/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/gD7W9mkGIkA/hqdefault.jpg",
       "published": "2026-08-23T11:00:33+00:00",
-      "views": 50
+      "views": 56
     },
     {
       "id": "epCLpfybDx8",
@@ -82,7 +132,7 @@
       "thumbnail": "https://i.ytimg.com/vi/epCLpfybDx8/maxresdefault.jpg",
       "thumbnailFallback": "https://i2.ytimg.com/vi/epCLpfybDx8/hqdefault.jpg",
       "published": "2026-08-23T06:00:09+00:00",
-      "views": 24
+      "views": 57
     },
     {
       "id": "jciNYXqJc9k",
@@ -92,7 +142,7 @@
       "thumbnail": "https://i.ytimg.com/vi/jciNYXqJc9k/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/jciNYXqJc9k/hqdefault.jpg",
       "published": "2026-08-21T06:00:17+00:00",
-      "views": 21
+      "views": 60
     },
     {
       "id": "w6fEEhQUDJo",
@@ -102,7 +152,7 @@
       "thumbnail": "https://i.ytimg.com/vi/w6fEEhQUDJo/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/w6fEEhQUDJo/hqdefault.jpg",
       "published": "2026-08-17T07:00:19+00:00",
-      "views": 16
+      "views": 20
     },
     {
       "id": "ppQcKw95u3E",
@@ -112,7 +162,7 @@
       "thumbnail": "https://i.ytimg.com/vi/ppQcKw95u3E/maxresdefault.jpg",
       "thumbnailFallback": "https://i1.ytimg.com/vi/ppQcKw95u3E/hqdefault.jpg",
       "published": "2026-08-16T13:51:30+00:00",
-      "views": 25
+      "views": 31
     },
     {
       "id": "ynZX2PVavYA",
@@ -120,9 +170,9 @@
       "description": "Hubmotors and wheels placed under the Iron frame | agbot project",
       "url": "https://www.youtube.com/watch?v=ynZX2PVavYA",
       "thumbnail": "https://i.ytimg.com/vi/ynZX2PVavYA/maxresdefault.jpg",
-      "thumbnailFallback": "https://i2.ytimg.com/vi/ynZX2PVavYA/hqdefault.jpg",
-      "published": "2026-08-15T09:49:31+00:00",
-      "views": 10
+      "thumbnailFallback": "https://i.ytimg.com/vi/ynZX2PVavYA/hqdefault.jpg",
+      "published": "2026-08-15T09:49:31.000Z",
+      "views": 13
     },
     {
       "id": "59rHvETqr8k",
@@ -130,9 +180,9 @@
       "description": "",
       "url": "https://www.youtube.com/watch?v=59rHvETqr8k",
       "thumbnail": "https://i.ytimg.com/vi/59rHvETqr8k/maxresdefault.jpg",
-      "thumbnailFallback": "https://i2.ytimg.com/vi/59rHvETqr8k/hqdefault.jpg",
-      "published": "2026-08-14T09:00:32+00:00",
-      "views": 15
+      "thumbnailFallback": "https://i.ytimg.com/vi/59rHvETqr8k/hqdefault.jpg",
+      "published": "2026-08-14T09:00:32.000Z",
+      "views": 17
     },
     {
       "id": "tX86u9yLPj0",
@@ -140,8 +190,8 @@
       "description": "Wielmodules aan elkaar lassen\nvoor een davilot 48v hubmotor",
       "url": "https://www.youtube.com/watch?v=tX86u9yLPj0",
       "thumbnail": "https://i.ytimg.com/vi/tX86u9yLPj0/maxresdefault.jpg",
-      "thumbnailFallback": "https://i1.ytimg.com/vi/tX86u9yLPj0/hqdefault.jpg",
-      "published": "2026-08-13T06:00:04+00:00",
+      "thumbnailFallback": "https://i.ytimg.com/vi/tX86u9yLPj0/hqdefault.jpg",
+      "published": "2026-08-13T06:00:04.000Z",
       "views": 14
     },
     {
@@ -150,9 +200,319 @@
       "description": "Van ontwerp tot nu lasergesneden onderdelen.\nNa de plannen te hebben gemaakt, deze laten lasersnijden door Hooymans Products uit roelofarendsveen vak werk en klaar voor de volgende bewerking",
       "url": "https://www.youtube.com/watch?v=iXHmo30YQE0",
       "thumbnail": "https://i.ytimg.com/vi/iXHmo30YQE0/maxresdefault.jpg",
-      "thumbnailFallback": "https://i2.ytimg.com/vi/iXHmo30YQE0/hqdefault.jpg",
-      "published": "2026-08-12T06:30:36+00:00",
-      "views": 12
+      "thumbnailFallback": "https://i.ytimg.com/vi/iXHmo30YQE0/hqdefault.jpg",
+      "published": "2026-08-12T06:30:36.000Z",
+      "views": 13
+    },
+    {
+      "id": "60MSzyQkxw8",
+      "title": "Designing the AgBot BRUUT: Engineering & Design Choices Explained",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=60MSzyQkxw8",
+      "thumbnail": "https://i.ytimg.com/vi/60MSzyQkxw8/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/60MSzyQkxw8/hqdefault.jpg",
+      "published": "2026-08-02T11:17:18.000Z",
+      "views": 15
+    },
+    {
+      "id": "qXAWqyu0CHc",
+      "title": "Nog is eens een test ritje",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=qXAWqyu0CHc",
+      "thumbnail": "https://i.ytimg.com/vi/qXAWqyu0CHc/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/qXAWqyu0CHc/hqdefault.jpg",
+      "published": "2026-07-04T06:00:14.000Z",
+      "views": 264
+    },
+    {
+      "id": "v1X30zueFwg",
+      "title": "Nieuwe global shutter camera voor de veldrobot",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=v1X30zueFwg",
+      "thumbnail": "https://i.ytimg.com/vi/v1X30zueFwg/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/v1X30zueFwg/hqdefault.jpg",
+      "published": "2026-06-19T06:00:31.000Z",
+      "views": 16
+    },
+    {
+      "id": "0t8D3A1YuBQ",
+      "title": "AB line track following, is going better till it doesnt",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=0t8D3A1YuBQ",
+      "thumbnail": "https://i.ytimg.com/vi/0t8D3A1YuBQ/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/0t8D3A1YuBQ/hqdefault.jpg",
+      "published": "2026-06-16T07:00:06.000Z",
+      "views": 37
+    },
+    {
+      "id": "LSitvhgaULE",
+      "title": "Mission following AB points in pure pursuit logic Autonomous driving",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=LSitvhgaULE",
+      "thumbnail": "https://i.ytimg.com/vi/LSitvhgaULE/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/LSitvhgaULE/hqdefault.jpg",
+      "published": "2026-06-15T07:43:54.000Z",
+      "views": 52
+    },
+    {
+      "id": "Ytq8aBc-LGA",
+      "title": "Concept idee, Kardinaalmuts detecteren in de rij | Handelskwekerij Mouws 8X",
+      "description": "Concept idee, Kardinaalmuts detecteren in de rij | Handelskwekerij Mouws 8X \n\nBeelden zijn vrij gesteld door | Handelskwekerij Mouws 8X  \nMouws is een boomkwekerij en maakt ook video's over hoe hij als boomkwekerij zijn werk bezighoudt, zeker ook het uit checken waard",
+      "url": "https://www.youtube.com/watch?v=Ytq8aBc-LGA",
+      "thumbnail": "https://i.ytimg.com/vi/Ytq8aBc-LGA/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/Ytq8aBc-LGA/hqdefault.jpg",
+      "published": "2026-06-07T13:26:43.000Z",
+      "views": 24
+    },
+    {
+      "id": "6hpZBFMKsVU",
+      "title": "tricycle steering proberen eerste run in pure pursuit",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=6hpZBFMKsVU",
+      "thumbnail": "https://i.ytimg.com/vi/6hpZBFMKsVU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/6hpZBFMKsVU/hqdefault.jpg",
+      "published": "2026-06-06T05:00:08.000Z",
+      "views": 49
+    },
+    {
+      "id": "PYb5LuAPigk",
+      "title": "from Dual-wheel differential drive to tricycle steering",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=PYb5LuAPigk",
+      "thumbnail": "https://i.ytimg.com/vi/PYb5LuAPigk/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/PYb5LuAPigk/hqdefault.jpg",
+      "published": "2026-06-05T07:36:48.000Z",
+      "views": 33
+    },
+    {
+      "id": "B8Myl0yAOnk",
+      "title": "inference with SAHI and without for smaller objects",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=B8Myl0yAOnk",
+      "thumbnail": "https://i.ytimg.com/vi/B8Myl0yAOnk/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/B8Myl0yAOnk/hqdefault.jpg",
+      "published": "2026-05-29T06:00:38.000Z",
+      "views": 34
+    },
+    {
+      "id": "QFVs_-NP0Zs",
+      "title": "in de bloemkool rij schoffelen met computervisie AI | project Bruut",
+      "description": "Dit is een proof of concept idee wat uiteindelijk moet gaan leiden voor de eerste prototypes",
+      "url": "https://www.youtube.com/watch?v=QFVs_-NP0Zs",
+      "thumbnail": "https://i.ytimg.com/vi/QFVs_-NP0Zs/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/QFVs_-NP0Zs/hqdefault.jpg",
+      "published": "2026-05-28T05:00:40.000Z",
+      "views": 136
+    },
+    {
+      "id": "XCqLeLjOtbk",
+      "title": "Stappenmotors NEMA 34 testen",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=XCqLeLjOtbk",
+      "thumbnail": "https://i.ytimg.com/vi/XCqLeLjOtbk/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/XCqLeLjOtbk/hqdefault.jpg",
+      "published": "2026-05-27T08:14:59.000Z",
+      "views": 32
+    },
+    {
+      "id": "Yxy4i9JCs5M",
+      "title": "Wiel module prototype gelast",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=Yxy4i9JCs5M",
+      "thumbnail": "https://i.ytimg.com/vi/Yxy4i9JCs5M/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/Yxy4i9JCs5M/hqdefault.jpg",
+      "published": "2026-05-22T07:00:39.000Z",
+      "views": 23
+    },
+    {
+      "id": "DWKYiGAT5SI",
+      "title": "1 stap vooruit,2 achteruit, robot is nat geregend",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=DWKYiGAT5SI",
+      "thumbnail": "https://i.ytimg.com/vi/DWKYiGAT5SI/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/DWKYiGAT5SI/hqdefault.jpg",
+      "published": "2026-05-18T07:00:07.000Z",
+      "views": 25
+    },
+    {
+      "id": "T8ZPbUqMY8A",
+      "title": "adding \"heading\" to the autonomous field robot.",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=T8ZPbUqMY8A",
+      "thumbnail": "https://i.ytimg.com/vi/T8ZPbUqMY8A/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/T8ZPbUqMY8A/hqdefault.jpg",
+      "published": "2026-05-17T09:36:04.000Z",
+      "views": 17
+    },
+    {
+      "id": "TlqnXHRx_Os",
+      "title": "In de rij schoffelen visualisatie en eerste model in de bloemkool",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=TlqnXHRx_Os",
+      "thumbnail": "https://i.ytimg.com/vi/TlqnXHRx_Os/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/TlqnXHRx_Os/hqdefault.jpg",
+      "published": "2026-05-11T21:26:18.000Z",
+      "views": 42
+    },
+    {
+      "id": "r-n6PC2zLds",
+      "title": "Step 15: testen van ongegraasd gras op hoogte aftoppen na beweiden",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=r-n6PC2zLds",
+      "thumbnail": "https://i.ytimg.com/vi/r-n6PC2zLds/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/r-n6PC2zLds/hqdefault.jpg",
+      "published": "2026-05-10T06:00:39.000Z",
+      "views": 316
+    },
+    {
+      "id": "MsO2YDD-0D4",
+      "title": "Agricultural fieldrobot Bruut from above",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=MsO2YDD-0D4",
+      "thumbnail": "https://i.ytimg.com/vi/MsO2YDD-0D4/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/MsO2YDD-0D4/hqdefault.jpg",
+      "published": "2026-05-09T09:26:44.000Z",
+      "views": 20
+    },
+    {
+      "id": "ns75B_q-mUE",
+      "title": "Step 14: First Autonomous Agbot meters driven to waypoints",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=ns75B_q-mUE",
+      "thumbnail": "https://i.ytimg.com/vi/ns75B_q-mUE/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/ns75B_q-mUE/hqdefault.jpg",
+      "published": "2026-04-30T19:37:49.000Z",
+      "views": 18
+    },
+    {
+      "id": "tlbdsFL29l0",
+      "title": "step 13: Detection program and Task maps",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=tlbdsFL29l0",
+      "thumbnail": "https://i.ytimg.com/vi/tlbdsFL29l0/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/tlbdsFL29l0/hqdefault.jpg",
+      "published": "2026-04-27T06:00:43.000Z",
+      "views": 40
+    },
+    {
+      "id": "zVSdb4Kwq60",
+      "title": "step 12: Testing the agbot in the Field and vision testing",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=zVSdb4Kwq60",
+      "thumbnail": "https://i.ytimg.com/vi/zVSdb4Kwq60/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/zVSdb4Kwq60/hqdefault.jpg",
+      "published": "2026-04-26T16:56:23.000Z",
+      "views": 46
+    },
+    {
+      "id": "FIysYutWCrc",
+      "title": "step 11: new code base in Svelte, and starting with adding computervision",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=FIysYutWCrc",
+      "thumbnail": "https://i.ytimg.com/vi/FIysYutWCrc/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/FIysYutWCrc/hqdefault.jpg",
+      "published": "2026-04-26T07:38:45.000Z",
+      "views": 17
+    },
+    {
+      "id": "zZHJYpOB1Gs",
+      "title": "Step 10: Receiving the First RTK connections for ardusimpleRTK board",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=zZHJYpOB1Gs",
+      "thumbnail": "https://i.ytimg.com/vi/zZHJYpOB1Gs/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/zZHJYpOB1Gs/hqdefault.jpg",
+      "published": "2026-04-21T21:41:45.000Z",
+      "views": 23
+    },
+    {
+      "id": "IjQxm32To_s",
+      "title": "Step 8: Setup before the test run in  the field agbot",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=IjQxm32To_s",
+      "thumbnail": "https://i.ytimg.com/vi/IjQxm32To_s/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/IjQxm32To_s/hqdefault.jpg",
+      "published": "2026-04-19T13:21:15.000Z",
+      "views": 53
+    },
+    {
+      "id": "MMicyc1rNyQ",
+      "title": "Step 9: First test run in the Field , agricultural robot",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=MMicyc1rNyQ",
+      "thumbnail": "https://i.ytimg.com/vi/MMicyc1rNyQ/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/MMicyc1rNyQ/hqdefault.jpg",
+      "published": "2026-04-19T13:18:55.000Z",
+      "views": 17
+    },
+    {
+      "id": "8m6IZRG1WxU",
+      "title": "Step 7: Agbot running on a remote control connection",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=8m6IZRG1WxU",
+      "thumbnail": "https://i.ytimg.com/vi/8m6IZRG1WxU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/8m6IZRG1WxU/hqdefault.jpg",
+      "published": "2026-04-19T08:46:42.000Z",
+      "views": 18
+    },
+    {
+      "id": "T-b-nBbgHxI",
+      "title": "Step 6: testrun of the prototype rover with 48v hubmotors",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=T-b-nBbgHxI",
+      "thumbnail": "https://i.ytimg.com/vi/T-b-nBbgHxI/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/T-b-nBbgHxI/hqdefault.jpg",
+      "published": "2026-04-19T08:35:10.000Z",
+      "views": 9
+    },
+    {
+      "id": "K5xD4EBhpTU",
+      "title": "step 5: the concept of the frame building",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=K5xD4EBhpTU",
+      "thumbnail": "https://i.ytimg.com/vi/K5xD4EBhpTU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/K5xD4EBhpTU/hqdefault.jpg",
+      "published": "2026-04-16T21:06:20.000Z",
+      "views": 35
+    },
+    {
+      "id": "8W_weQVoqw8",
+      "title": "Stap 4: prototype hubmotor beugels maken",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=8W_weQVoqw8",
+      "thumbnail": "https://i.ytimg.com/vi/8W_weQVoqw8/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/8W_weQVoqw8/hqdefault.jpg",
+      "published": "2026-04-15T07:58:15.000Z",
+      "views": 8
+    },
+    {
+      "id": "25qza_783X0",
+      "title": "Step 2: controlling the 48v hubmotor with an arduino via the DAC-module",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=25qza_783X0",
+      "thumbnail": "https://i.ytimg.com/vi/25qza_783X0/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/25qza_783X0/hqdefault.jpg",
+      "published": "2026-04-10T13:38:07.000Z",
+      "views": 33
+    },
+    {
+      "id": "-V4j899cQSQ",
+      "title": "Stap 1 : testen van de 48v hubmotor",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=-V4j899cQSQ",
+      "thumbnail": "https://i.ytimg.com/vi/-V4j899cQSQ/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/-V4j899cQSQ/hqdefault.jpg",
+      "published": "2026-04-10T13:37:18.000Z",
+      "views": 24
+    },
+    {
+      "id": "92rKA-VhyYI",
+      "title": "Step 3, turning both the hubmotors with the arduino",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=92rKA-VhyYI",
+      "thumbnail": "https://i.ytimg.com/vi/92rKA-VhyYI/maxresdefault.jpg",
+      "thumbnailFallback": "https://i.ytimg.com/vi/92rKA-VhyYI/hqdefault.jpg",
+      "published": "2026-04-10T09:25:10.000Z",
+      "views": 82
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
   "videos_meta_title": "Video's",
-  "videos_meta_description": "Bekijk de laatste bouwupdates, veldtests en ontwerpkeuzes van de Bruut open source veldrobot.",
-  "videos_hero_title": "Laatste Video's",
-  "videos_hero_description": "Elke stap van de Bruut veldrobot wordt vastgelegd op YouTube: van de eerste schets en het modulaire chassis tot veldtests, fouten en oplossingen. Deze pagina werkt zichzelf bij bij elke nieuwe upload.",
+  "videos_meta_description": "De hele bouw van de Bruut open source veldrobot op één tijdlijn: elke video van de eerste hubmotor tot autonoom rijden in het veld.",
+  "videos_hero_title": "De bouw in video's",
+  "videos_hero_description": "Elke stap van de Bruut veldrobot wordt vastgelegd op YouTube: van de eerste hubmotor op de werkbank tot autonoom rijden in het veld. Hieronder staat alles op één tijdlijn, met de grote momenten uitgelicht.",
   "videos_subscribe": "Abonneer op YouTube",
   "videos_visit_channel": "Bekijk het kanaal",
   "videos_play_button": "Speel de video {title} af",
-  "videos_watch_on_youtube": "Bekijk op YouTube",
   "videos_badge_new": "Nieuwste",
   "videos_views": "{count} weergaven",
-  "videos_all_title": "Alle Video's",
-  "videos_all_subtitle": "Klik op een video om deze in de speler hierboven af te spelen.",
+  "videos_all_title": "Van begin tot nu",
+  "videos_all_subtitle": "Alle video's op één tijdlijn, het nieuwste bovenaan. De grote stappen staan uitgelicht met een eigen titel en uitleg; de rest is een gewone bouwupdate.",
   "videos_last_updated": "Videolijst voor het laatst bijgewerkt op {date}. Nieuwe uploads verschijnen hier automatisch.",
   "videos_empty_title": "Geen video's gevonden",
   "videos_empty_desc": "De videolijst kon nu niet worden geladen. Je vindt alles altijd rechtstreeks op het YouTube-kanaal.",
   "videos_cta_title": "Volg de bouw op de voet",
   "videos_cta_desc": "Om de paar weken een nieuwe video: bouwstappen, elektronica, autonoom rijden en eerlijke resultaten uit het veld. Abonneer je zodat je geen update mist.",
-  "videos_cta_github": "Bekijk de code op GitHub"
+  "videos_cta_github": "Bekijk de code op GitHub",
+  "videos_counts": "{videos} video's · {milestones} mijlpalen"
 }

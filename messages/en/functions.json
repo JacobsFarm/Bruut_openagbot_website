@@ -10,6 +10,7 @@
   "func_cat_6_title": "Power & Drive",
   "func_cat_7_title": "Transport & General",
   "func_cat_8_title": "Measuring & Sensors",
+  "func_cat_9_title": "Cooperation & Swarm Operation",
 
   "func_1_title": "(Rubber) Push Blade / Grader Blade",
   "func_1_desc": "Front-mounted or mid-mounted between the front and rear wheels. Usable as a grader for leveling terrain, for pushing feed and grass back in the stable, or for cleaning silos.",
@@ -85,5 +86,14 @@
   "func_33_title": "Grass Meter / Crop Scanner",
   "func_33_desc": "Measuring grass and crop height and health to create task maps for nitrogen or phosphate.",
   "func_34_title": "Soil Compaction Meter",
-  "func_34_desc": "Measuring and mapping soil density at specific data points."
+  "func_34_desc": "Measuring and mapping soil density at specific data points.",
+
+  "func_35_title": "NIR Sensor (NDVI & Crop Status)",
+  "func_35_desc": "Near-infrared sensor that measures the NDVI of the crop while driving. From the difference between reflected red and near-infrared light the robot reads biomass, ground cover and crop vitality, and builds live task maps for variable-rate fertilisation. Because the sensor moves close over the crop instead of looking down from a satellite, the readings stay reliable under cloud cover and also register small spots and gaps.",
+
+  "func_36_title": "Drone Combination",
+  "func_36_desc": "The robot works together with a drone as a mobile base station. The drone flies out from the platform, maps the plot from above and passes its imagery straight to the robot, which converts it into a driving and treatment plan. The drone charges and swaps batteries on the robot, so the pair can keep scouting and working alternately for a full day without anyone coming out to the field.",
+
+  "func_37_title": "Swarm Operation (Multiple Robots per Field)",
+  "func_37_desc": "Several Bruut units work the same field as one swarm. The job is split into sections, the robots divide the passes among themselves and keep each other informed of position, progress and battery state, so they never overlap or cross. Capacity scales simply with the number of units instead of with machine size, work continues when one unit drops out, and the light platforms keep soil compaction low."
 }

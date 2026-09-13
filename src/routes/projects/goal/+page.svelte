@@ -7,8 +7,8 @@
     import MediaCardGif from '$lib/components/MediaCardGif.svelte';
 
     // Importeer de specifieke afbeeldingen uit de assets map [cite: 115]
-    import imgBaseToFrame from '$lib/assets/goal_from_base_to_frame.png';
-    import imgCommunityDriven from '$lib/assets/goal_community_driven.png';
+    import imgBaseToFrame from '$lib/assets/goal_from_base_to_frame.webp';
+    import imgCommunityDriven from '$lib/assets/goal_community_driven.webp';
     import placeholderImg from '$lib/assets/place-holder 875x875.jpg';
 </script>
 

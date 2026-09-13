@@ -3,8 +3,9 @@
     import ProjectCard from '$lib/components/ProjectCard.svelte';
     import FeatureCard from '$lib/components/FeatureCard.svelte';
     import InfoWithImage from '$lib/components/InfoWithImage.svelte';
-    import MediaCardVideo from '$lib/components/MediaCardVideo.svelte';
+    import MediaCardYouTube from '$lib/components/MediaCardYouTube.svelte';
     import FeaturedIn from '$lib/components/FeaturedIn.svelte';
+    import TeamSection from '$lib/components/TeamSection.svelte';
     import VideoCard from '$lib/components/VideoCard.svelte';
     import { base } from '$app/paths';
     import { channel, videos } from '$lib/youtube';
@@ -17,13 +18,10 @@
     const latestVideos = videos.slice(0, 3);
 
     // Assets
-    import imgRobotBuild from '$lib/assets/front_page_robot_build.png';
-    import imgGoal from '$lib/assets/goal_community_driven.png';
-    import imgFunctions from '$lib/assets/front_page_functionality.png';
+    import imgRobotBuild from '$lib/assets/front_page_robot_build.webp';
+    import imgGoal from '$lib/assets/goal_community_driven.webp';
+    import imgFunctions from '$lib/assets/front_page_functionality.webp';
     import imgScad from '$lib/assets/front_page_intro_picture.webp';
-    import videoRobotWebm from '$lib/assets/front_page_video_720.webm';
-    import videoRobotMp4 from '$lib/assets/front_page_video_720.mp4';
-    import videoRobotPoster from '$lib/assets/front_page_video_poster.jpg';
 
     const statsValue1 = tweened(0, { duration: 2000, easing: cubicOut });
     const statsValue2 = tweened(0, { duration: 2000, easing: cubicOut });
@@ -85,11 +83,15 @@
         </InfoWithImage>
     </section>
 
+    <section class="team-section">
+        <TeamSection />
+    </section>
+
     <section class="media-showcase">
-        <MediaCardVideo
+        <MediaCardYouTube
             title={m.front_page_media_title()}
             desc={m.front_page_media_desc()}
-            videos={[{ webm: videoRobotWebm, mp4: videoRobotMp4, poster: videoRobotPoster }]}
+            videoId="JFSSVHmUz9o"
             altText="The Bruut Field Robot in action"
         />
         <div class="action-container">

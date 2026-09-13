@@ -55,6 +55,7 @@
                             src="{gif}?t={timestamp}" 
                             alt="{altText} - {index + 1}" 
                             class="media-img interactive-gif" 
+                            loading="lazy"
                         />
                     </button>
                 {/if}

@@ -98,6 +98,7 @@
                         src={image} 
                         alt="{altText} - {index + 1}" 
                         class="media-img" 
+                        loading="lazy"
                         transition:fade={{ duration: 400 }}
                     />
                 {/if}

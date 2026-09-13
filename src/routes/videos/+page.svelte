@@ -1,7 +1,6 @@
 <script lang="ts">
   import * as m from '$lib/paraglide/messages.js';
   import { getLocale } from '$lib/paraglide/runtime';
-  import VideoCard from '$lib/components/VideoCard.svelte';
   import {
     channel,
     fetchedAt,
@@ -12,27 +11,27 @@
     videos,
     type Video
   } from '$lib/youtube';
+  import { buildTimeline, milestoneCount, phaseLabels } from '$lib/timeline';
 
-  let selected: Video | null = videos[0] ?? null;
-  let playing = false;
-  let playerRef: HTMLElement;
+  const months = buildTimeline(videos);
 
   $: locale = getLocale();
-  $: selectedViews = selected ? formatViews(selected.views, locale) : null;
 
-  // maxresdefault bestaat niet altijd; val dan terug op de feed-thumbnail.
-  let heroFailed = false;
-  $: selected, (heroFailed = false);
-  $: heroThumb = selected ? (heroFailed ? selected.thumbnailFallback : selected.thumbnail) : '';
+  // Er speelt er hooguit één tegelijk: de vorige player verdwijnt uit de DOM,
+  // dus nooit twee video's door elkaar en pas een YouTube-request na een klik.
+  let playingId: string | null = null;
 
-  function play(video: Video) {
-    selected = video;
-    playing = true;
-  }
+  // maxresdefault bestaat niet voor elke video; per video terugvallen op de
+  // thumbnail uit de feed.
+  let failed: Record<string, boolean> = {};
+  const thumb = (video: Video) => (failed[video.id] ? video.thumbnailFallback : video.thumbnail);
+  const markFailed = (id: string) => (failed = { ...failed, [id]: true });
 
-  function selectFromGrid(video: Video) {
-    play(video);
-    playerRef?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  function formatMonth(iso: string, current: string): string {
+    return new Intl.DateTimeFormat(current === 'nl' ? 'nl-NL' : 'en-GB', {
+      month: 'long',
+      year: 'numeric'
+    }).format(new Date(iso));
   }
 </script>
 
@@ -65,63 +64,131 @@
     </div>
   </header>
 
-  {#if selected}
-    <section class="player-section" bind:this={playerRef}>
-      <div class="player">
-        {#if playing}
-          <iframe
-            src={embedUrl(selected.id)}
-            title={selected.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        {:else}
-          <!-- Pas bij een klik laden we de YouTube-player: sneller én geen tracking vooraf. -->
-          <button class="poster" type="button" on:click={() => selected && play(selected)}>
-            <img
-              src={heroThumb}
-              alt={selected.title}
-              on:error={() => (heroFailed = true)}
-              on:load={(e) => isPlaceholderThumbnail(e.currentTarget) && (heroFailed = true)}
-            />
-            <span class="poster-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
-            </span>
-            <span class="sr-only">{m.videos_play_button({ title: selected.title })}</span>
-          </button>
-        {/if}
-      </div>
-
-      <div class="player-meta">
-        <h2>{selected.title}</h2>
-        <p class="meta-line">
-          <span>{formatDate(selected.published, locale)}</span>
-          {#if selectedViews}
-            <span class="dot" aria-hidden="true">•</span>
-            <span>{m.videos_views({ count: selectedViews })}</span>
-          {/if}
-        </p>
-        {#if selected.description}
-          <p class="description">{selected.description}</p>
-        {/if}
-        <a class="watch-link" href={selected.url} target="_blank" rel="noopener noreferrer">
-          {m.videos_watch_on_youtube()} &rarr;
-        </a>
-      </div>
-    </section>
-
+  {#if months.length}
     <section class="all-videos">
       <div class="section-head">
         <h2>{m.videos_all_title()}</h2>
         <p>{m.videos_all_subtitle()}</p>
+        <p class="counts">
+          {m.videos_counts({ videos: videos.length, milestones: milestoneCount })}
+        </p>
       </div>
 
-      <div class="video-grid">
-        {#each videos as video, i (video.id)}
-          <VideoCard {video} latest={i === 0} onSelect={selectFromGrid} />
+      <ol class="timeline">
+        <li class="marker">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="marker-label">{m.timeline_now_label()}</span>
+        </li>
+
+        {#each months as month (month.key)}
+          <li class="month">
+            <span class="dot month-dot" aria-hidden="true"></span>
+            <h3>{formatMonth(month.date, locale)}</h3>
+          </li>
+
+          {#each month.entries as entry (entry.video.id)}
+            {@const video = entry.video}
+            {#if entry.milestone}
+              <li class="entry milestone" id={entry.milestone.key}>
+                <span class="dot big" aria-hidden="true"></span>
+
+                <article class="card">
+                  <div class="frame">
+                    {#if playingId === video.id}
+                      <iframe
+                        src={embedUrl(video.id)}
+                        title={video.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    {:else}
+                      <button class="poster" type="button" on:click={() => (playingId = video.id)}>
+                        <img
+                          src={thumb(video)}
+                          alt={entry.milestone.title()}
+                          loading="lazy"
+                          on:error={() => markFailed(video.id)}
+                          on:load={(e) =>
+                            isPlaceholderThumbnail(e.currentTarget) && markFailed(video.id)}
+                        />
+                        <span class="play" aria-hidden="true">
+                          <svg viewBox="0 0 24 24" fill="currentColor"
+                            ><path d="M8 5v14l11-7z" /></svg
+                          >
+                        </span>
+                        <span class="sr-only">
+                          {m.videos_play_button({ title: entry.milestone.title() })}
+                        </span>
+                      </button>
+                    {/if}
+                  </div>
+
+                  <div class="body">
+                    <p class="meta">
+                      <span class="phase phase-{entry.milestone.phase}">
+                        {phaseLabels[entry.milestone.phase]()}
+                      </span>
+                      <span>{formatDate(video.published, locale)}</span>
+                    </p>
+
+                    <h4>{entry.milestone.title()}</h4>
+                    <p class="story">{entry.milestone.body()}</p>
+
+                    <a class="watch" href={video.url} target="_blank" rel="noopener noreferrer">
+                      {m.timeline_watch()} &rarr;
+                    </a>
+                  </div>
+                </article>
+              </li>
+            {:else}
+              <li class="entry update">
+                <span class="dot" aria-hidden="true"></span>
+
+                {#if playingId === video.id}
+                  <div class="frame update-frame">
+                    <iframe
+                      src={embedUrl(video.id)}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                {:else}
+                  <button class="row" type="button" on:click={() => (playingId = video.id)}>
+                    <span class="row-thumb">
+                      <img
+                        src={thumb(video)}
+                        alt=""
+                        loading="lazy"
+                        on:error={() => markFailed(video.id)}
+                        on:load={(e) =>
+                          isPlaceholderThumbnail(e.currentTarget) && markFailed(video.id)}
+                      />
+                      <span class="play small" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="currentColor"
+                          ><path d="M8 5v14l11-7z" /></svg
+                        >
+                      </span>
+                    </span>
+
+                    <span class="row-text">
+                      <span class="row-date">{formatDate(video.published, locale)}</span>
+                      <span class="row-title">{video.title}</span>
+                    </span>
+                  </button>
+                {/if}
+              </li>
+            {/if}
+          {/each}
         {/each}
-      </div>
+
+        <li class="marker">
+          <span class="dot start" aria-hidden="true"></span>
+          <span class="marker-label">{m.timeline_start_label()}</span>
+        </li>
+      </ol>
 
       <p class="updated">
         {m.videos_last_updated({ date: formatDate(fetchedAt, locale) })}
@@ -202,7 +269,7 @@
   }
 
   .lead {
-    max-width: 640px;
+    max-width: 660px;
     margin: 0;
     font-size: clamp(1rem, 3.5vw, 1.15rem);
     line-height: 1.6;
@@ -249,25 +316,151 @@
     transform: translateY(-2px);
   }
 
-  /* ---------- Speler ---------- */
+  /* ---------- Kop boven de tijdlijn ---------- */
 
-  .player-section {
-    display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-    gap: 2rem;
-    align-items: start;
+  .section-head {
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
 
-  .player {
+  .section-head h2 {
+    font-family: 'Bebas Kai', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #386938;
+    margin: 0 0 0.5rem;
+  }
+
+  .section-head p {
+    margin: 0 auto;
+    max-width: 620px;
+    color: oklch(45% 0.02 145);
+    line-height: 1.6;
+  }
+
+  .counts {
+    margin-top: 0.75rem !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---------- De tijdlijn ---------- */
+
+  .timeline {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 720px;
     position: relative;
-    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  /* De lijn loopt links langs alles heen. */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    width: 3px;
+    background: linear-gradient(
+      to bottom,
+      oklch(65% 0.16 75) 0%,
+      oklch(85% 0.01 145) 6%,
+      oklch(85% 0.01 145) 94%,
+      #386938 100%
+    );
+    border-radius: 2px;
+  }
+
+  .marker,
+  .month,
+  .entry {
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  /* Bolletje op de lijn. */
+  .dot {
+    position: absolute;
+    left: 9px;
+    top: 0.55rem;
+    width: 13px;
+    height: 13px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid oklch(70% 0.02 145);
+    box-shadow: 0 0 0 4px #f9fbf9;
+    z-index: 2;
+  }
+
+  /* Mijlpalen krijgen een dikker, groen bolletje. */
+  .dot.big {
+    top: 1.4rem;
+    width: 19px;
+    height: 19px;
+    border: 5px solid #386938;
+  }
+
+  .month-dot {
+    top: 0.7rem;
+    border-color: oklch(65% 0.16 75); /* Deep Amber */
+  }
+
+  .dot.start {
+    background: #386938;
+    border-color: #386938;
+  }
+
+  /* ---------- Maandkop ---------- */
+
+  .month {
+    margin-top: 1.75rem;
+  }
+
+  .month:first-of-type {
+    margin-top: 0;
+  }
+
+  .month h3 {
+    margin: 0;
+    font-family: 'Bebas Kai', sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: oklch(45% 0.02 145);
+  }
+
+  /* ---------- Mijlpaal-kaart ---------- */
+
+  .card {
+    background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
-    background: oklch(22% 0.02 145); /* Deep Ink */
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid oklch(65% 0.16 75); /* Deep Amber */
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
   }
 
-  .player :global(iframe) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.11);
+  }
+
+  .frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: oklch(22% 0.02 145); /* Deep Ink */
+  }
+
+  .frame :global(iframe) {
     width: 100%;
     height: 100%;
     border: 0;
@@ -292,15 +485,15 @@
   }
 
   .poster:hover img {
-    transform: scale(1.03);
+    transform: scale(1.04);
   }
 
-  .poster-play {
+  .play {
     position: absolute;
     inset: 0;
     margin: auto;
-    width: 88px;
-    height: 88px;
+    width: 62px;
+    height: 62px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,109 +505,186 @@
       transform 0.25s ease;
   }
 
-  .poster-play svg {
-    width: 44px;
-    height: 44px;
-    margin-left: 5px;
+  .play svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
   }
 
-  .poster:hover .poster-play,
-  .poster:focus-visible .poster-play {
-    background: #ff0000;
+  .poster:hover .play,
+  .poster:focus-visible .play {
+    background: #ff0000; /* YouTube rood */
     transform: scale(1.08);
   }
 
-  .poster:focus-visible {
+  .poster:focus-visible,
+  .row:focus-visible {
     outline: 3px solid oklch(65% 0.16 75);
     outline-offset: -3px;
   }
 
-  .player-meta {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 1.75rem;
-    border-left: 5px solid oklch(65% 0.16 75); /* Deep Amber */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  .body {
+    padding: 1.4rem 1.6rem 1.6rem;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.6rem;
   }
 
-  .player-meta h2 {
-    margin: 0;
-    font-size: 1.35rem;
-    line-height: 1.35;
-    color: #386938;
-  }
-
-  .meta-line {
+  .meta {
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.75rem;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: oklch(45% 0.02 145);
   }
 
-  .dot {
-    opacity: 0.6;
+  .phase {
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: oklch(45% 0.02 145);
   }
 
-  .description {
+  .phase-drive {
+    background: oklch(50% 0.13 245); /* blauw: elektronica en aandrijving */
+  }
+
+  .phase-vision {
+    background: oklch(45% 0.16 300); /* paars: computervisie */
+  }
+
+  .phase-autonomy {
+    background: #386938; /* Emerald Green: autonoom rijden */
+  }
+
+  .phase-work {
+    background: oklch(60% 0.16 75); /* Deep Amber: werktuigen */
+  }
+
+  .body h4 {
     margin: 0;
-    line-height: 1.6;
-    white-space: pre-line;
-
-    /* Lange beschrijvingen inkorten zodat de kaart compact blijft. */
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    font-family: 'Bebas Kai', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #386938;
   }
 
-  .watch-link {
-    margin-top: auto;
+  .story {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .watch {
+    margin-top: 0.25rem;
+    align-self: flex-start;
     color: #386938;
     font-weight: bold;
     text-decoration: none;
-    align-self: flex-start;
   }
 
-  .watch-link:hover {
+  .watch:hover {
     color: oklch(65% 0.16 75);
   }
 
-  /* ---------- Overzicht ---------- */
+  /* ---------- Gewone update: compacte regel ---------- */
 
-  .section-head {
-    text-align: center;
-    margin-bottom: 2rem;
+  .row {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
   }
 
-  .section-head h2 {
-    font-family: 'Bebas Kai', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #386938;
-    margin: 0 0 0.5rem;
+  .row:hover {
+    background: #ffffff;
   }
 
-  .section-head p {
-    margin: 0;
+  .row-thumb {
+    position: relative;
+    flex: 0 0 132px;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    background: oklch(22% 0.02 145);
+  }
+
+  .row-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .play.small {
+    width: 34px;
+    height: 34px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .play.small svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+  }
+
+  .row:hover .play.small {
+    background: #ff0000;
+  }
+
+  .row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  .row-date {
+    font-size: 0.8rem;
     color: oklch(45% 0.02 145);
   }
 
-  .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 1.75rem;
+  .row-title {
+    font-weight: 600;
+    line-height: 1.35;
+    color: oklch(22% 0.02 145);
+  }
+
+  .row:hover .row-title {
+    color: #386938;
+  }
+
+  /* Een afgespeelde update krijgt dezelfde speler als een mijlpaal. */
+  .update-frame {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* ---------- Begin- en eindmarkering ---------- */
+
+  .marker-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: oklch(45% 0.02 145);
   }
 
   .updated {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     text-align: center;
     font-size: 0.85rem;
     color: oklch(45% 0.02 145);
@@ -487,25 +757,33 @@
 
   /* ---------- Responsief ---------- */
 
-  @media (max-width: 900px) {
-    .player-section {
-      grid-template-columns: 1fr;
-    }
-  }
-
   @media (max-width: 768px) {
     .page {
       gap: 3rem;
     }
 
-    .poster-play {
-      width: 64px;
-      height: 64px;
+    .marker,
+    .month,
+    .entry {
+      padding-left: 2.25rem;
     }
 
-    .poster-play svg {
-      width: 32px;
-      height: 32px;
+    .row-thumb {
+      flex-basis: 104px;
+    }
+
+    .row-title {
+      font-size: 0.95rem;
+    }
+
+    .play {
+      width: 48px;
+      height: 48px;
+    }
+
+    .play svg {
+      width: 24px;
+      height: 24px;
     }
 
     .btn-youtube,
@@ -517,8 +795,9 @@
   @media (prefers-reduced-motion: reduce) {
     .btn-youtube:hover,
     .btn-ghost:hover,
+    .card:hover,
     .poster:hover img,
-    .poster:hover .poster-play {
+    .poster:hover .play {
       transform: none;
     }
   }

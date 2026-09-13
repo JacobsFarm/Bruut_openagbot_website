@@ -10,6 +10,7 @@
   "func_cat_6_title": "Energie & Aandrijving",
   "func_cat_7_title": "Transport & Diversen",
   "func_cat_8_title": "Meten & Sensoren",
+  "func_cat_9_title": "Samenwerking & Zwerminzet",
 
   "func_1_title": "(Rubber) Schuifblad / Egaliseerschuif",
   "func_1_desc": "Vooraan of midden tussen de voor- en achterwielen gemonteerd. Inzetbaar als grader om terrein te egaliseren, om voer en gras in de stal aan te schuiven of om silo's te reinigen.",
@@ -85,5 +86,14 @@
   "func_33_title": "Grasmeter / Gewasscanner",
   "func_33_desc": "Meten van gras- en gewashoogte en -gezondheid om taakkaarten voor stikstof of fosfaat te maken.",
   "func_34_title": "Bodemverdichtingsmeter",
-  "func_34_desc": "Meten en in kaart brengen van de bodemdichtheid op specifieke datapunten."
+  "func_34_desc": "Meten en in kaart brengen van de bodemdichtheid op specifieke datapunten.",
+
+  "func_35_title": "NIR-sensor (NDVI & Gewasstand)",
+  "func_35_desc": "Nabij-infraroodsensor die rijdend de NDVI van het gewas meet. Uit het verschil tussen het teruggekaatste rode en nabij-infrarode licht leest de robot de biomassa, bodembedekking en vitaliteit van het gewas af en bouwt daarmee live taakkaarten voor plaatsspecifiek bemesten. Doordat de sensor vlak over het gewas beweegt in plaats van vanaf een satelliet mee te kijken, blijven de metingen betrouwbaar onder bewolking en worden ook kleine plekken en gaten geregistreerd.",
+
+  "func_36_title": "Dronecombinatie",
+  "func_36_desc": "De robot werkt samen met een drone als mobiel basisstation. De drone vertrekt vanaf het platform, brengt het perceel vanuit de lucht in kaart en geeft de beelden direct door aan de robot, die er een rij- en behandelplan van maakt. De drone laadt en wisselt accu's op de robot, zodat het duo een hele dag afwisselend kan scouten en werken zonder dat er iemand het land op hoeft.",
+
+  "func_37_title": "Zwerminzet (Meerdere Robots per Veld)",
+  "func_37_desc": "Meerdere Bruut-units bewerken hetzelfde veld als één zwerm. De taak wordt in vakken opgedeeld, de robots verdelen de werkgangen onderling en houden elkaar op de hoogte van positie, voortgang en accustand, zodat ze elkaar niet overlappen of kruisen. De capaciteit schaalt eenvoudig mee met het aantal units in plaats van met de machinegrootte, het werk gaat door als één unit uitvalt en de lichte platforms houden de bodemdruk laag."
 }
