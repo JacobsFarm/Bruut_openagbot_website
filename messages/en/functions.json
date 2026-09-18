@@ -10,7 +10,7 @@
   "func_cat_6_title": "Power & Drive",
   "func_cat_7_title": "Transport & General",
   "func_cat_8_title": "Measuring & Sensors",
-  "func_cat_9_title": "Cooperation & Swarm Operation",
+  "func_cat_9_title": "Extras",
 
   "func_1_title": "(Rubber) Push Blade / Grader Blade",
   "func_1_desc": "Front-mounted or mid-mounted between the front and rear wheels. Usable as a grader for leveling terrain, for pushing feed and grass back in the stable, or for cleaning silos.",
@@ -95,5 +95,17 @@
   "func_36_desc": "The robot works together with a drone as a mobile base station. The drone flies out from the platform, maps the plot from above and passes its imagery straight to the robot, which converts it into a driving and treatment plan. The drone charges and swaps batteries on the robot, so the pair can keep scouting and working alternately for a full day without anyone coming out to the field.",
 
   "func_37_title": "Swarm Operation (Multiple Robots per Field)",
-  "func_37_desc": "Several Bruut units work the same field as one swarm. The job is split into sections, the robots divide the passes among themselves and keep each other informed of position, progress and battery state, so they never overlap or cross. Capacity scales simply with the number of units instead of with machine size, work continues when one unit drops out, and the light platforms keep soil compaction low."
+  "func_37_desc": "Several Bruut units work the same field as one swarm. The job is split into sections, the robots divide the passes among themselves and keep each other informed of position, progress and battery state, so they never overlap or cross. Capacity scales simply with the number of units instead of with machine size, work continues when one unit drops out, and the light platforms keep soil compaction low.",
+
+  "func_38_title": "Liquid Fertiliser (RENURE) Application",
+  "func_38_desc": "Dosing unit for liquid fertiliser, built for RENURE: mineral nitrogen recovered from animal manure, which the EU allows as a replacement for fossil fertiliser. This closes the nutrient cycle on the farm or in the region and reduces the need for fertiliser whose production uses a lot of natural gas. The robot works from task maps made by the grass meter, NIR sensor or drone and adjusts the rate per square metre. Where the crop lags behind it gets more, and where there is already enough nitrogen nothing is applied. The liquid goes into the sward just above the ground, with no mist or drift, and a light robot can drive when the land is too wet for a tractor with a tank. Every application is logged with its GPS position, which makes fertiliser record-keeping easier.",
+
+  "func_39_title": "Trailer with Tent (Mobile Base Station)",
+  "func_39_desc": "Trailer with a pop-up tent that serves as a mobile shed for the robot. The trailer carries the robot by road from field to field, or stays parked at the edge of the plot so the robot can spend the night there, dry and out of sight. From the tent the robot starts its task remotely, so the farmer does not have to drive out and unload it first.",
+  "func_40_title": "Charging Station (Automatic Docking)",
+  "func_40_desc": "Fixed charging point at the edge of the field, like the one a robotic lawn mower uses. When the battery runs low, the robot drives to the station by itself, docks, recharges and then carries on from where it left off. Large plots are finished over several rounds without anyone having to fetch the robot or plug it in.",
+  "func_41_title": "Cycly: Cyclic Autonomous Weed Control",
+  "func_41_desc": "In Cycly mode the robot stays on one plot for a longer period. Every few days it runs a weeder harrow over the field to remove weeds at the seedling stage, before they can take hold. It uses the weather forecast to pick the dry spells between showers, so it does not smear the soil. In between it recharges at the charging station or in the trailer. Through the cameras the farmer keeps an eye on the crop and the robot remotely, without having to go out to the field.",
+  "func_42_title": "Automatic Refilling at the Headland",
+  "func_42_desc": "When spreading fertiliser or sowing, the robot drives to a supply hopper on the headland once its bin is empty and refills automatically. It then returns to the spot where it stopped and continues the pass. This way a small, light platform can still cover a large plot, with nobody needed on site to top it up."
 }

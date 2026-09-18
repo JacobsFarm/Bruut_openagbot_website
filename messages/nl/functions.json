@@ -10,7 +10,7 @@
   "func_cat_6_title": "Energie & Aandrijving",
   "func_cat_7_title": "Transport & Diversen",
   "func_cat_8_title": "Meten & Sensoren",
-  "func_cat_9_title": "Samenwerking & Zwerminzet",
+  "func_cat_9_title": "Extra's",
 
   "func_1_title": "(Rubber) Schuifblad / Egaliseerschuif",
   "func_1_desc": "Vooraan of midden tussen de voor- en achterwielen gemonteerd. Inzetbaar als grader om terrein te egaliseren, om voer en gras in de stal aan te schuiven of om silo's te reinigen.",
@@ -95,5 +95,17 @@
   "func_36_desc": "De robot werkt samen met een drone als mobiel basisstation. De drone vertrekt vanaf het platform, brengt het perceel vanuit de lucht in kaart en geeft de beelden direct door aan de robot, die er een rij- en behandelplan van maakt. De drone laadt en wisselt accu's op de robot, zodat het duo een hele dag afwisselend kan scouten en werken zonder dat er iemand het land op hoeft.",
 
   "func_37_title": "Zwerminzet (Meerdere Robots per Veld)",
-  "func_37_desc": "Meerdere Bruut-units bewerken hetzelfde veld als één zwerm. De taak wordt in vakken opgedeeld, de robots verdelen de werkgangen onderling en houden elkaar op de hoogte van positie, voortgang en accustand, zodat ze elkaar niet overlappen of kruisen. De capaciteit schaalt eenvoudig mee met het aantal units in plaats van met de machinegrootte, het werk gaat door als één unit uitvalt en de lichte platforms houden de bodemdruk laag."
+  "func_37_desc": "Meerdere Bruut-units bewerken hetzelfde veld als één zwerm. De taak wordt in vakken opgedeeld, de robots verdelen de werkgangen onderling en houden elkaar op de hoogte van positie, voortgang en accustand, zodat ze elkaar niet overlappen of kruisen. De capaciteit schaalt eenvoudig mee met het aantal units in plaats van met de machinegrootte, het werk gaat door als één unit uitvalt en de lichte platforms houden de bodemdruk laag.",
+
+  "func_38_title": "Vloeibare Kunstmest (RENURE) Toedienen",
+  "func_38_desc": "Doseerunit voor vloeibare kunstmest, gemaakt voor RENURE: minerale stikstof die uit dierlijke mest wordt teruggewonnen en die de EU toestaat als vervanger van fossiele kunstmest. Zo sluit de kringloop op het eigen bedrijf of in de regio, en is er minder kunstmest nodig waarvan de productie veel aardgas kost. De robot werkt met taakkaarten van de grasmeter, NIR-sensor of drone en past per vierkante meter de dosis aan. Waar het gewas achterblijft krijgt het meer, waar al genoeg stikstof zit wordt niets toegediend. De vloeistof gaat vlak boven de grond de zode in, zonder nevel of drift, en een lichte robot kan ook rijden wanneer het land te nat is voor een trekker met tank. Elke gift wordt vastgelegd met GPS-locatie, wat de bemestingsadministratie eenvoudiger maakt.",
+
+  "func_39_title": "Trailer met Tent (Mobiel Basisstation)",
+  "func_39_desc": "Aanhanger met opzetbare tent die dient als rijdende schuur voor de robot. De trailer brengt de robot over de weg van veld naar veld, of blijft aan de rand van het perceel staan zodat de robot daar kan overnachten, droog en uit het zicht. Vanuit de tent start de robot op afstand zijn taak, zonder dat de boer eerst naar het land hoeft om hem uit te laden.",
+  "func_40_title": "Oplaadstation (Automatisch Docken)",
+  "func_40_desc": "Vast oplaadpunt aan de rand van het veld, zoals bij een robotmaaier voor het gazon. Loopt de accu leeg, dan rijdt de robot zelf naar het station, dockt, laadt op en gaat daarna verder op de plek waar hij gebleven was. Grote percelen worden zo in meerdere rondes afgewerkt zonder dat iemand de robot hoeft op te halen of aan te sluiten.",
+  "func_41_title": "Cycly: Cyclisch Autonoom Onkruidvrij Houden",
+  "func_41_desc": "In de Cycly-modus blijft de robot voor langere tijd op één perceel. Om de zoveel dagen rijdt hij met de wiedeg of onkruideg over het veld om onkruid in het kiemstadium te verwijderen, voordat het zich kan vestigen. Aan de hand van de weersverwachting kiest hij zelf de droge periodes tussen de buien, zodat hij de grond niet versmeert. Tussendoor laadt hij op bij het oplaadstation of in de trailer. Via de camera's houdt de boer op afstand het gewas en de robot in de gaten, zonder zelf het land op te hoeven.",
+  "func_42_title": "Automatisch Bijvullen op de Kopakker",
+  "func_42_desc": "Bij het strooien van kunstmest of het zaaien rijdt de robot met een lege bak naar een voorraadbak op de kopakker en vult zich daar automatisch bij. Daarna rijdt hij terug naar de plek waar hij stopte en gaat hij verder met de werkgang. Zo kan een klein, licht platform toch een groot perceel afwerken, zonder dat er iemand bij hoeft te staan om bij te vullen."
 }

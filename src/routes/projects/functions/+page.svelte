@@ -10,7 +10,7 @@
     import imgSicklebar from '$lib/assets/functions_sicklebar_mower.webp';
     import imgSpotspray from '$lib/assets/functions_spotspray.webp';
     import imgSpotsprayField from '$lib/assets/functions_spotspray_field.webp';
-    import imgWeeder from '$lib/assets/functions_weeder.jpg';
+    import imgWeeder from '$lib/assets/functions_weeder.webp';
     import imgGrassMeter from '$lib/assets/functions_grass_meter.webp';
     import imgFeedpusher from '$lib/assets/function_feedpsuher.webp';
     import imgFertilizer from '$lib/assets/function_fertilize_spreader.webp';
@@ -22,6 +22,7 @@
     import imgStraw from '$lib/assets/function_straw_spreader.webp';
     import imgHitch from '$lib/assets/function_tow_hitch.webp';
     import imgDumper from '$lib/assets/function_dumper.webp';
+    import imgLiquidFertilizer from '$lib/assets/function_liquid_fertilizer.webp';
 
     // Functionaliteiten gegroepeerd per categorie.
     // Zonder eigen afbeelding wordt de fallback robotbuild.webp gebruikt.
@@ -52,7 +53,8 @@
             items: [
                 { title: m.func_12_title, desc: m.func_12_desc, images: [fallbackImg] },
                 { title: m.func_13_title, desc: m.func_13_desc, images: [imgFertilizer] },
-                { title: m.func_14_title, desc: m.func_14_desc, images: [imgLimeSpreader] }
+                { title: m.func_14_title, desc: m.func_14_desc, images: [imgLimeSpreader] },
+                { title: m.func_38_title, desc: m.func_38_desc, images: [imgLiquidFertilizer] }
             ]
         },
         {
@@ -105,7 +107,11 @@
             title: m.func_cat_9_title,
             items: [
                 { title: m.func_36_title, desc: m.func_36_desc, images: [fallbackImg] },
-                { title: m.func_37_title, desc: m.func_37_desc, images: [fallbackImg] }
+                { title: m.func_37_title, desc: m.func_37_desc, images: [fallbackImg] },
+                { title: m.func_39_title, desc: m.func_39_desc, images: [fallbackImg] },
+                { title: m.func_40_title, desc: m.func_40_desc, images: [fallbackImg] },
+                { title: m.func_41_title, desc: m.func_41_desc, images: [fallbackImg] },
+                { title: m.func_42_title, desc: m.func_42_desc, images: [fallbackImg] }
             ]
         }
     ];
