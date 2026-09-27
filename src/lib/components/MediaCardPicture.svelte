@@ -221,6 +221,8 @@
         }
         .media-visual { width: 100%; }
         .media-text { padding: 25px; }
-        .carousel-container { min-height: 250px; }
+        /* Vaste verhouding i.p.v. een platte strook, zodat de cartoons
+           (en foto's) niet onder- en bovenaan worden weggesneden. */
+        .carousel-container { min-height: 0; aspect-ratio: 16 / 10; }
     }
 </style>

@@ -2,8 +2,148 @@
   "channelId": "UCYW2RxlhWwQdn4d33I-OmGg",
   "channelTitle": "Agbot bruut",
   "channelUrl": "https://www.youtube.com/@opensource_agbot",
-  "fetchedAt": "2026-09-13T12:06:08.377Z",
+  "fetchedAt": "2026-09-27T21:25:40.368Z",
   "videos": [
+    {
+      "id": "6yiq7W1ruiA",
+      "title": "VESC controllers installaren, toch nog weer DC \"puntlassen\" fout",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=6yiq7W1ruiA",
+      "thumbnail": "https://i.ytimg.com/vi/6yiq7W1ruiA/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/6yiq7W1ruiA/hqdefault.jpg",
+      "published": "2026-09-27T06:00:15+00:00",
+      "views": 19
+    },
+    {
+      "id": "kow_wTptKBU",
+      "title": "Allebei de hubmotoren draaien over CANbus met de VESC controllers | Agbot bruut",
+      "description": "Allebei de hubmotoren draaien over CANbus met de VESC controllers | Agbot bruut \n\nDit betekend dat allebei hubmotoren veel precieser kan aansturen, nu heen en weer kan praten wat de oude stock controllers niet deden. \nHele grote verbetering en praten nu via canbus",
+      "url": "https://www.youtube.com/watch?v=kow_wTptKBU",
+      "thumbnail": "https://i.ytimg.com/vi/kow_wTptKBU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/kow_wTptKBU/hqdefault.jpg",
+      "published": "2026-09-26T06:00:33+00:00",
+      "views": 20
+    },
+    {
+      "id": "RdwZLaisAlk",
+      "title": "met de openagbot de koeien waterbak verplaatsen",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=RdwZLaisAlk",
+      "thumbnail": "https://i.ytimg.com/vi/RdwZLaisAlk/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/RdwZLaisAlk/hqdefault.jpg",
+      "published": "2026-09-25T06:00:13+00:00",
+      "views": 124
+    },
+    {
+      "id": "CMPRAg-yp3A",
+      "title": "Een aanhanger trekken met de Veldrobot openagbot Bruut",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=CMPRAg-yp3A",
+      "thumbnail": "https://i.ytimg.com/vi/CMPRAg-yp3A/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/CMPRAg-yp3A/hqdefault.jpg",
+      "published": "2026-09-24T06:00:16+00:00",
+      "views": 88
+    },
+    {
+      "id": "K190CLXsmxc",
+      "title": "openagbot AB lijnen rijden met versterkte zwenkwielen | openagbot Bruut",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=K190CLXsmxc",
+      "thumbnail": "https://i.ytimg.com/vi/K190CLXsmxc/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/K190CLXsmxc/hqdefault.jpg",
+      "published": "2026-09-23T06:00:28+00:00",
+      "views": 16
+    },
+    {
+      "id": "sk5x69CTNTw",
+      "title": "nieuwe voorwiel draai mechanisme testen",
+      "description": "Het nieuwe voorwiel draai mechanisme testen",
+      "url": "https://www.youtube.com/watch?v=sk5x69CTNTw",
+      "thumbnail": "https://i.ytimg.com/vi/sk5x69CTNTw/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/sk5x69CTNTw/hqdefault.jpg",
+      "published": "2026-09-22T06:00:39+00:00",
+      "views": 50
+    },
+    {
+      "id": "5MKM7fcS47E",
+      "title": "Nieuwe voorwiel draai mechanisme monteren",
+      "description": "Nieuwe voorwiel draai mechanisme monteren",
+      "url": "https://www.youtube.com/watch?v=5MKM7fcS47E",
+      "thumbnail": "https://i.ytimg.com/vi/5MKM7fcS47E/maxresdefault.jpg",
+      "thumbnailFallback": "https://i2.ytimg.com/vi/5MKM7fcS47E/hqdefault.jpg",
+      "published": "2026-09-21T06:00:38+00:00",
+      "views": 102
+    },
+    {
+      "id": "2jP3d6Wv7n4",
+      "title": "Eerste rondjes op de Canbus connectie met de VESC",
+      "description": "Eerste rondjes op de Canbus connectie met de VESC met een succesvolle koppeling met de VESC en een linux laptop straks naar de jetson",
+      "url": "https://www.youtube.com/watch?v=2jP3d6Wv7n4",
+      "thumbnail": "https://i.ytimg.com/vi/2jP3d6Wv7n4/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/2jP3d6Wv7n4/hqdefault.jpg",
+      "published": "2026-09-20T06:00:33+00:00",
+      "views": 111
+    },
+    {
+      "id": "1Ve-_vnAhKU",
+      "title": "VESC classic 100+ controller op de hubmotor | lange versie",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=1Ve-_vnAhKU",
+      "thumbnail": "https://i.ytimg.com/vi/1Ve-_vnAhKU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i2.ytimg.com/vi/1Ve-_vnAhKU/hqdefault.jpg",
+      "published": "2026-09-19T06:00:09+00:00",
+      "views": 55
+    },
+    {
+      "id": "_u4l48hMVNU",
+      "title": "VESC classic 100+ controller op de hubmotor | verkort versie",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=_u4l48hMVNU",
+      "thumbnail": "https://i.ytimg.com/vi/_u4l48hMVNU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/_u4l48hMVNU/hqdefault.jpg",
+      "published": "2026-09-18T06:00:19+00:00",
+      "views": 64
+    },
+    {
+      "id": "2y6FSY8FY2Y",
+      "title": "Gratis landelijk RTK-gps-netwerk aanleggen: mede impuls voor landbouw sector",
+      "description": "Een neveneffect van openagbot bruut zou worden dat door gebruikers van de Veldrobot rtk antennes gaat aanleggen om voor de eigen robot RTK 1 cm nauwkeurig gps signaal zo  meer antennes in Nederland krijgen en zo een dekend signaal door heel nederland wordt aagelegd waar veel meer projecten / precisielandbouw mogelijkheden ontstaan zonder gebruik te maken van commercieele licentie/abbonementen. Hierin is sharing is caring",
+      "url": "https://www.youtube.com/watch?v=2y6FSY8FY2Y",
+      "thumbnail": "https://i.ytimg.com/vi/2y6FSY8FY2Y/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/2y6FSY8FY2Y/hqdefault.jpg",
+      "published": "2026-09-17T08:26:43+00:00",
+      "views": 47
+    },
+    {
+      "id": "OBwbb9hbVbA",
+      "title": "VESC classic 100V unboxing",
+      "description": "De nieuwe speed controller voor robot bruut",
+      "url": "https://www.youtube.com/watch?v=OBwbb9hbVbA",
+      "thumbnail": "https://i.ytimg.com/vi/OBwbb9hbVbA/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/OBwbb9hbVbA/hqdefault.jpg",
+      "published": "2026-09-16T06:00:22+00:00",
+      "views": 66
+    },
+    {
+      "id": "WVSnZWGvT5s",
+      "title": "standaard controller zijn een doodeinde moeten naar universele speed Controllers",
+      "description": "standaard controller zijn een doodeinde moeten naar universele speed Controllers",
+      "url": "https://www.youtube.com/watch?v=WVSnZWGvT5s",
+      "thumbnail": "https://i.ytimg.com/vi/WVSnZWGvT5s/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/WVSnZWGvT5s/hqdefault.jpg",
+      "published": "2026-09-15T06:00:18+00:00",
+      "views": 97
+    },
+    {
+      "id": "0Yabt-8nH7U",
+      "title": "zwenkwiel weer geen succes, moet beter en soepeler",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=0Yabt-8nH7U",
+      "thumbnail": "https://i.ytimg.com/vi/0Yabt-8nH7U/maxresdefault.jpg",
+      "thumbnailFallback": "https://i1.ytimg.com/vi/0Yabt-8nH7U/hqdefault.jpg",
+      "published": "2026-09-14T06:00:32+00:00",
+      "views": 105
+    },
     {
       "id": "JFSSVHmUz9o",
       "title": "Drone video voor op de website ;)",
@@ -12,7 +152,7 @@
       "thumbnail": "https://i.ytimg.com/vi/JFSSVHmUz9o/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/JFSSVHmUz9o/hqdefault.jpg",
       "published": "2026-09-13T11:29:59+00:00",
-      "views": 1
+      "views": 19
     },
     {
       "id": "slNxeRu5yBM",

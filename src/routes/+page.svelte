@@ -22,6 +22,7 @@
     import imgGoal from '$lib/assets/goal_community_driven.webp';
     import imgFunctions from '$lib/assets/front_page_functionality.webp';
     import imgScad from '$lib/assets/front_page_intro_picture.webp';
+    import imgConfigurator from '$lib/assets/configurator_card.svg';
 
     const statsValue1 = tweened(0, { duration: 2000, easing: cubicOut });
     const statsValue2 = tweened(0, { duration: 2000, easing: cubicOut });
@@ -71,6 +72,12 @@
             link="/projects/functions"
             desc={m.front_page_project_functions_desc()}
             logo={imgFunctions}
+        />
+        <ProjectCard
+            title={m.configurator_card_title()}
+            link="/projects/configurator"
+            desc={m.configurator_card_desc()}
+            logo={imgConfigurator}
         />
     </section>
 
@@ -232,7 +239,7 @@
     .projects-grid {
         display: grid;
         gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
     }
 
     .action-container {

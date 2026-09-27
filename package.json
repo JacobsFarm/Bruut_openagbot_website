@@ -6,6 +6,7 @@
 	"scripts": {
 		"merge-messages": "node merge-messages.js",
 		"fetch-youtube": "node scripts/fetch-youtube.mjs",
+		"cartoons": "node scripts/generate-function-cartoons.mjs",
 		"dev": "npm run merge-messages && npm run fetch-youtube && vite dev",
 		"build": "npm run merge-messages && npm run fetch-youtube && vite build",
 		"preview": "vite preview",

@@ -40,6 +40,7 @@
       </svg>
       {m.nav_videos()}
     </a>
+    <a href="{base}/projects/configurator" on:click={closeMenu}>{m.nav_configurator()}</a>
     <a href="{base}/about-us" on:click={closeMenu}>{m.nav_about()}</a>
 
     <a href="{base}/projects/robotbuild" class="mobile-only" on:click={closeMenu}>Robot Build</a>

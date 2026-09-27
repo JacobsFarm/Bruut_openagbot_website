@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -30 720 460" width="720" height="460">
+<!-- Gegenereerd door scripts/generate-function-cartoons.mjs (functie 26); niet met de hand bewerken. -->
+<style> svg { stroke-linecap: round; stroke-linejoin: round; } rect, circle, path, ellipse, polygon { stroke: #1f2a22; stroke-width: 3; } .ns, .hole { stroke: none !important; } .hole-dark { fill: #6f7a73; stroke: none; } .grass { fill: #7cb35b; stroke: none; } .ground-line { stroke: #4f8a3a; stroke-width: 4; } .soil { fill: #9b6b43; stroke: none; } .soil-line { stroke: #6e4a2c; stroke-width: 4; } .furrow { stroke: #7f5433; stroke-width: 3; } .floor { fill: #cfc6b4; stroke: none; } .floor-line { stroke: #a39a88; stroke-width: 4; } .plank { stroke: #b99c6c; stroke-width: 2.5; } .plank-rail { stroke: #a8865a; stroke-width: 10; } .sprout path { fill: #5aa447; stroke: #2f6b2a; stroke-width: 2; } .blade { fill: #5aa447; stroke: #2f6b2a; stroke-width: 2; } .weed { fill: #3f7d34; stroke: #1f4a1c; stroke-width: 2; } .crop path { fill: #6bb04f; stroke: #2f6b2a; stroke-width: 2.5; } .crop.small path { stroke-width: 1.5; } .cloud ellipse { fill: #ffffff; stroke: none; } .rain-cloud ellipse { fill: #c7d0cb; } .sun circle { fill: #f6c945; } .sun path { stroke: #e0a02c; stroke-width: 4; } .star { fill: #fff6c2; stroke: none; animation: twinkle 2.4s ease-in-out infinite; } .tire { fill: #33383a; } .tread { fill: none; stroke: #5d6663; stroke-dasharray: 7 6; stroke-width: 4; } .rim { fill: #dfe5df; } .hub { fill: #e0a02c; } .hub-inner { fill: #c07f14; } .bolt { fill: #fffdf5; stroke-width: 2; } .metal { fill: #b9c3bc; } .dark { fill: #2c3e2c; } .nut { fill: #7b857f; } .motor { fill: #2f9a9e; } .far { opacity: 0.55; } .beam-outline { fill: none; stroke: #1f2a22; stroke-width: 26; stroke-linecap: butt; } .beam { fill: none; stroke: #4a544e; stroke-width: 20; stroke-linecap: butt; } .beam-shine { fill: none; stroke: #6d7972; stroke-width: 3; stroke-linecap: butt; } .hole { fill: #c7cfc9; } .beam-end { fill: #4a544e; } .beam-end-hole { fill: #1f2a22; stroke: none; } .battery { fill: #f08a2c; } .led { fill: #6fcf6f; stroke-width: 2; } .handle { fill: none; stroke-width: 4; } .plus { fill: #4f8a3a; } .generator { fill: #f6c945; } .grille { stroke-width: 2.5; } .puff { fill: #e6eae7; stroke: #9aa39e; stroke-width: 2; } .spark { fill: none; stroke: #e0a02c; stroke-width: 3.5; animation: pulse 0.9s ease-in-out infinite; } .solar { fill: #2d4a7a; } .cells { fill: none; stroke: #8fb3e6; stroke-width: 1.8; } .box { fill: #386938; } .eye { fill: #ffffff; } .pupil { fill: #1f2a22; stroke: none; animation: look 5s ease-in-out infinite; } .mouth { fill: none; stroke-width: 3; } .blink { fill: #6fcf6f; animation: blink 1.6s steps(2, jump-none) infinite; } .dome { fill: #f4f6f4; } .seat { fill: #5b6360; } .skin { fill: #f2c7a0; } .knob { fill: #c0492b; } .lens { fill: #7fc4d6; } .cone { fill: rgba(246, 201, 69, 0.28); stroke: none; } .mist { fill: rgba(127, 196, 214, 0.75); stroke: none; animation: pulse 1.2s ease-in-out infinite; } .water { fill: none; stroke: #7fc4d6; stroke-width: 4; stroke-dasharray: 3 9; animation: flow 0.8s linear infinite; } .signal { fill: none; stroke: #2f9a9e; stroke-width: 3; animation: pulse 1.4s ease-in-out infinite; } .signal.s1 { animation-delay: 0.3s; } .signal.s2 { animation-delay: 0.6s; } .link { fill: none; stroke: #2f9a9e; stroke-width: 3; stroke-dasharray: 2 8; animation: flow 1s linear infinite; } .ray { fill: none; stroke-width: 3.5; } .ray.red { stroke: #c0492b; } .ray.nir { stroke: #8e44ad; } .ring { fill: none; stroke: #c0492b; stroke-dasharray: 10 8; stroke-width: 2.5; animation: flow 1.2s linear infinite; } .beacon { fill: #f08a2c; animation: beacon 0.8s steps(2, jump-none) infinite; } .beam-light { fill: none; stroke: #f6c945; stroke-width: 3; animation: pulse 0.8s ease-in-out infinite; } .goose { fill: none; stroke: #dfe5df; stroke-width: 3; } .needle { stroke: #c0492b; stroke-width: 3.5; } .prop { fill: rgba(223, 229, 223, 0.7); stroke: #9aa39e; stroke-width: 1.5; } .blade-line { fill: none; stroke: #7b857f; stroke-width: 4; stroke-dasharray: 14 6; animation: flow 0.3s linear infinite; } .chain { fill: none; stroke: #2c3e2c; stroke-width: 4; stroke-dasharray: 5 3; animation: flow 0.6s linear infinite; } .sprocket { fill: #e0a02c; stroke-dasharray: 3 2; } .card { fill: #fffdf5; filter: drop-shadow(0 3px 0 #1f2a22); } /* Beweging: draaiende rotors, vallende korrels, wegvliegende brokjes. */ .spin { transform-box: fill-box; transform-origin: center; animation: spin 1.4s linear infinite; } .spin.slow { animation-duration: 3s; } .spin.fast { animation-duration: 0.5s; } .spin.rev { animation-direction: reverse; } .fall { animation: fall 1.3s linear infinite; } .fall-short { animation: fall-short 0.9s linear infinite; } .fly-back { animation: fly-back 1.3s ease-out infinite; } .fly-up { animation: fly-up 1.3s ease-out infinite; } .drip { animation: drip 1.1s ease-in infinite; } .rain { animation: drip 1s linear infinite; } .bob { animation: bob 1.1s ease-in-out infinite; } .pulse { animation: pulse 0.7s ease-in-out infinite; } .saw { animation: saw 0.25s linear infinite alternate; } .sway { animation: sway 1.6s ease-in-out infinite alternate; } .hover { animation: hover 2.2s ease-in-out infinite alternate; } .plant-arm { animation: plant 2.4s ease-in-out infinite; } .flee { animation: flee 3s ease-in infinite; } .charge { animation: pulse 1.5s ease-in-out infinite; } .charge.c1 { animation-delay: 0.3s; } .charge.c2 { animation-delay: 0.6s; } @keyframes spin { to { transform: rotate(360deg); } } @keyframes fall { from { transform: translate(0, -18px); opacity: 0; } 25% { opacity: 1; } to { transform: translate(0, 24px); opacity: 0; } } @keyframes fall-short { from { transform: translate(0, -8px); opacity: 0; } 30% { opacity: 1; } to { transform: translate(0, 10px); opacity: 0; } } @keyframes fly-back { from { transform: translate(14px, 10px); opacity: 0; } 30% { opacity: 1; } to { transform: translate(-22px, -14px); opacity: 0; } } @keyframes fly-up { from { transform: translate(0, 8px); opacity: 0; } 30% { opacity: 1; } to { transform: translate(10px, -20px); opacity: 0; } } @keyframes drip { from { transform: translate(0, -14px); opacity: 0; } 20% { opacity: 1; } to { transform: translate(0, 16px); opacity: 0; } } @keyframes bob { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(0, -4px); } } @keyframes pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } } @keyframes flow { to { stroke-dashoffset: -24; } } @keyframes saw { from { transform: translateX(-3px); } to { transform: translateX(3px); } } @keyframes sway { from { transform: translateX(-10px); } to { transform: translateX(10px); } } @keyframes hover { from { transform: translateY(-4px); } to { transform: translateY(4px); } } @keyframes plant { 0%, 100% { transform: translateY(-14px); } 50% { transform: translateY(0); } } @keyframes flee { from { transform: translateX(0); } 70% { opacity: 1; } to { transform: translateX(60px); opacity: 0; } } @keyframes blink { 50% { fill: #c0492b; } } @keyframes beacon { 50% { fill: #f6c945; } } @keyframes twinkle { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } } @keyframes look { 0%, 70%, 100% { transform: translate(0, 0); } 78%, 92% { transform: translate(-5px, -1px); } } @media (prefers-reduced-motion: reduce) { * { animation: none !important; } } </style>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#bfe3f2"/><stop offset="1" stop-color="#eef8f2"/>
+</linearGradient>
+<linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#142440"/><stop offset="1" stop-color="#34507a"/>
+</linearGradient>
+</defs>
+<rect x="-40" y="-30" width="720" height="460" fill="url(#sky)" class="ns"/>
+<g class="cloud">
+<ellipse cx="250" cy="58" rx="34" ry="14"/><ellipse cx="275" cy="48" rx="22" ry="16"/><ellipse cx="228" cy="52" rx="16" ry="11"/>
+</g>
+<g class="cloud">
+<ellipse cx="470" cy="84" rx="26" ry="10"/><ellipse cx="488" cy="76" rx="16" ry="12"/>
+</g>
+<rect x="-40" y="350" width="720" height="80" class="grass"/>
+<path d="M-40 350 H680" class="ground-line"/>
+<g class="sprout" transform="translate(20 350) scale(1)">
+<path d="M0 0 V-12"/>
+<path d="M0 -8 Q -10 -16 -12 -8 Q -6 -4 0 -8"/>
+<path d="M0 -10 Q 10 -20 13 -11 Q 6 -6 0 -10"/>
+</g>
+<g class="sprout" transform="translate(600 350) scale(1)">
+<path d="M0 0 V-12"/>
+<path d="M0 -8 Q -10 -16 -12 -8 Q -6 -4 0 -8"/>
+<path d="M0 -10 Q 10 -20 13 -11 Q 6 -6 0 -10"/>
+</g>
+<g transform="translate(80 0)">
+<g transform="translate(14 -12)" class="far">
+<circle cx="475" cy="308" r="42" class="tire"/>
+<circle cx="475" cy="308" r="36" class="tread"/>
+<circle cx="475" cy="308" r="26" class="hub"/>
+<circle cx="475" cy="308" r="14.3" class="hub-inner"/>
+<path transform="translate(463 284)" d="M16 0 L4 22 H13 L8 40 L22 15 H13 Z" class="bolt"/>
+<rect x="466" y="212" width="18" height="104" rx="4" class="metal"/>
+<circle cx="475" cy="224" r="2.6" class="hole-dark"/><circle cx="475" cy="240" r="2.6" class="hole-dark"/><circle cx="475" cy="256" r="2.6" class="hole-dark"/><circle cx="475" cy="272" r="2.6" class="hole-dark"/><circle cx="475" cy="288" r="2.6" class="hole-dark"/>
+<circle cx="475" cy="308" r="5" class="nut"/>
+<rect x="453" y="198" width="44" height="16" rx="5" class="dark"/>
+<rect x="495" y="194" width="24" height="22" rx="5" class="motor"/>
+<circle cx="165" cy="308" r="42" class="tire"/>
+<circle cx="165" cy="308" r="36" class="tread"/>
+<circle cx="165" cy="308" r="26" class="hub"/>
+<circle cx="165" cy="308" r="14.3" class="hub-inner"/>
+<path transform="translate(153 284)" d="M16 0 L4 22 H13 L8 40 L22 15 H13 Z" class="bolt"/>
+<rect x="156" y="198" width="18" height="118" rx="4" class="metal"/>
+<circle cx="165" cy="210" r="2.6" class="hole-dark"/><circle cx="165" cy="226" r="2.6" class="hole-dark"/><circle cx="165" cy="242" r="2.6" class="hole-dark"/><circle cx="165" cy="258" r="2.6" class="hole-dark"/><circle cx="165" cy="274" r="2.6" class="hole-dark"/><circle cx="165" cy="290" r="2.6" class="hole-dark"/>
+<circle cx="165" cy="308" r="5" class="nut"/>
+<path d="M100 190 L540 190" class="beam-outline"/>
+<path d="M100 190 L540 190" class="beam"/>
+<path d="M100 190 L540 190" class="beam-shine" transform="translate(0 -5)"/>
+<circle cx="112" cy="191" r="3" class="hole"/><circle cx="136" cy="191" r="3" class="hole"/><circle cx="160" cy="191" r="3" class="hole"/><circle cx="184" cy="191" r="3" class="hole"/><circle cx="208" cy="191" r="3" class="hole"/><circle cx="232" cy="191" r="3" class="hole"/><circle cx="256" cy="191" r="3" class="hole"/><circle cx="280" cy="191" r="3" class="hole"/><circle cx="304" cy="191" r="3" class="hole"/><circle cx="328" cy="191" r="3" class="hole"/><circle cx="352" cy="191" r="3" class="hole"/><circle cx="376" cy="191" r="3" class="hole"/><circle cx="400" cy="191" r="3" class="hole"/><circle cx="424" cy="191" r="3" class="hole"/><circle cx="448" cy="191" r="3" class="hole"/><circle cx="472" cy="191" r="3" class="hole"/><circle cx="496" cy="191" r="3" class="hole"/><circle cx="520" cy="191" r="3" class="hole"/></g>
+<circle cx="475" cy="308" r="42" class="tire"/>
+<circle cx="475" cy="308" r="36" class="tread"/>
+<circle cx="475" cy="308" r="26" class="hub"/>
+<circle cx="475" cy="308" r="14.3" class="hub-inner"/>
+<path transform="translate(463 284)" d="M16 0 L4 22 H13 L8 40 L22 15 H13 Z" class="bolt"/>
+<rect x="466" y="212" width="18" height="104" rx="4" class="metal"/>
+<circle cx="475" cy="224" r="2.6" class="hole-dark"/><circle cx="475" cy="240" r="2.6" class="hole-dark"/><circle cx="475" cy="256" r="2.6" class="hole-dark"/><circle cx="475" cy="272" r="2.6" class="hole-dark"/><circle cx="475" cy="288" r="2.6" class="hole-dark"/>
+<circle cx="475" cy="308" r="5" class="nut"/>
+<rect x="453" y="198" width="44" height="16" rx="5" class="dark"/>
+<rect x="495" y="194" width="24" height="22" rx="5" class="motor"/>
+<circle cx="165" cy="308" r="42" class="tire"/>
+<circle cx="165" cy="308" r="36" class="tread"/>
+<circle cx="165" cy="308" r="26" class="hub"/>
+<circle cx="165" cy="308" r="14.3" class="hub-inner"/>
+<path transform="translate(153 284)" d="M16 0 L4 22 H13 L8 40 L22 15 H13 Z" class="bolt"/>
+<rect x="156" y="198" width="18" height="118" rx="4" class="metal"/>
+<circle cx="165" cy="210" r="2.6" class="hole-dark"/><circle cx="165" cy="226" r="2.6" class="hole-dark"/><circle cx="165" cy="242" r="2.6" class="hole-dark"/><circle cx="165" cy="258" r="2.6" class="hole-dark"/><circle cx="165" cy="274" r="2.6" class="hole-dark"/><circle cx="165" cy="290" r="2.6" class="hole-dark"/>
+<circle cx="165" cy="308" r="5" class="nut"/>
+<path d="M8 190 L110 190" class="beam-outline"/>
+<path d="M8 190 L110 190" class="beam"/>
+<path d="M8 190 L110 190" class="beam-shine" transform="translate(0 -5)"/>
+<circle cx="20" cy="191" r="3" class="hole"/><circle cx="44" cy="191" r="3" class="hole"/><circle cx="68" cy="191" r="3" class="hole"/><circle cx="92" cy="191" r="3" class="hole"/><rect x="8" y="157" width="22" height="22" rx="2" class="beam-end"/><rect x="14" y="163" width="10" height="10" class="beam-end-hole"/>
+<path d="M100 190 L540 190" class="beam-outline"/>
+<path d="M100 190 L540 190" class="beam"/>
+<path d="M100 190 L540 190" class="beam-shine" transform="translate(0 -5)"/>
+<circle cx="112" cy="191" r="3" class="hole"/><circle cx="136" cy="191" r="3" class="hole"/><circle cx="160" cy="191" r="3" class="hole"/><circle cx="184" cy="191" r="3" class="hole"/><circle cx="208" cy="191" r="3" class="hole"/><circle cx="232" cy="191" r="3" class="hole"/><circle cx="256" cy="191" r="3" class="hole"/><circle cx="280" cy="191" r="3" class="hole"/><circle cx="304" cy="191" r="3" class="hole"/><circle cx="328" cy="191" r="3" class="hole"/><circle cx="352" cy="191" r="3" class="hole"/><circle cx="376" cy="191" r="3" class="hole"/><circle cx="400" cy="191" r="3" class="hole"/><circle cx="424" cy="191" r="3" class="hole"/><circle cx="448" cy="191" r="3" class="hole"/><circle cx="472" cy="191" r="3" class="hole"/><circle cx="496" cy="191" r="3" class="hole"/><circle cx="520" cy="191" r="3" class="hole"/><rect x="100" y="157" width="22" height="22" rx="2" class="beam-end"/>
+<rect x="106" y="163" width="10" height="10" class="beam-end-hole"/><rect x="518" y="157" width="22" height="22" rx="2" class="beam-end"/>
+<rect x="524" y="163" width="10" height="10" class="beam-end-hole"/>
+<rect x="144" y="116" width="14" height="9" rx="2" class="dark"/>
+<rect x="194" y="116" width="14" height="9" rx="2" class="dark"/>
+<rect x="130" y="123" width="92" height="57" rx="9" class="battery"/>
+<rect x="140" y="162" width="13" height="10" rx="2" class="led"/><rect x="159" y="162" width="13" height="10" rx="2" class="led"/><rect x="178" y="162" width="13" height="10" rx="2" class="led"/><rect x="197" y="162" width="13" height="10" rx="2" class="led"/>
+<path transform="translate(166 128)" d="M14 0 L3 16 H10 L6 30 L18 11 H11 Z" class="bolt"/>
+<rect x="317" y="150" width="6" height="30" class="metal"/>
+<rect x="303" y="147" width="34" height="7" rx="2" class="dark"/>
+<path d="M304 148 Q 320 124 336 148 Z" class="dome"/>
+<rect x="416" y="126" width="88" height="54" rx="10" class="box"/>
+<circle cx="430" cy="140" r="4" class="blink"/>
+<circle cx="466" cy="150" r="9" class="eye"/>
+<circle cx="488" cy="150" r="9" class="eye"/>
+<circle cx="469" cy="151" r="4.5" class="pupil"/>
+<circle cx="491" cy="151" r="4.5" class="pupil"/>
+<path d="M468 166 Q477 173 486 166" class="mouth"/>
+<rect x="54" y="160" width="10" height="20" class="dark"/>
+<rect x="30" y="146" width="66" height="16" rx="8" class="seat"/>
+<rect x="20" y="92" width="18" height="66" rx="8" class="seat"/>
+<path d="M64 146 L100 148 L106 206" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#1f2a22;stroke-width:16"/><path d="M64 146 L100 148 L106 206" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#2d4a7a;stroke-width:10"/>
+<rect x="98" y="202" width="24" height="10" rx="4" class="dark"/>
+<rect x="40" y="92" width="30" height="56" rx="11" fill="#2f9a9e"/>
+<path d="M60 106 L88 124 L112 116" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#1f2a22;stroke-width:12"/><path d="M60 106 L88 124 L112 116" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#2f9a9e;stroke-width:6"/>
+<circle cx="112" cy="116" r="5" class="skin"/>
+<circle cx="56" cy="76" r="13" class="skin"/>
+<path d="M42 72 Q 44 56 58 58 Q 68 60 69 70 Z" fill="#386938"/>
+<path d="M62 69 H80" style="stroke:#1f2a22;stroke-width:5;stroke-linecap:round"/>
+<circle cx="62" cy="77" r="2" fill="#1f2a22" class="ns"/></g>
+</svg>
