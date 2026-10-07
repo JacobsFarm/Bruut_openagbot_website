@@ -1,7 +1,23 @@
 {
-  "func_hero_title": "Attachments & Functionalities",
-  "func_hero_subtitle": "The Bruut platform is a versatile tool carrier. Discover all modules and attachments you can add for specific tasks in the field, greenhouse, or yard.",
-
+  "func_meta_title": "Functions | Bruut OpenAgbot",
+  "func_meta_desc": "All implements and applications for the Bruut field robot, from overseeder to wildlife deterrent. Five implements are fully worked out in FreeCAD, with calculations and animations.",
+  "func_hero_title": "Functions",
+  "func_hero_subtitle": "Bruut is a tool carrier: the frame stays, the work changes. These are all implements and applications for the field, the greenhouse and the yard.",
+  "func_hero_alt": "The liquid fertilizer applicator behind the robot, as a FreeCAD model",
+  "func_stat_functions": "functions",
+  "func_stat_categories": "categories",
+  "func_stat_freecad": "worked out in FreeCAD",
+  "func_featured_title": "Worked out down to the bolt",
+  "func_featured_desc": "These five implements are designed parametrically in FreeCAD, with calculations, drawings and animations on the robot.",
+  "func_variants_count": "{count} variants",
+  "func_all_title": "All functions",
+  "func_jump_label": "Jump to a category",
+  "func_badge_freecad": "In FreeCAD",
+  "func_badge_photo": "Real photo",
+  "func_read_more": "Read more",
+  "func_read_less": "Show less",
+  "func_view_design": "Design and calculations",
+  "func_grass_meter_alt": "The prototype with a grass height meter in the field",
   "func_cat_1_title": "Soil Cultivation & Weed Control",
   "func_cat_2_title": "Mowing",
   "func_cat_3_title": "Spraying, Fertilizing & Irrigation",
@@ -11,7 +27,6 @@
   "func_cat_7_title": "Transport & General",
   "func_cat_8_title": "Measuring & Sensors",
   "func_cat_9_title": "Extras",
-
   "func_1_title": "(Rubber) Push Blade / Grader Blade",
   "func_1_desc": "Front-mounted or mid-mounted between the front and rear wheels. Usable as a grader for leveling terrain, for pushing feed and grass back in the stable, or for cleaning silos.",
   "func_2_title": "Ditch Trencher",
@@ -30,33 +45,28 @@
   "func_8_desc": "Two-axis system with CNC movement (left/right and up/down) carrying a drill that grinds individual weeds out of the sward. Developed for tap-rooted weeds such as broad-leaved dock, fully chemical-free.",
   "func_9_title": "Grassland Aerator",
   "func_9_desc": "Improving soil structure and air supply in grassland.",
-
   "func_10_title": "Sickle Bar Mower",
   "func_10_desc": "Mowing at various heights, including 'topping' plants above ground level.",
   "func_11_title": "Mowing Arm / Brush Cutter",
   "func_11_desc": "Flexible arm with a brush cutter head or blades for mowing under fences and around obstacles.",
-
   "func_12_title": "Irrigation Pump",
   "func_12_desc": "Pumping water from ditches for local irrigation or crop spraying.",
   "func_13_title": "Fertilizer Spreader",
   "func_13_desc": "Precise application and spreading of granular fertilizers.",
   "func_14_title": "Lime Spreader",
   "func_14_desc": "Spreading lime to improve soil pH levels and structure.",
-
   "func_15_title": "Seeder & Overseeder",
   "func_15_desc": "Seed box for initial crop sowing and for overseeding existing grassland in one pass.",
   "func_16_title": "Tray Setter",
   "func_16_desc": "Front-mounted unit that takes seedlings out of the tray and sets them out at the right spacing.",
   "func_17_title": "Patch Seeder",
   "func_17_desc": "Compact seeder that spreads grass seed onto bare patches in the sward, so damaged spots close up again quickly.",
-
   "func_18_title": "Sawdust Spreader",
   "func_18_desc": "Even distribution of sawdust or bedding material in stables.",
   "func_19_title": "Straw Spreader",
   "func_19_desc": "Evenly spreading straw, specially designed for use between vegetable rows.",
   "func_20_title": "Compost Spreader / Bin",
   "func_20_desc": "Transporting compost within the frame structure and spreading it between the crop rows.",
-
   "func_21_title": "Battery Pack",
   "func_21_desc": "Additional power supply modules to be installed between the frames.",
   "func_22_title": "Generator / Engine",
@@ -65,7 +75,6 @@
   "func_23_desc": "Integrated panels to extend battery life and provide sustainable power during operation.",
   "func_24_title": "Heavy-Duty Electric Motors",
   "func_24_desc": "Electric motors such as the Ego Power+ or Greenworks units to drive implements that need real power, replacing small petrol engines.",
-
   "func_25_title": "Broom / Sweeper",
   "func_25_desc": "Large front-mounted brush or electrically driven radial brush for surface cleaning, as an alternative to the front push blade.",
   "func_26_title": "Seat & Frame Extension",
@@ -82,24 +91,18 @@
   "func_31_desc": "Standard lifting system for attaching various agricultural implements.",
   "func_32_title": "Small Cabin",
   "func_32_desc": "Protective enclosure or housing for the operator.",
-
   "func_33_title": "Grass Meter / Crop Scanner",
   "func_33_desc": "Measuring grass and crop height and health to create task maps for nitrogen or phosphate.",
   "func_34_title": "Soil Compaction Meter",
   "func_34_desc": "Measuring and mapping soil density at specific data points.",
-
   "func_35_title": "NIR Sensor (NDVI & Crop Status)",
   "func_35_desc": "Near-infrared sensor that measures the NDVI of the crop while driving. From the difference between reflected red and near-infrared light the robot reads biomass, ground cover and crop vitality, and builds live task maps for variable-rate fertilisation. Because the sensor moves close over the crop instead of looking down from a satellite, the readings stay reliable under cloud cover and also register small spots and gaps.",
-
   "func_36_title": "Drone Combination",
   "func_36_desc": "The robot works together with a drone as a mobile base station. The drone flies out from the platform, maps the plot from above and passes its imagery straight to the robot, which converts it into a driving and treatment plan. The drone charges and swaps batteries on the robot, so the pair can keep scouting and working alternately for a full day without anyone coming out to the field.",
-
   "func_37_title": "Swarm Operation (Multiple Robots per Field)",
   "func_37_desc": "Several Bruut units work the same field as one swarm. The job is split into sections, the robots divide the passes among themselves and keep each other informed of position, progress and battery state, so they never overlap or cross. Capacity scales simply with the number of units instead of with machine size, work continues when one unit drops out, and the light platforms keep soil compaction low.",
-
   "func_38_title": "Liquid Fertiliser (RENURE) Application",
   "func_38_desc": "Dosing unit for liquid fertiliser, built for RENURE: mineral nitrogen recovered from animal manure, which the EU allows as a replacement for fossil fertiliser. This closes the nutrient cycle on the farm or in the region and reduces the need for fertiliser whose production uses a lot of natural gas. The robot works from task maps made by the grass meter, NIR sensor or drone and adjusts the rate per square metre. Where the crop lags behind it gets more, and where there is already enough nitrogen nothing is applied. The liquid goes into the sward just above the ground, with no mist or drift, and a light robot can drive when the land is too wet for a tractor with a tank. Every application is logged with its GPS position, which makes fertiliser record-keeping easier.",
-
   "func_39_title": "Trailer with Tent (Mobile Base Station)",
   "func_39_desc": "Trailer with a pop-up tent that serves as a mobile shed for the robot. The trailer carries the robot by road from field to field, or stays parked at the edge of the plot so the robot can spend the night there, dry and out of sight. From the tent the robot starts its task remotely, so the farmer does not have to drive out and unload it first.",
   "func_40_title": "Charging Station (Automatic Docking)",
@@ -108,10 +111,23 @@
   "func_41_desc": "In Cycly mode the robot stays on one plot for a longer period. Every few days it runs a weeder harrow over the field to remove weeds at the seedling stage, before they can take hold. It uses the weather forecast to pick the dry spells between showers, so it does not smear the soil. In between it recharges at the charging station or in the trailer. Through the cameras the farmer keeps an eye on the crop and the robot remotely, without having to go out to the field.",
   "func_42_title": "Automatic Refilling at the Headland",
   "func_42_desc": "When spreading fertiliser or sowing, the robot drives to a supply hopper on the headland once its bin is empty and refills automatically. It then returns to the spot where it stopped and continues the pass. This way a small, light platform can still cover a large plot, with nobody needed on site to top it up.",
-
   "func_43_title": "Wildlife Deterrent (24/7 Guard)",
   "func_43_desc": "The robot as a mobile wildlife deterrent, with a 360-degree camera and solar panels so it can stay out in the field day and night. It moves along with your livestock in the pasture, or drives a set patrol around the plot to keep geese, wild boar or wolves at bay. Using AI it recognises the animals on the camera feed and learns from earlier visits when and where they usually turn up, so it is already there before the damage is done. When wildlife comes into view it scares the animals off with sound and light, and the farmer gets an alert on their phone straight away. Because the robot keeps changing position and varies its deterrent each time, animals get used to it far less quickly than to a fixed bird banger or scarecrow.",
-
   "func_44_title": "Mechanical Drive for Classic Implements",
-  "func_44_desc": "Through a belt or chain drive that turns with the robot's travel, it can power existing mechanically driven implements, such as a small ELHO tedder or rake. The rotating parts of the implement run in step with the driving speed, just like the old ground-driven machines behind a horse or tractor. The implement itself needs no separate motor, electronics or hydraulics, giving simple, robust and often second-hand machines a second life behind an autonomous robot."
+  "func_44_desc": "Through a belt or chain drive that turns with the robot's travel, it can power existing mechanically driven implements, such as a small ELHO tedder or rake. The rotating parts of the implement run in step with the driving speed, just like the old ground-driven machines behind a horse or tractor. The implement itself needs no separate motor, electronics or hydraulics, giving simple, robust and often second-hand machines a second life behind an autonomous robot.",
+  "impl_back": "All functions",
+  "impl_status": "Design in FreeCAD",
+  "impl_github": "Design on GitHub",
+  "impl_figures_title": "Key figures",
+  "impl_how_title": "How it works",
+  "impl_variants_title": "Variants",
+  "impl_calcs_title": "Calculations",
+  "impl_calcs_desc": "From the calculation scripts in the repository. They read the same parameters as the 3D model, so a different dimension gives different numbers straight away.",
+  "impl_robot_title": "On the robot",
+  "impl_motion_title": "In motion",
+  "impl_chart_title": "Ground following",
+  "impl_gallery_title": "More images",
+  "impl_next": "Next implement",
+  "impl_cta_title": "Build it or improve it?",
+  "impl_cta_desc": "All files are open on GitHub: the FreeCAD model, STEP export, calculation scripts and the reasoning behind every dimension."
 }

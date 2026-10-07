@@ -1,35 +1,34 @@
-<script>
-    import Navbar from '$lib/components/Navbar.svelte';
-    import Footer from '$lib/components/Footer.svelte';
-    import LanguageModal from '$lib/components/LanguageModal.svelte';
+<script lang="ts">
+	import '../app.css';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import LanguageModal from '$lib/components/LanguageModal.svelte';
+
+	let { children } = $props();
 </script>
+
+<svelte:head>
+	<meta name="theme-color" content="#386938" />
+</svelte:head>
 
 <LanguageModal />
 
-<Navbar />
-
-<main>
-  <slot />
-</main>
-
-<Footer />
+<div class="shell">
+	<Navbar />
+	<main id="main">
+		{@render children()}
+	</main>
+	<Footer />
+</div>
 
 <style>
-  :global(body) {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fbf9;
-    color: #2c3e2c;
-  }
+	.shell {
+		min-height: 100dvh;
+		display: flex;
+		flex-direction: column;
+	}
 
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-    min-height: 80vh;
-  }
-
-  :global(h1) {
-    color: #386938;
-  }
+	main {
+		flex: 1;
+	}
 </style>

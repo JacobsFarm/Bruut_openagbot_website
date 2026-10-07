@@ -1,9 +1,12 @@
 {
-  "footer_tagline": "Simple agricultural robotics for everyone. Modular, electric, and fully open-source.",
-  "footer_section_links": "Quick Links",
-  "footer_section_connect": "Connect",
-  "footer_link_github": "GitHub Repository",
-  "footer_link_youtube": "YouTube Channel",
-  "footer_link_contact": "Email Contact",
-  "footer_copyright": "&copy; {year} Open Source Project Bruut. All rights reserved."
+  "footer_tagline": "Simple agricultural robotics for everyone. Modular, electric and fully open source.",
+  "footer_section_project": "Project",
+  "footer_section_open": "Open source",
+  "footer_section_connect": "Contact",
+  "footer_link_github": "Robot on GitHub",
+  "footer_link_implements": "Implements on GitHub",
+  "footer_link_youtube": "YouTube channel",
+  "footer_contact_note": "Questions, your own implement or becoming a partner? Send an email.",
+  "footer_copyright": "Open Source Project Bruut",
+  "footer_license": "Designs and code under an open licence on GitHub."
 }

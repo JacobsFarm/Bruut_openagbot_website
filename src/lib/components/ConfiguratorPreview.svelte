@@ -615,7 +615,7 @@
   .btn-b { fill: #2f9a9e; stroke-width: 2 !important; }
 
   .note {
-    font: 700 14px 'Roboto', 'Segoe UI', sans-serif;
+    font: 700 14px 'Roboto Variable', 'Roboto', 'Segoe UI', sans-serif;
     fill: #7a5410;
     stroke: #fffdf5 !important;
     stroke-width: 4 !important;
@@ -634,8 +634,8 @@
   .seat-line { fill: none; stroke: #f08a2c !important; stroke-width: 3 !important; }
 
   .inset-card { fill: #fffdf5; filter: drop-shadow(0 3px 0 #1f2a22); }
-  .inset-title { font: 700 13px 'Roboto', 'Segoe UI', sans-serif; fill: #386938; text-transform: uppercase; letter-spacing: 0.5px; }
-  .inset-note { font: 700 11px 'Roboto', 'Segoe UI', sans-serif; fill: #7a5410; }
+  .inset-title { font: 700 13px 'Roboto Variable', 'Roboto', 'Segoe UI', sans-serif; fill: #386938; text-transform: uppercase; letter-spacing: 0.5px; }
+  .inset-note { font: 700 11px 'Roboto Variable', 'Roboto', 'Segoe UI', sans-serif; fill: #7a5410; }
   .inset-ground { stroke: #4f8a3a !important; stroke-width: 3 !important; }
   .inset-arch-outline { fill: none; stroke: #1f2a22 !important; stroke-width: 11 !important; }
   .inset-arch { fill: none; stroke: #4a544e !important; stroke-width: 6 !important; }

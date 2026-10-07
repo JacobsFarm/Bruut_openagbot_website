@@ -1,231 +1,278 @@
 <script lang="ts">
-  import * as m from '$lib/paraglide/messages.js';
-  import { base } from '$app/paths';
-  import { getLocale, setLocale } from '$lib/paraglide/runtime';
+	import * as m from '$lib/paraglide/messages';
+	import { base } from '$app/paths';
+	import { page } from '$app/state';
+	import { getLocale, setLocale } from '$lib/paraglide/runtime';
+	import GithubLogoIcon from 'phosphor-svelte/lib/GithubLogoIcon';
+	import ListIcon from 'phosphor-svelte/lib/ListIcon';
+	import XIcon from 'phosphor-svelte/lib/XIcon';
 
-  let isOpen = false;
+	let open = $state(false);
+	const locale = getLocale();
 
-  function toggleMenu() {
-    isOpen = !isOpen;
-  }
+	const links = [
+		{ href: '/projects/functions', label: m.nav_functions },
+		{ href: '/projects/robotbuild', label: m.nav_build },
+		{ href: '/projects/goal', label: m.nav_goal },
+		{ href: '/projects/configurator', label: m.nav_configurator },
+		{ href: '/videos', label: m.nav_videos },
+		{ href: '/about-us', label: m.nav_about }
+	];
 
-  function closeMenu() {
-    isOpen = false;
-  }
+	const current = $derived(page.url.pathname.replace(base, '') || '/');
+	const isActive = (href: string) => current === href || current.startsWith(href + '/');
 
-  $: currentLocale = getLocale();
+	function chooseLocale(next: 'nl' | 'en') {
+		try {
+			localStorage.setItem('lang_chosen', next);
+		} catch {}
+		setLocale(next);
+	}
+
+	$effect(() => {
+		current;
+		open = false;
+	});
 </script>
 
-<nav>
-  <div class="logo">BRUUT</div>
+<svelte:window onkeydown={(e) => e.key === 'Escape' && (open = false)} />
 
-  <button
-    class="hamburger"
-    on:click={toggleMenu}
-    aria-label="Toggle navigation"
-    aria-expanded={isOpen}
-  >
-    <span class="bar" class:open={isOpen}></span>
-    <span class="bar" class:open={isOpen}></span>
-    <span class="bar" class:open={isOpen}></span>
-  </button>
+<header class="nav" class:open>
+	<div class="bar wrap">
+		<a class="brand" href="{base}/" aria-label="Bruut OpenAgbot, home">
+			<span class="word">Bruut</span>
+			<span class="sub">OpenAgbot</span>
+		</a>
 
-  <div class="links" class:open={isOpen}>
-    <a href="{base}/" on:click={closeMenu}>{m.nav_home()}</a>
-    <a href="{base}/videos" class="nav-videos" on:click={closeMenu}>
-      <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path
-          d="M23 12s0-3.9-.5-5.8c-.3-1-1.1-1.8-2.1-2.1C18.5 3.6 12 3.6 12 3.6s-6.5 0-8.4.5c-1 .3-1.8 1.1-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.8c.3 1 1.1 1.8 2.1 2.1 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.9.5-5.8.5-5.8zM9.9 15.6V8.4l5.4 3.6-5.4 3.6z"
-        />
-      </svg>
-      {m.nav_videos()}
-    </a>
-    <a href="{base}/projects/configurator" on:click={closeMenu}>{m.nav_configurator()}</a>
-    <a href="{base}/about-us" on:click={closeMenu}>{m.nav_about()}</a>
+		<nav class="links" aria-label={m.nav_main()}>
+			{#each links as link}
+				<a href="{base}{link.href}" class:active={isActive(link.href)} aria-current={isActive(link.href) ? 'page' : undefined}>
+					{link.label()}
+				</a>
+			{/each}
+		</nav>
 
-    <a href="{base}/projects/robotbuild" class="mobile-only" on:click={closeMenu}>Robot Build</a>
-    <a href="{base}/projects/goal" class="mobile-only" on:click={closeMenu}>Goal</a>
-    <a href="{base}/projects/functions" class="mobile-only" on:click={closeMenu}>Functions</a>
+		<div class="tools">
+			<div class="lang" role="group" aria-label={m.nav_language()}>
+				<button type="button" class:on={locale === 'nl'} aria-pressed={locale === 'nl'} onclick={() => chooseLocale('nl')}>NL</button>
+				<button type="button" class:on={locale === 'en'} aria-pressed={locale === 'en'} onclick={() => chooseLocale('en')}>EN</button>
+			</div>
+			<a class="gh" href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+				<GithubLogoIcon size={22} weight="regular" />
+			</a>
+			<button
+				type="button"
+				class="burger"
+				aria-expanded={open}
+				aria-controls="mobile-menu"
+				aria-label={open ? m.nav_close() : m.nav_menu()}
+				onclick={() => (open = !open)}
+			>
+				{#if open}<XIcon size={24} />{:else}<ListIcon size={24} />{/if}
+			</button>
+		</div>
+	</div>
 
-    <div class="lang-switcher">
-      <button
-        class:active={currentLocale === 'nl'}
-        on:click={() => { setLocale('nl'); closeMenu(); }}
-        aria-label="Schakel naar Nederlands"
-      >
-        🇳🇱 NL
-      </button>
-      <button
-        class:active={currentLocale === 'en'}
-        on:click={() => { setLocale('en'); closeMenu(); }}
-        aria-label="Switch to English"
-      >
-        🇬🇧 EN
-      </button>
-    </div>
-  </div>
-</nav>
+	<div class="sheet" id="mobile-menu" hidden={!open}>
+		<nav class="wrap" aria-label={m.nav_main()}>
+			<a href="{base}/" class:active={current === '/'}>{m.nav_home()}</a>
+			{#each links as link}
+				<a href="{base}{link.href}" class:active={isActive(link.href)}>{link.label()}</a>
+			{/each}
+		</nav>
+	</div>
+</header>
 
 <style>
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #386938; /* Emerald Green */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: relative;
-    z-index: 100;
-    font-family: 'Roboto', sans-serif;
-  }
+	.nav {
+		position: sticky;
+		top: 0;
+		z-index: var(--z-nav);
+		background: color-mix(in oklch, var(--bg) 86%, transparent);
+		backdrop-filter: saturate(1.4) blur(14px);
+		-webkit-backdrop-filter: saturate(1.4) blur(14px);
+		border-bottom: 1px solid var(--line);
+	}
 
-  .logo {
-    color: oklch(98% 0.005 145); /* Off White */
-    font-family: 'Bebas Kai', 'Bebas Neue', sans-serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
+	@media (prefers-reduced-transparency: reduce) {
+		.nav {
+			background: var(--bg);
+			backdrop-filter: none;
+		}
+	}
 
-  .links {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-  }
+	.bar {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		height: var(--nav-h);
+	}
 
-  a {
-    text-decoration: none;
-    color: oklch(98% 0.005 145); /* Off White */
-    font-weight: bold;
-    transition: all 0.2s ease;
-  }
+	.brand {
+		display: inline-flex;
+		align-items: baseline;
+		gap: 0.45rem;
+		text-decoration: none;
+		color: var(--brand-text);
+		flex-shrink: 0;
+	}
 
-  a:hover {
-    color: oklch(65% 0.16 75); /* Deep Amber */
-  }
+	.word {
+		font-family: var(--font-display);
+		font-size: 2rem;
+		line-height: 1;
+		letter-spacing: 0.03em;
+	}
 
-  .mobile-only {
-    display: none;
-  }
+	.sub {
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		color: var(--ink-3);
+	}
 
-  .nav-videos {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		margin-inline: auto;
+	}
 
-  .yt-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    transition: color 0.2s ease;
-  }
+	.links a {
+		position: relative;
+		padding: 0.5rem 0.75rem;
+		border-radius: var(--r-pill);
+		font-size: 0.95rem;
+		font-weight: 550;
+		color: var(--ink-2);
+		text-decoration: none;
+		white-space: nowrap;
+		transition:
+			color 0.2s ease,
+			background-color 0.2s ease;
+	}
 
-  .nav-videos:hover .yt-icon {
-    color: oklch(65% 0.16 75); /* Deep Amber */
-  }
+	.links a:hover {
+		color: var(--ink);
+		background: var(--bg-alt);
+	}
 
-  .lang-switcher {
-    display: flex;
-    gap: 0.3rem;
-    align-items: center;
-    margin-left: 0.5rem;
-    padding-left: 1rem;
-    border-left: 1px solid oklch(85% 0.01 145 / 0.4); /* Soft Gray met opacity */
-  }
+	.links a.active {
+		color: var(--brand-text);
+	}
 
-  .lang-switcher button {
-    background: transparent;
-    border: 1px solid transparent;
-    color: oklch(98% 0.005 145); /* Off White */
-    font-size: 0.8rem;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    transition: all 0.2s ease;
-  }
+	.links a.active::after {
+		content: '';
+		position: absolute;
+		left: 0.75rem;
+		right: 0.75rem;
+		bottom: 0.15rem;
+		height: 2px;
+		border-radius: 2px;
+		background: var(--amber);
+	}
 
-  .lang-switcher button:hover {
-    color: oklch(65% 0.16 75); /* Deep Amber */
-    border-color: oklch(85% 0.01 145 / 0.4);
-  }
+	.tools {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		flex-shrink: 0;
+	}
 
-  .lang-switcher button.active {
-    color: oklch(65% 0.16 75); /* Deep Amber */
-    border-color: oklch(65% 0.16 75); /* Deep Amber */
-    background: rgba(255, 255, 255, 0.1);
-  }
+	.lang {
+		display: inline-flex;
+		padding: 3px;
+		border-radius: var(--r-pill);
+		background: var(--bg-alt);
+	}
 
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
+	.lang button {
+		min-width: 38px;
+		height: 30px;
+		padding: 0 0.6rem;
+		border: 0;
+		border-radius: var(--r-pill);
+		background: transparent;
+		color: var(--ink-3);
+		font: 650 0.78rem/1 var(--font-body);
+		letter-spacing: 0.04em;
+		cursor: pointer;
+	}
 
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: oklch(98% 0.005 145); /* Off White */
-    border-radius: 2px;
-    transition: all 0.3s ease-in-out;
-  }
+	.lang button.on {
+		background: var(--surface);
+		color: var(--ink);
+		box-shadow: var(--shadow-sm);
+	}
 
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex;
-    }
+	.gh,
+	.burger {
+		display: grid;
+		place-items: center;
+		width: 42px;
+		height: 42px;
+		border-radius: var(--r-pill);
+		color: var(--ink-2);
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+	}
 
-    .bar.open:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .bar.open:nth-child(2) {
-      opacity: 0;
-    }
-    .bar.open:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
+	.gh:hover,
+	.burger:hover {
+		color: var(--ink);
+		background: var(--bg-alt);
+	}
 
-    .links {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #386938; /* Emerald Green */
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-in-out;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-    }
+	.burger {
+		display: none;
+	}
 
-    .links.open {
-      max-height: 500px;
-    }
+	.sheet {
+		border-top: 1px solid var(--line);
+		background: var(--bg);
+	}
 
-    .links a {
-      padding: 1rem 2rem;
-      width: 100%;
-      border-top: 1px solid oklch(85% 0.01 145 / 0.2); /* Soft Gray met opacity */
-    }
+	.sheet nav {
+		display: grid;
+		padding-block: 0.75rem 1.5rem;
+	}
 
-    .mobile-only {
-      display: block;
-    }
+	.sheet a {
+		padding: 0.85rem 0;
+		font-family: var(--font-display);
+		font-size: 1.9rem;
+		line-height: 1;
+		color: var(--ink);
+		text-decoration: none;
+		border-bottom: 1px solid var(--line);
+	}
 
-    .lang-switcher {
-      border-left: none;
-      border-top: 1px solid oklch(85% 0.01 145 / 0.2);
-      margin-left: 0;
-      padding: 0.75rem 2rem;
-      width: 100%;
-      justify-content: flex-start;
-    }
-  }
+	.sheet a:last-child {
+		border-bottom: 0;
+	}
+
+	.sheet a.active {
+		color: var(--brand-text);
+	}
+
+	@media (max-width: 1120px) {
+		.links {
+			display: none;
+		}
+
+		.tools {
+			margin-left: auto;
+		}
+
+		.burger {
+			display: grid;
+		}
+	}
+
+	@media (min-width: 1121px) {
+		.sheet {
+			display: none;
+		}
+	}
 </style>

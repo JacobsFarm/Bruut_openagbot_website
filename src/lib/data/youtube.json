@@ -2,8 +2,68 @@
   "channelId": "UCYW2RxlhWwQdn4d33I-OmGg",
   "channelTitle": "Agbot bruut",
   "channelUrl": "https://www.youtube.com/@opensource_agbot",
-  "fetchedAt": "2026-09-27T21:25:40.368Z",
+  "fetchedAt": "2026-10-07T07:13:50.774Z",
   "videos": [
+    {
+      "id": "alDGotWZsuA",
+      "title": "Het idee van ridderzuring kapot frezen/boren | openagbot Bruut",
+      "description": "Het idee van ridderzuring kapot frezen/boren | openagbot Bruut\n\nvoor duidelijkheid we werken samen met Joost Samson, daarmee blazen we robot ruud weer een nieuw lezen in , want deze staat nu te verstoffen in de schuur",
+      "url": "https://www.youtube.com/watch?v=alDGotWZsuA",
+      "thumbnail": "https://i.ytimg.com/vi/alDGotWZsuA/maxresdefault.jpg",
+      "thumbnailFallback": "https://i2.ytimg.com/vi/alDGotWZsuA/hqdefault.jpg",
+      "published": "2026-10-07T06:00:08+00:00",
+      "views": 6
+    },
+    {
+      "id": "zygX2hKVRBE",
+      "title": "Autonoom renure / vloeibare kunstmest toedienen | openagbot Bruut",
+      "description": "Autonoom renure / vloeibare kunstmest toedienen | openagbot Bruut",
+      "url": "https://www.youtube.com/watch?v=zygX2hKVRBE",
+      "thumbnail": "https://i.ytimg.com/vi/zygX2hKVRBE/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/zygX2hKVRBE/hqdefault.jpg",
+      "published": "2026-10-06T06:00:09+00:00",
+      "views": 45
+    },
+    {
+      "id": "ViF4mgSAOJo",
+      "title": "stuwkracht uitproberen met voerschuiven",
+      "description": "stuwkracht uitproberen met voerschuiven\n\nHet is dan wel een veldrobot maar een schuif is nooit mis daarom",
+      "url": "https://www.youtube.com/watch?v=ViF4mgSAOJo",
+      "thumbnail": "https://i.ytimg.com/vi/ViF4mgSAOJo/maxresdefault.jpg",
+      "thumbnailFallback": "https://i3.ytimg.com/vi/ViF4mgSAOJo/hqdefault.jpg",
+      "published": "2026-10-05T06:00:36+00:00",
+      "views": 1220
+    },
+    {
+      "id": "iHPEtxU6Nbg",
+      "title": "Bruut de voeraanschuifrobot",
+      "description": "openagbot bruut als voeraanschuifrobot",
+      "url": "https://www.youtube.com/watch?v=iHPEtxU6Nbg",
+      "thumbnail": "https://i.ytimg.com/vi/iHPEtxU6Nbg/maxresdefault.jpg",
+      "thumbnailFallback": "https://i2.ytimg.com/vi/iHPEtxU6Nbg/hqdefault.jpg",
+      "published": "2026-10-04T06:00:24+00:00",
+      "views": 54
+    },
+    {
+      "id": "mPiLMqUoxJU",
+      "title": "De veldrobot met de sector maken is de wens, komt er hulp van het Dutch Diary Platform?",
+      "description": "Vanaf het begin heb ik gezegd ik wil een veldrobot maken met de Sector en opensource, gemaakt door boeren voor boeren. Niet om de beste robot op de markt te maken maar een die zich wel kan hendelen en eerste stap naar robotificatie van de sector. Betaalbaar als een instap model een modulair frame waar boeren zelf zijn machines aan kan hangen. Gaat dit ook lukken, ik geloof erin. Cowcatcher voor tochtdetectie waren de eerste reacties van dat kan helemaal niet, gratis gaat je nooit lukken het kost je jaren. En toch komen op deze manier de boeren en makers bijelkaar met hetzelfde idee dit kan en gaan we gewoon maken, met resultaat dat het keihard groeit in gebruikers, steeds slimmere modellen ontstaan en dit allemaal door een gemeenschappelijke aanpak. Dit moet voor een veldrobot ook lukken de uitdaging is de financiele kant, software is goedkoop, hardware is duur, wat maakt de R&D ook duurder maar dat mag het niet stoppen, al is hulp juist hier van de sector enorm welkom. Met zijn allen kan het, en dan niet morgen maar vandaag",
+      "url": "https://www.youtube.com/watch?v=mPiLMqUoxJU",
+      "thumbnail": "https://i.ytimg.com/vi/mPiLMqUoxJU/maxresdefault.jpg",
+      "thumbnailFallback": "https://i2.ytimg.com/vi/mPiLMqUoxJU/hqdefault.jpg",
+      "published": "2026-10-02T06:00:09+00:00",
+      "views": 322
+    },
+    {
+      "id": "sZ9OwMH-Sw0",
+      "title": "De eerste Veiligheidsprotocolen kikken in",
+      "description": "De eerste Veiligheidsprotocolen kikken in",
+      "url": "https://www.youtube.com/watch?v=sZ9OwMH-Sw0",
+      "thumbnail": "https://i.ytimg.com/vi/sZ9OwMH-Sw0/maxresdefault.jpg",
+      "thumbnailFallback": "https://i4.ytimg.com/vi/sZ9OwMH-Sw0/hqdefault.jpg",
+      "published": "2026-10-01T06:00:17+00:00",
+      "views": 100
+    },
     {
       "id": "6yiq7W1ruiA",
       "title": "VESC controllers installaren, toch nog weer DC \"puntlassen\" fout",
@@ -12,7 +72,7 @@
       "thumbnail": "https://i.ytimg.com/vi/6yiq7W1ruiA/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/6yiq7W1ruiA/hqdefault.jpg",
       "published": "2026-09-27T06:00:15+00:00",
-      "views": 19
+      "views": 164
     },
     {
       "id": "kow_wTptKBU",
@@ -22,7 +82,7 @@
       "thumbnail": "https://i.ytimg.com/vi/kow_wTptKBU/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/kow_wTptKBU/hqdefault.jpg",
       "published": "2026-09-26T06:00:33+00:00",
-      "views": 20
+      "views": 188
     },
     {
       "id": "RdwZLaisAlk",
@@ -32,7 +92,7 @@
       "thumbnail": "https://i.ytimg.com/vi/RdwZLaisAlk/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/RdwZLaisAlk/hqdefault.jpg",
       "published": "2026-09-25T06:00:13+00:00",
-      "views": 124
+      "views": 802
     },
     {
       "id": "CMPRAg-yp3A",
@@ -42,7 +102,7 @@
       "thumbnail": "https://i.ytimg.com/vi/CMPRAg-yp3A/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/CMPRAg-yp3A/hqdefault.jpg",
       "published": "2026-09-24T06:00:16+00:00",
-      "views": 88
+      "views": 133
     },
     {
       "id": "K190CLXsmxc",
@@ -52,7 +112,7 @@
       "thumbnail": "https://i.ytimg.com/vi/K190CLXsmxc/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/K190CLXsmxc/hqdefault.jpg",
       "published": "2026-09-23T06:00:28+00:00",
-      "views": 16
+      "views": 32
     },
     {
       "id": "sk5x69CTNTw",
@@ -62,7 +122,7 @@
       "thumbnail": "https://i.ytimg.com/vi/sk5x69CTNTw/maxresdefault.jpg",
       "thumbnailFallback": "https://i4.ytimg.com/vi/sk5x69CTNTw/hqdefault.jpg",
       "published": "2026-09-22T06:00:39+00:00",
-      "views": 50
+      "views": 73
     },
     {
       "id": "5MKM7fcS47E",
@@ -72,7 +132,7 @@
       "thumbnail": "https://i.ytimg.com/vi/5MKM7fcS47E/maxresdefault.jpg",
       "thumbnailFallback": "https://i2.ytimg.com/vi/5MKM7fcS47E/hqdefault.jpg",
       "published": "2026-09-21T06:00:38+00:00",
-      "views": 102
+      "views": 123
     },
     {
       "id": "2jP3d6Wv7n4",
@@ -82,7 +142,7 @@
       "thumbnail": "https://i.ytimg.com/vi/2jP3d6Wv7n4/maxresdefault.jpg",
       "thumbnailFallback": "https://i3.ytimg.com/vi/2jP3d6Wv7n4/hqdefault.jpg",
       "published": "2026-09-20T06:00:33+00:00",
-      "views": 111
+      "views": 150
     },
     {
       "id": "1Ve-_vnAhKU",
@@ -92,7 +152,7 @@
       "thumbnail": "https://i.ytimg.com/vi/1Ve-_vnAhKU/maxresdefault.jpg",
       "thumbnailFallback": "https://i2.ytimg.com/vi/1Ve-_vnAhKU/hqdefault.jpg",
       "published": "2026-09-19T06:00:09+00:00",
-      "views": 55
+      "views": 73
     },
     {
       "id": "_u4l48hMVNU",

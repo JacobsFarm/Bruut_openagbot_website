@@ -1,19 +1,20 @@
 {
-  "about_us_title": "Project Bruut: By and for the community",
-  "about_us_intro": "Robotics in agriculture is often complex and unaffordable. We believe this can be different. Project Bruut was born from the desire to design a modular, open-source field robot that you, as a farmer or maker, can build, understand, and adapt yourself.",
-  
-  "about_us_opensource_title": "Why Open Source?",
-  "about_us_opensource_text": "We want to make complex robotics accessible by providing a solid foundation. Because the project is open-source, you are not tied to expensive licenses or closed ecosystems. You have the freedom to fully customize the tool carrier to your own needs and share your innovations with others.",
-  
-  "about_us_independence_title": "Simplicity & Independence",
-  "about_us_independence_text": "No unnecessary electronics or overly complex systems. We use as many off-the-shelf standard components as possible. This means the robot is easy to build and, more importantly, that you can repair it yourself in the field without having to wait for an expensive technician.",
-  
-  "about_us_reality_title": "Expectations & Reality",
-  "about_us_reality_text": "Let’s be honest: robotics is difficult. So don’t expect a ready-made commercial product wrapped up with a bow. What we do offer is a robust, programmable frame and a clear manual. We give you the tool—you give the robot its purpose.",
-  
-  "about_us_community_title": "The Power of Makers",
-  "about_us_community_text": "Whether you’re a farmer with a welding machine or a developer who enjoys working with Ardupilot—we do this together. How great is it to share ideas as a community of enthusiasts, improve them, test them in the mud, and simply use them together?",
-  
-  "about_us_conclusion": "Help build the future of accessible agricultural robotics. Share your attachments, improve the code, or simply start building your own Bruut.",
+  "about_us_meta_title": "About us | Bruut OpenAgbot",
+  "about_us_meta_desc": "Project Bruut is by and for the community: an open-source field robot that farmers and makers can build, understand and adapt themselves.",
+  "about_us_title": "By and for the community",
+  "about_us_intro": "Robotics in agriculture is often complex and unaffordable. We believe this can be different. Bruut is a modular, open-source field robot that you, as a farmer or maker, can build, understand and adapt yourself.",
+  "about_us_photo_alt": "The robot frame in the workshop, with both steering heads",
+  "about_us_principles_title": "How we work",
+  "about_us_opensource_title": "Why open source",
+  "about_us_opensource_text": "You are not locked into expensive licences or closed systems. You adapt the tool carrier to your own work and share your improvements with others.",
+  "about_us_independence_title": "Simplicity & independence",
+  "about_us_independence_text": "No unnecessary electronics. As many standard off-the-shelf parts as possible, so you repair the robot yourself in the field without waiting for a mechanic.",
+  "about_us_reality_title": "Expectations & reality",
+  "about_us_reality_text": "Robotics is hard. Do not expect a ready-made product with a bow on top. Do expect a robust, programmable frame and a clear manual. We provide the tools, you give the robot its purpose.",
+  "about_us_community_title": "The power of makers",
+  "about_us_community_text": "Whether you are a farmer with a welder or a developer who likes working with ArduPilot: we do this together. Sharing ideas, improving them, testing in the mud and using them together.",
+  "about_us_team_title": "The team",
+  "about_us_conclusion_title": "Ready to start?",
+  "about_us_conclusion": "Help build accessible agricultural robotics. Share your implements, improve the code or start building your own Bruut.",
   "about_us_github_button": "View the project on GitHub"
 }

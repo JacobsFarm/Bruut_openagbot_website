@@ -174,7 +174,9 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    font-family: 'Roboto', sans-serif;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 4rem) var(--gutter) clamp(4rem, 8vw, 6rem);
   }
 
   .hero {
@@ -182,12 +184,8 @@
   }
 
   .hero h1 {
-    font-family: 'Bebas Kai', 'Bebas Neue', sans-serif;
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    text-transform: uppercase;
-    line-height: 1;
+    font-size: clamp(3rem, 6vw, 4.8rem);
     margin: 0 0 0.75rem;
-    color: #386938;
   }
 
   .hero p {
@@ -195,6 +193,7 @@
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.6;
+    color: var(--ink-2);
   }
 
   .layout {
@@ -221,6 +220,7 @@
   .summary {
     grid-area: summary;
     background: #ffffff;
+    color: oklch(22% 0.02 145);
     border: 3px solid #1f2a22;
     border-radius: 18px;
     box-shadow: 0 6px 0 #1f2a22;
@@ -231,7 +231,7 @@
   }
 
   .summary h2 {
-    font-family: 'Bebas Kai', 'Bebas Neue', sans-serif;
+    font-family: var(--font-display);
     font-weight: normal;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -289,7 +289,7 @@
     background-color: #386938;
     color: #ffffff;
     padding: 0.7rem 1.2rem;
-    border-radius: 8px;
+    border-radius: var(--r-pill);
     text-decoration: none;
     font-weight: bold;
     text-align: center;

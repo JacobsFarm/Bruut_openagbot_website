@@ -1,13 +1,42 @@
 {
-  "goal_hero_title": "Onze Missie: Toegankelijke Robotica",
+  "goal_meta_title": "Ons doel | Bruut OpenAgbot",
+  "goal_meta_desc": "Waarom Bruut bestaat: landbouwrobotica toegankelijk maken met een open, eenvoudige basis die boeren en makers zelf bouwen, delen en verbeteren.",
+  "goal_hero_title": "Robotica die van boeren zelf is",
   "goal_hero_subtitle": "Complexe robotica toegankelijk maken door een solide basis te bieden, aangedreven door een actieve gemeenschap van boeren en makers.",
+
+  "goal_story_title": "Van basisframe naar je eigen toepassing",
+  "goal_story_desc": "Wij bieden het gereedschap en de opzet. De boer of maker geeft het een doel.",
+  "goal_story_1_title": "Het frame",
+  "goal_story_1_desc": "Kokerbalken met een gatenpatroon op vier wielunits. Breder, langer of hoger zonder te lassen.",
+  "goal_story_1_alt": "Het kale frame op vier wielunits in de werkplaats",
+  "goal_story_2_title": "De robot",
+  "goal_story_2_desc": "Accu, besturing en RTK erbij, en de robot rijdt zelfstandig het veld in.",
+  "goal_story_2_alt": "Het prototype met zitje en grashoogtemeter in het veld",
+  "goal_story_3_title": "Jouw toepassing",
+  "goal_story_3_desc": "Een werktuig dat je kiest, deelt of zelf ontwerpt. Zoals deze doorzaaier.",
+  "goal_story_3_alt": "Doorzaaier achter de robot, als FreeCAD-model",
+
+  "goal_problems_title": "Wat we willen oplossen",
+  "goal_problem_1_title": "Minder chemie",
+  "goal_problem_1_desc": "Pleksgewijs spuiten raakt alleen het onkruid. Mechanisch wieden en de ridderzuringfrees maken middelen soms helemaal overbodig.",
+  "goal_problem_2_title": "Lagere kosten",
+  "goal_problem_2_desc": "Elektrisch en licht: geen diesel, weinig onderhoud en onderdelen die je zelf vervangt. Vanaf ongeveer € 6.000 aan onderdelen.",
+  "goal_problem_3_title": "Minder zwaar werk",
+  "goal_problem_3_desc": "Voer aanschuiven, schoffelen en scouten kan de robot overnemen, ook als er geen personeel te vinden is.",
+  "goal_problem_4_title": "Gezonde bodem",
+  "goal_problem_4_desc": "Ongeveer 1 kg/cm² bodemdruk bij 0,8 bar en de mogelijkheid om met meerdere kleine robots te werken in plaats van één zware machine.",
+  "goal_problem_link": "Bekijk de functies",
+
   "goal_feature1_title": "Gemeenschapsgedreven",
   "goal_feature1_desc": "Een platform waar makers en enthousiastelingen hun ontwerpen, code en hulpstukken delen, verbeteren en testen.",
-  "goal_feature2_title": "Emissievrij & Duurzaam",
+  "goal_feature2_title": "Emissievrij & duurzaam",
   "goal_feature2_desc": "Dankzij de elektrische aandrijving en zonnepaneelopties is de robot ideaal voor emissievrij werk in kassen en op het land.",
   "goal_feature3_title": "Arbeidsbesparend",
   "goal_feature3_desc": "Lichter en efficiënter werk voor agrarische ondernemers, van grootschalige landbouw tot kleinere moestuinen.",
-  "goal_info_title": "Van Basisframe naar Je Eigen Toepassing",
-  "goal_info_desc": "Wij bieden het gereedschap en de opzet. De boer of maker geeft het vervolgens een doel, met onafhankelijke besturing voor eindeloze mogelijkheden.",
-  "goal_cta": "Sluit je aan bij de community"
+  "goal_pillars_title": "Waar we voor staan",
+
+  "goal_cta_title": "Sluit je aan bij de community",
+  "goal_cta_desc": "Volg de bouw, stel vragen of draag bij met een eigen aanbouwdeel. Alles gebeurt in het openbaar.",
+  "goal_cta_github": "Bekijk het project",
+  "goal_cta_youtube": "Volg op YouTube"
 }

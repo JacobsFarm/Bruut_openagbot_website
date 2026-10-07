@@ -228,6 +228,9 @@
     display: flex;
     flex-direction: column;
     gap: 4.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 4rem) var(--gutter) clamp(4rem, 8vw, 6rem);
   }
 
   /* ---------- Hero ---------- */
@@ -244,13 +247,15 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: #ffffff;
-    border: 1px solid oklch(85% 0.01 145);
+    background: var(--surface);
+    border: 1px solid var(--line);
     border-radius: 999px;
     padding: 0.4rem 1rem;
     font-size: 0.9rem;
     font-weight: 600;
-    color: oklch(22% 0.02 145);
+    color: var(--ink);
+    text-transform: none;
+    letter-spacing: 0;
   }
 
   .eyebrow svg {
@@ -260,9 +265,10 @@
   }
 
   h1 {
-    font-family: 'Bebas Kai', sans-serif;
-    font-size: clamp(2.25rem, 7vw, 3.75rem);
-    color: #386938; /* Emerald Green */
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(3rem, 6vw, 4.8rem);
+    color: var(--ink);
     text-transform: uppercase;
     line-height: 1;
     margin: 0;
@@ -285,7 +291,7 @@
   .btn-youtube,
   .btn-ghost {
     padding: 0.8rem 2rem;
-    border-radius: 8px;
+    border-radius: var(--r-pill);
     text-decoration: none;
     font-weight: bold;
     transition:
@@ -306,12 +312,12 @@
   }
 
   .btn-ghost {
-    border: 2px solid #386938;
-    color: #386938;
+    border: 2px solid var(--brand);
+    color: var(--brand-text);
   }
 
   .btn-ghost:hover {
-    background: #386938;
+    background: var(--brand);
     color: oklch(98% 0.005 145);
     transform: translateY(-2px);
   }
@@ -324,18 +330,19 @@
   }
 
   .section-head h2 {
-    font-family: 'Bebas Kai', sans-serif;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #386938;
+    color: var(--brand-text);
     margin: 0 0 0.5rem;
   }
 
   .section-head p {
     margin: 0 auto;
     max-width: 620px;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
     line-height: 1.6;
   }
 
@@ -370,9 +377,9 @@
     background: linear-gradient(
       to bottom,
       oklch(65% 0.16 75) 0%,
-      oklch(85% 0.01 145) 6%,
-      oklch(85% 0.01 145) 94%,
-      #386938 100%
+      var(--line) 6%,
+      var(--line) 94%,
+      var(--brand) 100%
     );
     border-radius: 2px;
   }
@@ -393,9 +400,9 @@
     height: 13px;
     transform: translateX(-50%);
     border-radius: 50%;
-    background: #ffffff;
-    border: 3px solid oklch(70% 0.02 145);
-    box-shadow: 0 0 0 4px #f9fbf9;
+    background: var(--surface);
+    border: 3px solid var(--line-strong);
+    box-shadow: 0 0 0 4px var(--bg);
     z-index: 2;
   }
 
@@ -404,7 +411,7 @@
     top: 1.4rem;
     width: 19px;
     height: 19px;
-    border: 5px solid #386938;
+    border: 5px solid var(--brand);
   }
 
   .month-dot {
@@ -413,8 +420,8 @@
   }
 
   .dot.start {
-    background: #386938;
-    border-color: #386938;
+    background: var(--brand);
+    border-color: var(--brand-text);
   }
 
   /* ---------- Maandkop ---------- */
@@ -429,17 +436,18 @@
 
   .month h3 {
     margin: 0;
-    font-family: 'Bebas Kai', sans-serif;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-size: 1.35rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
   }
 
   /* ---------- Mijlpaal-kaart ---------- */
 
   .card {
-    background: #ffffff;
+    background: var(--surface);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
@@ -537,7 +545,7 @@
     gap: 0.75rem;
     flex-wrap: wrap;
     font-size: 0.85rem;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
   }
 
   .phase {
@@ -560,7 +568,7 @@
   }
 
   .phase-autonomy {
-    background: #386938; /* Emerald Green: autonoom rijden */
+    background: var(--brand); /* Emerald Green: autonoom rijden */
   }
 
   .phase-work {
@@ -569,12 +577,13 @@
 
   .body h4 {
     margin: 0;
-    font-family: 'Bebas Kai', sans-serif;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.15;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #386938;
+    color: var(--brand-text);
   }
 
   .story {
@@ -585,7 +594,7 @@
   .watch {
     margin-top: 0.25rem;
     align-self: flex-start;
-    color: #386938;
+    color: var(--brand-text);
     font-weight: bold;
     text-decoration: none;
   }
@@ -610,7 +619,7 @@
   }
 
   .row:hover {
-    background: #ffffff;
+    background: var(--surface);
   }
 
   .row-thumb {
@@ -654,17 +663,17 @@
 
   .row-date {
     font-size: 0.8rem;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
   }
 
   .row-title {
     font-weight: 600;
     line-height: 1.35;
-    color: oklch(22% 0.02 145);
+    color: var(--ink);
   }
 
   .row:hover .row-title {
-    color: #386938;
+    color: var(--brand-text);
   }
 
   /* Een afgespeelde update krijgt dezelfde speler als een mijlpaal. */
@@ -680,34 +689,34 @@
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
   }
 
   .updated {
     margin-top: 2.5rem;
     text-align: center;
     font-size: 0.85rem;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
   }
 
   /* ---------- Lege staat & CTA ---------- */
 
   .empty {
     text-align: center;
-    background: #ffffff;
+    background: var(--surface);
     border-radius: 16px;
     padding: 3rem 2rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
 
   .empty h2 {
-    color: #386938;
+    color: var(--brand-text);
     margin-top: 0;
   }
 
   .follow-cta {
     text-align: center;
-    background: #386938; /* Emerald Green */
+    background: var(--green-700);
     color: oklch(98% 0.005 145);
     border-radius: 16px;
     padding: 3rem 2rem;
@@ -718,7 +727,8 @@
   }
 
   .follow-cta h2 {
-    font-family: 'Bebas Kai', sans-serif;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -740,7 +750,7 @@
 
   .follow-cta .btn-ghost:hover {
     background: oklch(98% 0.005 145);
-    color: #386938;
+    color: #2c5a2c;
   }
 
   .sr-only {

@@ -73,17 +73,17 @@
 
 <style>
   .card {
-    border: 1px solid oklch(85% 0.01 145); /* Soft Gray */
-    background: #ffffff;
+    border: 1px solid var(--line);
+    background: var(--surface);
     color: inherit;
     text-decoration: none;
     cursor: pointer;
 
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: var(--r-lg);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
     transition:
       transform 0.3s ease,
       border-color 0.3s ease,
@@ -92,13 +92,13 @@
 
   .card:hover,
   .card:focus-visible {
-    transform: translateY(-5px);
-    border-color: oklch(65% 0.16 75); /* Deep Amber */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-md);
   }
 
   .card:focus-visible {
-    outline: 3px solid oklch(65% 0.16 75);
+    outline: 2.5px solid var(--focus);
     outline-offset: 2px;
   }
 
@@ -176,7 +176,7 @@
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.4;
-    color: #386938; /* Emerald Green */
+    color: var(--ink);
 
     /* Maximaal twee regels, zodat de kaarten even hoog blijven. */
     display: -webkit-box;
@@ -189,7 +189,7 @@
   .meta {
     margin: 0;
     font-size: 0.85rem;
-    color: oklch(45% 0.02 145);
+    color: var(--ink-3);
     display: flex;
     align-items: center;
     gap: 0.4rem;

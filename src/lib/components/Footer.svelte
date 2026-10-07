@@ -1,151 +1,136 @@
-<script>
-    import * as m from '$lib/paraglide/messages';
-    import { base } from '$app/paths';
-    import { channel } from '$lib/youtube';
+<script lang="ts">
+	import * as m from '$lib/paraglide/messages';
+	import { base } from '$app/paths';
+	import { channel } from '$lib/youtube';
+	import { implementsRepo } from '$lib/data/implements';
 
-    // Bereken het huidige jaar automatisch
-    const currentYear = new Date().getFullYear();
+	const year = new Date().getFullYear();
 </script>
 
-<footer>
-    <div class="footer-content">
-        <div class="footer-brand">
-            <a href="{base}/" class="logo">BRUUT</a>
-            <p class="tagline">{m.footer_tagline()}</p>
-        </div>
+<footer class="footer">
+	<div class="wrap grid">
+		<div class="brand-col">
+			<a class="brand" href="{base}/">Bruut</a>
+			<p>{m.footer_tagline()}</p>
+		</div>
 
-        <div class="footer-links">
-            <div class="link-group">
-                <h3>{m.footer_section_links()}</h3>
-                <a href="{base}/">{m.nav_home()}</a>
-                <a href="{base}/about-us">{m.nav_about()}</a>
-                <a href="{base}/videos">{m.nav_videos()}</a>
-                <a href="{base}/projects/goal">Goal</a>
-            </div>
-            <div class="link-group">
-                <h3>{m.footer_section_connect()}</h3>
-                <a href={channel.url} target="_blank" rel="noopener noreferrer">
-                    {m.footer_link_youtube()}
-                </a>
-                <a href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" rel="noopener noreferrer">
-                    {m.footer_link_github()}
-                </a>
-                <a href="mailto:info@projectbruut.nl">{m.footer_link_contact()}</a>
-            </div>
-        </div>
-    </div>
+		<nav aria-label={m.footer_section_project()}>
+			<h2>{m.footer_section_project()}</h2>
+			<a href="{base}/projects/functions">{m.nav_functions()}</a>
+			<a href="{base}/projects/robotbuild">{m.nav_build()}</a>
+			<a href="{base}/projects/goal">{m.nav_goal()}</a>
+			<a href="{base}/projects/configurator">{m.nav_configurator()}</a>
+			<a href="{base}/about-us">{m.nav_about()}</a>
+		</nav>
 
-    <div class="footer-bottom">
-        <p>
-            {@html m.footer_copyright({ year: currentYear })}
-        </p>
-    </div>
+		<nav aria-label={m.footer_section_open()}>
+			<h2>{m.footer_section_open()}</h2>
+			<a href="https://github.com/JacobsFarm/Bruut_OpenAgbot" target="_blank" rel="noopener noreferrer">{m.footer_link_github()}</a>
+			<a href={implementsRepo} target="_blank" rel="noopener noreferrer">{m.footer_link_implements()}</a>
+			<a href={channel.url} target="_blank" rel="noopener noreferrer">{m.footer_link_youtube()}</a>
+			<a href="{base}/videos">{m.nav_videos()}</a>
+		</nav>
+
+		<div>
+			<h2>{m.footer_section_connect()}</h2>
+			<a href="mailto:info@projectbruut.nl">info@projectbruut.nl</a>
+			<p class="small">{m.footer_contact_note()}</p>
+		</div>
+	</div>
+
+	<div class="wrap bottom">
+		<p>© {year} {m.footer_copyright()}</p>
+		<p>{m.footer_license()}</p>
+	</div>
 </footer>
 
 <style>
-    footer {
-        background-color: #386938; /* Emerald Green */
-        color: oklch(98% 0.005 145); /* Off White */
-        padding: 4rem 2rem 1rem;
-        margin-top: auto; /* Zorgt dat footer onderaan blijft bij korte pagina's */
-        font-family: 'Roboto', sans-serif;
-    }
+	.footer {
+		margin-top: auto;
+		background: var(--green-900);
+		color: oklch(86% 0.015 145);
+		padding-top: clamp(3.5rem, 7vw, 5.5rem);
+	}
 
-    .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        gap: 3rem;
-        flex-wrap: wrap;
-    }
+	.grid {
+		display: grid;
+		grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+		gap: 2.5rem;
+	}
 
-    /* Brand Sectie */
-    .footer-brand {
-        flex: 1 1 300px;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+	.brand {
+		font-family: var(--font-display);
+		font-size: 3.4rem;
+		line-height: 1;
+		color: oklch(97% 0.01 145);
+		text-decoration: none;
+	}
 
-    .logo {
-        font-family: 'Bebas Kai', sans-serif;
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-decoration: none;
-        color: oklch(98% 0.005 145); /* Off White */
-        letter-spacing: 2px;
-        transition: color 0.3s ease;
-    }
+	.brand-col p {
+		margin-top: 0.75rem;
+		max-width: 34ch;
+		color: oklch(80% 0.02 145);
+	}
 
-    .logo:hover {
-        color: oklch(65% 0.16 75); /* Deep Amber */
-    }
+	h2 {
+		font-family: var(--font-body);
+		font-size: 0.82rem;
+		font-weight: 650;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: oklch(72% 0.06 145);
+		margin-bottom: 1rem;
+	}
 
-    .tagline {
-        font-size: 1rem;
-        opacity: 0.9;
-        max-width: 320px;
-        line-height: 1.5;
-    }
+	nav,
+	.grid > div:last-child {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.55rem;
+	}
 
-    /* Links Sectie */
-    .footer-links {
-        display: flex;
-        gap: 4rem;
-        flex-wrap: wrap;
-    }
+	a {
+		color: oklch(94% 0.01 145);
+		text-decoration: none;
+	}
 
-    .link-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-    }
+	nav a:hover,
+	.grid a:hover {
+		color: var(--amber);
+	}
 
-    .link-group h3 {
-        font-family: 'Bebas Kai', sans-serif;
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-        margin-bottom: 0.5rem;
-        color: oklch(65% 0.16 75); /* Deep Amber */
-    }
+	.small {
+		font-size: 0.88rem;
+		color: oklch(76% 0.02 145);
+		max-width: 30ch;
+	}
 
-    .link-group a {
-        text-decoration: none;
-        color: oklch(98% 0.005 145); /* Off White */
-        font-size: 0.95rem;
-        transition: color 0.2s ease, transform 0.2s ease;
-        display: inline-block;
-    }
+	.bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0.5rem 2rem;
+		margin-top: 3.5rem;
+		padding-block: 1.4rem 1.8rem;
+		border-top: 1px solid oklch(32% 0.03 145);
+		font-size: 0.85rem;
+		color: oklch(72% 0.02 145);
+	}
 
-    .link-group a:hover {
-        color: oklch(65% 0.16 75); /* Deep Amber */
-        transform: translateX(3px);
-    }
+	@media (max-width: 900px) {
+		.grid {
+			grid-template-columns: 1fr 1fr;
+		}
 
-    /* Bottom Bar */
-    .footer-bottom {
-        max-width: 1200px;
-        margin: 3rem auto 0;
-        padding-top: 1.5rem;
-        border-top: 1px solid oklch(98% 0.005 145 / 0.2); /* Soft White divider */
-        text-align: center;
-        font-size: 0.85rem;
-        opacity: 0.7;
-    }
+		.brand-col {
+			grid-column: 1 / -1;
+		}
+	}
 
-    @media (max-width: 768px) {
-        footer {
-            padding: 3rem 1.5rem 1rem;
-        }
-        .footer-content {
-            flex-direction: column;
-            gap: 2rem;
-        }
-        .footer-links {
-            gap: 2rem;
-            justify-content: space-between;
-            width: 100%;
-        }
-    }
+	@media (max-width: 480px) {
+		.grid {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>

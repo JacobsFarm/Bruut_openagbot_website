@@ -1,0 +1,346 @@
+@import '@fontsource/bebas-neue/latin-400.css';
+@import '@fontsource-variable/roboto/wght.css';
+
+/*
+  Merkkleuren uit info.json. Groen is het merk, amber is de enige actiekleur
+  (knoppen), teal alleen als tweede reeks in grafieken.
+  Hoeken: panelen en kaarten 18px, beelden binnen een kaart 12px, knoppen en
+  chips volledig rond. Renders uit FreeCAD staan altijd op een lichte "plaat",
+  ook in donkere modus, zodat hun witte achtergrond wegvalt.
+*/
+:root {
+	color-scheme: light;
+
+	--green: #386938;
+	--green-50: oklch(97% 0.01 145);
+	--green-100: oklch(92% 0.02 145);
+	--green-300: oklch(65% 0.08 145);
+	--green-700: oklch(28% 0.05 145);
+	--green-900: oklch(18% 0.03 145);
+	--amber: oklch(65% 0.16 75);
+	--amber-strong: oklch(58% 0.15 70);
+	--teal: oklch(60% 0.09 195);
+
+	--bg: oklch(98% 0.005 145);
+	--bg-alt: oklch(95.6% 0.011 145);
+	--surface: oklch(99.4% 0.003 145);
+	--ink: oklch(22% 0.02 145);
+	--ink-2: oklch(38% 0.02 145);
+	--ink-3: oklch(47% 0.018 145);
+	--line: oklch(88% 0.01 145);
+	--line-strong: oklch(80% 0.014 145);
+	--brand: var(--green);
+	--brand-text: var(--green);
+	--brand-soft: var(--green-100);
+	--plate: oklch(96.4% 0.008 145);
+	--on-amber: oklch(20% 0.03 75);
+	--on-brand: oklch(98% 0.005 145);
+	--focus: oklch(55% 0.13 75);
+
+	--shadow-sm: 0 1px 2px oklch(22% 0.03 145 / 0.06);
+	--shadow-md: 0 1px 2px oklch(22% 0.03 145 / 0.05), 0 18px 40px -22px oklch(22% 0.05 145 / 0.35);
+
+	--r-lg: 18px;
+	--r-md: 12px;
+	--r-pill: 999px;
+
+	--font-display: 'Bebas Neue', 'Bebas Kai', 'Arial Narrow', sans-serif;
+	--font-body: 'Roboto Variable', 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+	--nav-h: 68px;
+	--wrap: 1240px;
+	--gutter: clamp(1rem, 4vw, 2.5rem);
+	--ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+	/* z-index-schaal */
+	--z-nav: 50;
+	--z-dialog: 80;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		--bg: oklch(17% 0.016 145);
+		--bg-alt: oklch(20.5% 0.02 145);
+		--surface: oklch(22.5% 0.02 145);
+		--ink: oklch(95% 0.008 145);
+		--ink-2: oklch(82% 0.012 145);
+		--ink-3: oklch(70% 0.012 145);
+		--line: oklch(31% 0.02 145);
+		--line-strong: oklch(40% 0.02 145);
+		--brand: oklch(46% 0.08 145);
+		--brand-text: oklch(80% 0.1 145);
+		--brand-soft: oklch(28% 0.045 145);
+		--plate: oklch(91% 0.01 145);
+		--shadow-sm: 0 1px 2px oklch(5% 0.02 145 / 0.4);
+		--shadow-md: 0 1px 2px oklch(5% 0.02 145 / 0.4), 0 18px 40px -22px oklch(5% 0.02 145 / 0.8);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	scroll-padding-top: calc(var(--nav-h) + 1rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: 1.0625rem;
+	line-height: 1.6;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+img,
+video,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+img,
+video {
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	color: var(--ink);
+	text-wrap: balance;
+}
+
+h1,
+h2,
+.display {
+	font-family: var(--font-display);
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	line-height: 0.95;
+}
+
+h1 {
+	font-size: clamp(3rem, 6.2vw, 5.4rem);
+}
+
+h2 {
+	font-size: clamp(2.3rem, 4.4vw, 3.6rem);
+}
+
+h3 {
+	font-size: 1.2rem;
+	font-weight: 650;
+	line-height: 1.3;
+	letter-spacing: -0.005em;
+}
+
+p {
+	margin: 0;
+	text-wrap: pretty;
+}
+
+a {
+	color: var(--brand-text);
+	text-underline-offset: 0.18em;
+}
+
+:focus-visible {
+	outline: 2.5px solid var(--focus);
+	outline-offset: 3px;
+	border-radius: 6px;
+}
+
+.wrap {
+	width: 100%;
+	max-width: var(--wrap);
+	margin-inline: auto;
+	padding-inline: var(--gutter);
+}
+
+.section {
+	padding-block: clamp(4rem, 9vw, 7.5rem);
+}
+
+.lead {
+	font-size: clamp(1.08rem, 1.4vw, 1.22rem);
+	line-height: 1.6;
+	color: var(--ink-2);
+	max-width: 62ch;
+}
+
+.muted {
+	color: var(--ink-3);
+}
+
+.eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 650;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: var(--brand-text);
+}
+
+.num {
+	font-variant-numeric: tabular-nums;
+}
+
+/* Knoppen: amber = hoofdactie, groen = gewone actie, ghost = secundair. */
+.btn {
+	--btn-bg: var(--brand);
+	--btn-fg: var(--on-brand);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.55rem;
+	min-height: 48px;
+	padding: 0.7rem 1.4rem;
+	border-radius: var(--r-pill);
+	border: 1.5px solid transparent;
+	background: var(--btn-bg);
+	color: var(--btn-fg);
+	font: 600 1rem/1 var(--font-body);
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+	transition:
+		transform 0.25s var(--ease),
+		background-color 0.2s ease,
+		border-color 0.2s ease,
+		box-shadow 0.25s var(--ease);
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-md);
+}
+
+.btn:active {
+	transform: translateY(0) scale(0.98);
+	box-shadow: none;
+}
+
+.btn-primary {
+	--btn-bg: var(--amber);
+	--btn-fg: var(--on-amber);
+}
+
+.btn-primary:hover {
+	--btn-bg: oklch(70% 0.15 78);
+}
+
+.btn-green:hover {
+	--btn-bg: var(--green-700);
+}
+
+.btn-ghost {
+	--btn-bg: transparent;
+	--btn-fg: var(--ink);
+	border-color: var(--line-strong);
+}
+
+.btn-ghost:hover {
+	border-color: var(--ink);
+	box-shadow: none;
+}
+
+.link-arrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-weight: 600;
+	color: var(--brand-text);
+	text-decoration: none;
+}
+
+.link-arrow :global(svg),
+.link-arrow svg {
+	transition: transform 0.25s var(--ease);
+}
+
+.link-arrow:hover svg {
+	transform: translateX(4px);
+}
+
+/* Lichte tekenplaat voor CAD-renders: wit valt weg door multiply. */
+.plate {
+	position: relative;
+	background: var(--plate);
+	border-radius: var(--r-lg);
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.plate img {
+	mix-blend-mode: multiply;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.32rem 0.75rem;
+	border-radius: var(--r-pill);
+	border: 1px solid var(--line-strong);
+	font-size: 0.82rem;
+	font-weight: 550;
+	color: var(--ink-2);
+	white-space: nowrap;
+}
+
+.chip-brand {
+	border-color: transparent;
+	background: var(--brand-soft);
+	color: var(--brand-text);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Inkomen bij scrollen; alleen als de bezoeker beweging toestaat. */
+@media (prefers-reduced-motion: no-preference) {
+	.reveal {
+		opacity: 0;
+		transform: translateY(22px);
+		transition:
+			opacity 0.8s var(--ease),
+			transform 0.8s var(--ease);
+		transition-delay: calc(var(--i, 0) * 70ms);
+	}
+
+	.reveal.is-in {
+		opacity: 1;
+		transform: none;
+	}
+}

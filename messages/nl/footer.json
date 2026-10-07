@@ -1,9 +1,12 @@
 {
-  "footer_tagline": "Eenvoudige landbouwrobotica voor iedereen. Modulair, elektrisch en volledig open-source.",
-  "footer_section_links": "Snelle Links",
+  "footer_tagline": "Eenvoudige landbouwrobotica voor iedereen. Modulair, elektrisch en volledig open source.",
+  "footer_section_project": "Project",
+  "footer_section_open": "Open source",
   "footer_section_connect": "Contact",
-  "footer_link_github": "GitHub Repository",
-  "footer_link_youtube": "YouTube Kanaal",
-  "footer_link_contact": "E-mail Contact",
-  "footer_copyright": "&copy; {year} Open Source Project Bruut. Alle rechten voorbehouden."
+  "footer_link_github": "Robot op GitHub",
+  "footer_link_implements": "Aanbouwdelen op GitHub",
+  "footer_link_youtube": "YouTube-kanaal",
+  "footer_contact_note": "Vragen, een eigen aanbouwdeel of partner worden? Stuur een mail.",
+  "footer_copyright": "Open Source Project Bruut",
+  "footer_license": "Ontwerpen en code onder open licentie op GitHub."
 }

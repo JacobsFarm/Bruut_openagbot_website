@@ -151,7 +151,7 @@
   h3 {
     margin: 0 0 0.2rem;
     text-align: center;
-    font-family: 'Bebas Kai', 'Bebas Neue', sans-serif;
+    font-family: var(--font-display);
     font-weight: normal;
     font-size: 1.25rem;
     letter-spacing: 1px;
