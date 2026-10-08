@@ -20,6 +20,13 @@
   $: video, (failed = false);
   $: thumb = failed ? video.thumbnailFallback : video.thumbnail;
 
+  // Bij het eerste bezoek komt de HTML van de server en kan de afbeelding al
+  // klaar (of mislukt) zijn voordat Svelte de load/error-handlers koppelt; die
+  // events komen dan nooit meer en de grijze placeholder blijft staan.
+  function checkLoaded(img: HTMLImageElement) {
+    if (img.complete && (img.naturalWidth === 0 || isPlaceholderThumbnail(img))) failed = true;
+  }
+
   function handleClick(event: MouseEvent) {
     if (!onSelect) return;
     // Laat ctrl/cmd/middenklik gewoon een YouTube-tab openen.
@@ -43,6 +50,7 @@
 >
   <div class="thumb-wrap">
     <img
+      use:checkLoaded
       src={thumb}
       alt={video.title}
       loading="lazy"
