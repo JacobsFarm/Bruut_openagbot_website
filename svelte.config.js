@@ -8,11 +8,11 @@ const config = {
             fallback: '404.html' 
         }),
         paths: {
-            // Dit zorgt dat de site werkt op JacobsFarm.github.io/website/
-            base: process.env.NODE_ENV === 'production' ? '/website' : '',
+            // De site staat op JacobsFarm.github.io/Bruut_openagbot_website/
+            base: process.env.NODE_ENV === 'production' ? '/Bruut_openagbot_website' : '',
         },
         prerender: {
-            // Dit voorkomt dat de build stopt als hij een link vindt die niet met /website begint
+            // Dit voorkomt dat de build stopt als hij een link vindt die niet met /Bruut_openagbot_website begint
             handleHttpError: 'warn' 
         }
     },
