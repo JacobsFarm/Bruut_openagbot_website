@@ -1,6 +1,6 @@
 {
   "front_page_meta_title": "Bruut OpenAgbot | Open-source field robot for farmers and makers",
-  "front_page_meta_desc": "Bruut is an open-source, electric tool carrier for farmers and makers. Four versions, 44 functions and five implements fully worked out in FreeCAD.",
+  "front_page_meta_desc": "Bruut is an open-source, electric tool carrier for farmers and makers. Four versions, 44 functions and {count} implements fully worked out in FreeCAD.",
 
   "front_page_hero_eyebrow": "Open-source field robot",
   "front_page_hero_title": "A field robot you build yourself",
@@ -15,10 +15,10 @@
   "front_page_fact_1": "open source: designs, code and calculations",
   "front_page_fact_2": "electric, on safe low voltage",
   "front_page_fact_3": "versions, from 1.1 to 8.4 kW motor power",
-  "front_page_fact_4": "functions, 5 of them worked out in FreeCAD",
+  "front_page_fact_4": "functions, {count} of them worked out in FreeCAD",
 
   "front_page_start_title": "Where do you want to start?",
-  "front_page_card_functions": "44 implements and applications, from overseeder to wildlife deterrent. Five are worked out down to the bolt, with calculations and animations.",
+  "front_page_card_functions": "44 implements and applications, from overseeder to wildlife deterrent. {count} of them are worked out down to the bolt, with calculations and animations.",
   "front_page_card_build": "The hole-grid frame, the wheel units and the steering heads. All built from standard parts.",
   "front_page_card_build_alt": "The bare robot frame on four wheel units in the workshop",
   "front_page_card_goal": "Why we make agricultural robotics open, simple and affordable.",
@@ -29,8 +29,9 @@
   "front_page_versions_more": "All dimensions and the comparison",
 
   "front_page_impl_eyebrow": "Worked out in FreeCAD",
-  "front_page_impl_title": "Five implements, fully calculated",
+  "front_page_impl_title": "{count} implements, fully calculated",
   "front_page_impl_desc": "Every design is parametric: change a dimension and the whole model follows. With calculations, drawings and an animation on the robot.",
+  "front_page_impl_all": "All {count} implements",
   "front_page_slide_robot_title": "The robot itself",
   "front_page_slide_robot_text": "Ackermann steering with stepper motors: straight ahead, a 90° turn and straight again.",
 

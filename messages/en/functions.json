@@ -1,6 +1,6 @@
 {
   "func_meta_title": "Functions | Bruut OpenAgbot",
-  "func_meta_desc": "All implements and applications for the Bruut field robot, from overseeder to wildlife deterrent. Five implements are fully worked out in FreeCAD, with calculations and animations.",
+  "func_meta_desc": "All implements and applications for the Bruut field robot, from overseeder to wildlife deterrent. {count} implements are fully worked out in FreeCAD, with calculations and animations.",
   "func_hero_title": "Functions",
   "func_hero_subtitle": "Bruut is a tool carrier: the frame stays, the work changes. These are all implements and applications for the field, the greenhouse and the yard.",
   "func_hero_alt": "The liquid fertilizer applicator behind the robot, as a FreeCAD model",
@@ -8,7 +8,7 @@
   "func_stat_categories": "categories",
   "func_stat_freecad": "worked out in FreeCAD",
   "func_featured_title": "Worked out down to the bolt",
-  "func_featured_desc": "These five implements are designed parametrically in FreeCAD, with calculations, drawings and animations on the robot.",
+  "func_featured_desc": "These {count} implements are designed parametrically in FreeCAD, with calculations, drawings and animations on the robot.",
   "func_variants_count": "{count} variants",
   "func_all_title": "All functions",
   "func_jump_label": "Jump to a category",

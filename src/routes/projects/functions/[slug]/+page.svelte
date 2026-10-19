@@ -84,7 +84,7 @@
 				<div class="motion-grid" class:single={item.clips.length + (item.chart ? 1 : 0) === 1}>
 					{#each item.clips as clip}
 						<figure use:reveal>
-							<LoopVideo src={clip.src} poster={clip.poster} label={t(clip.caption)} ratio={item.slug === 'dock-weed-drill' ? '8 / 5' : '3 / 2'} />
+							<LoopVideo src={clip.src} poster={clip.poster} label={t(clip.caption)} ratio={item.clipRatio ?? '3 / 2'} />
 							<figcaption>{t(clip.caption)}</figcaption>
 						</figure>
 					{/each}

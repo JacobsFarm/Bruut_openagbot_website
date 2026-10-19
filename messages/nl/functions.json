@@ -1,6 +1,6 @@
 {
   "func_meta_title": "Functionaliteiten | Bruut OpenAgbot",
-  "func_meta_desc": "Alle werktuigen en toepassingen voor de Bruut-veldrobot, van doorzaaier tot wildverschrikker. Vijf aanbouwdelen zijn volledig uitgewerkt in FreeCAD, met berekeningen en animaties.",
+  "func_meta_desc": "Alle werktuigen en toepassingen voor de Bruut-veldrobot, van doorzaaier tot wildverschrikker. {count} aanbouwdelen zijn volledig uitgewerkt in FreeCAD, met berekeningen en animaties.",
   "func_hero_title": "Functionaliteiten",
   "func_hero_subtitle": "Bruut is een werktuigdrager: het frame blijft, het werk verandert. Dit zijn alle aanbouwdelen en toepassingen voor het veld, de kas en het erf.",
   "func_hero_alt": "De vloeibare-mesttoediener achter de robot, als FreeCAD-model",
@@ -8,7 +8,7 @@
   "func_stat_categories": "categorieën",
   "func_stat_freecad": "uitgewerkt in FreeCAD",
   "func_featured_title": "Uitgewerkt tot op de bout",
-  "func_featured_desc": "Deze vijf aanbouwdelen zijn parametrisch ontworpen in FreeCAD, met berekeningen, tekeningen en animaties op de robot.",
+  "func_featured_desc": "Deze {count} aanbouwdelen zijn parametrisch ontworpen in FreeCAD, met berekeningen, tekeningen en animaties op de robot.",
   "func_variants_count": "{count} uitvoeringen",
   "func_all_title": "Alle functies",
   "func_jump_label": "Spring naar een categorie",

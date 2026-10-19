@@ -1,6 +1,6 @@
 {
   "front_page_meta_title": "Bruut OpenAgbot | Open-source veldrobot voor boeren en makers",
-  "front_page_meta_desc": "Bruut is een open-source, elektrische werktuigdrager voor boeren en makers. Vier versies, 44 functies en vijf aanbouwdelen volledig uitgewerkt in FreeCAD.",
+  "front_page_meta_desc": "Bruut is een open-source, elektrische werktuigdrager voor boeren en makers. Vier versies, 44 functies en {count} aanbouwdelen volledig uitgewerkt in FreeCAD.",
 
   "front_page_hero_eyebrow": "Open-source veldrobot",
   "front_page_hero_title": "Een veldrobot die je zelf bouwt",
@@ -15,10 +15,10 @@
   "front_page_fact_1": "open source: ontwerpen, code en berekeningen",
   "front_page_fact_2": "elektrisch, op veilige laagspanning",
   "front_page_fact_3": "versies, van 1,1 tot 8,4 kW motorvermogen",
-  "front_page_fact_4": "functies, waarvan 5 uitgewerkt in FreeCAD",
+  "front_page_fact_4": "functies, waarvan {count} uitgewerkt in FreeCAD",
 
   "front_page_start_title": "Waar wil je beginnen?",
-  "front_page_card_functions": "44 werktuigen en toepassingen, van doorzaaier tot wildverschrikker. Vijf zijn tot op de bout uitgewerkt, met berekeningen en animaties.",
+  "front_page_card_functions": "44 werktuigen en toepassingen, van doorzaaier tot wildverschrikker. Daarvan zijn er {count} tot op de bout uitgewerkt, met berekeningen en animaties.",
   "front_page_card_build": "Het gatenbalkframe, de wielunits en de stuurkoppen. Alles op te bouwen met standaard onderdelen.",
   "front_page_card_build_alt": "Het kale robotframe op vier wielunits in de werkplaats",
   "front_page_card_goal": "Waarom we landbouwrobotica open, eenvoudig en betaalbaar maken.",
@@ -29,8 +29,9 @@
   "front_page_versions_more": "Alle maten en de vergelijking",
 
   "front_page_impl_eyebrow": "Uitgewerkt in FreeCAD",
-  "front_page_impl_title": "Vijf aanbouwdelen, volledig doorgerekend",
+  "front_page_impl_title": "{count} aanbouwdelen, volledig doorgerekend",
   "front_page_impl_desc": "Elk ontwerp is parametrisch: verander een maat en het hele model rekent mee. Met berekeningen, tekeningen en een animatie op de robot.",
+  "front_page_impl_all": "Alle {count} aanbouwdelen",
   "front_page_slide_robot_title": "De robot zelf",
   "front_page_slide_robot_text": "Ackermann-besturing met stappenmotoren: rechtuit, een bocht van 90° en weer rechtuit.",
 

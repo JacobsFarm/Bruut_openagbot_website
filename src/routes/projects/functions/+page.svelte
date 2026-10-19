@@ -3,7 +3,7 @@
 	import { base } from '$app/paths';
 	import { t } from '$lib/i18n';
 	import { reveal } from '$lib/actions/reveal';
-	import { implementList, implementByFunction } from '$lib/data/implements';
+	import { implementList, implementsByFunction } from '$lib/data/implements';
 	import Emblem from '$lib/components/Emblem.svelte';
 	import ArrowRightIcon from 'phosphor-svelte/lib/ArrowRightIcon';
 	import CubeIcon from 'phosphor-svelte/lib/CubeIcon';
@@ -48,7 +48,7 @@
 
 <svelte:head>
 	<title>{m.func_meta_title()}</title>
-	<meta name="description" content={m.func_meta_desc()} />
+	<meta name="description" content={m.func_meta_desc({ count: implementList.length })} />
 </svelte:head>
 
 <section class="hero">
@@ -73,7 +73,7 @@
 	<div class="wrap">
 		<header class="sec-head" use:reveal>
 			<h2 id="featured-title">{m.func_featured_title()}</h2>
-			<p class="lead">{m.func_featured_desc()}</p>
+			<p class="lead">{m.func_featured_desc({ count: implementList.length })}</p>
 		</header>
 
 		<ul class="featured-grid" role="list">
@@ -123,7 +123,8 @@
 
 				<ul class="cards" role="list">
 					{#each cat.items as nr, i (nr)}
-						{@const impl = implementByFunction.get(nr)}
+						{@const impls = implementsByFunction.get(nr) ?? []}
+						{@const impl = impls[0]}
 						{@const photo = photos[nr]}
 						{@const title = text(`func_${nr}_title`)}
 						<li class="card" use:reveal={i % 3}>
@@ -160,11 +161,15 @@
 										{expanded[nr] ? m.func_read_less() : m.func_read_more()}
 									</button>
 								{/if}
-								{#if impl}
-									<a class="btn btn-green design-link" href="{base}/projects/functions/{impl.slug}">
-										{m.func_view_design()}
-										<ArrowRightIcon size={16} weight="bold" />
-									</a>
+								{#if impls.length}
+									<div class="design-links">
+										{#each impls as design (design.slug)}
+											<a class="btn btn-green design-link" href="{base}/projects/functions/{design.slug}">
+												{impls.length > 1 ? t(design.name) : m.func_view_design()}
+												<ArrowRightIcon size={16} weight="bold" />
+											</a>
+										{/each}
+									</div>
 								{/if}
 							</div>
 						</li>
@@ -480,8 +485,14 @@
 		text-underline-offset: 0.2em;
 	}
 
-	.design-link {
+	.design-links {
 		margin-top: auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.design-link {
 		min-height: 42px;
 		padding: 0.55rem 1.05rem;
 		font-size: 0.92rem;

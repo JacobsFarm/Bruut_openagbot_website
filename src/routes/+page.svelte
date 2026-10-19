@@ -29,9 +29,16 @@
 	import vidLiquid from '$lib/assets/video/implement_liquid_adv.mp4';
 	import posterLiquid from '$lib/assets/implement_liquid_adv_poster.webp';
 	import vidDock from '$lib/assets/video/implement_dockweed.mp4';
+	import vidSpot from '$lib/assets/video/implement_spotspray.mp4';
+	import posterSpot from '$lib/assets/implement_spotspray_poster.webp';
+	import vidSickle from '$lib/assets/video/implement_sicklebar.mp4';
+	import posterSickle from '$lib/assets/implement_sicklebar_poster.webp';
 	import posterDock from '$lib/assets/implement_dockweed_poster.webp';
 
 	const bySlug = (slug: string) => implementList.find((i) => i.slug === slug)!;
+
+	// Een greep uit de uitgewerkte aanbouwdelen; de rest staat op /projects/functions.
+	const homeImplements = ['overseeder', 'liquid-fertilizer', 'feed-pusher', 'dock-weed-drill', 'spot-sprayer', 'in-row-weeder'].map(bySlug);
 
 	const slides: Slide[] = [
 		{
@@ -57,6 +64,21 @@
 			ratio: '8 / 5'
 		},
 		{
+			src: vidSpot,
+			poster: posterSpot,
+			title: t(bySlug('spot-sprayer').name),
+			text: t(bySlug('spot-sprayer').short),
+			href: '/projects/functions/spot-sprayer',
+			ratio: '8 / 5'
+		},
+		{
+			src: vidSickle,
+			poster: posterSickle,
+			title: t(bySlug('sickle-bar-mower').name),
+			text: t(bySlug('sickle-bar-mower').short),
+			href: '/projects/functions/sickle-bar-mower'
+		},
+		{
 			src: vidRobot,
 			poster: posterRobot,
 			title: m.front_page_slide_robot_title(),
@@ -69,7 +91,7 @@
 		{ value: '100%', label: m.front_page_fact_1() },
 		{ value: '48-60 V', label: m.front_page_fact_2() },
 		{ value: '4', label: m.front_page_fact_3() },
-		{ value: '44', label: m.front_page_fact_4() }
+		{ value: '44', label: m.front_page_fact_4({ count: implementList.length }) }
 	];
 
 	const latestVideos = videos.slice(0, 3);
@@ -77,7 +99,7 @@
 
 <svelte:head>
 	<title>{m.front_page_meta_title()}</title>
-	<meta name="description" content={m.front_page_meta_desc()} />
+	<meta name="description" content={m.front_page_meta_desc({ count: implementList.length })} />
 </svelte:head>
 
 <!-- Hero -->
@@ -132,7 +154,7 @@
 					<ArrowUpRightIcon class="cell-arrow" size={24} />
 				</div>
 				<h3>{m.nav_functions()}</h3>
-				<p>{m.front_page_card_functions()}</p>
+				<p>{m.front_page_card_functions({ count: implementList.length })}</p>
 				<div class="strip" aria-hidden="true">
 					{#each [imgLiquid, imgFeed, imgOverseeder] as src}
 						<div class="plate"><img {src} alt="" loading="lazy" /></div>
@@ -197,11 +219,11 @@
 
 		<div class="impl-copy">
 			<span class="eyebrow" use:reveal>{m.front_page_impl_eyebrow()}</span>
-			<h2 use:reveal>{m.front_page_impl_title()}</h2>
+			<h2 use:reveal>{m.front_page_impl_title({ count: implementList.length })}</h2>
 			<p class="lead" use:reveal>{m.front_page_impl_desc()}</p>
 
 			<ul class="impl-list" role="list">
-				{#each implementList as item, i (item.slug)}
+				{#each homeImplements as item, i (item.slug)}
 					<li use:reveal={i}>
 						<a href="{base}/projects/functions/{item.slug}">
 							<span class="plate thumb"><img src={item.hero} alt="" loading="lazy" /></span>
@@ -214,6 +236,10 @@
 					</li>
 				{/each}
 			</ul>
+			<a class="link-arrow impl-all" href="{base}/projects/functions" use:reveal>
+				{m.front_page_impl_all({ count: implementList.length })}
+				<ArrowRightIcon size={18} weight="bold" />
+			</a>
 		</div>
 	</div>
 </section>
@@ -561,6 +587,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.1rem;
+	}
+
+	.impl-all {
+		margin-top: 1.2rem;
 	}
 
 	.impl-list {
